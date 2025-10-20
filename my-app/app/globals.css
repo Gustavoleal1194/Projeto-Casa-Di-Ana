@@ -1,0 +1,409 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Casa di Ana - Paleta Principal */
+  --color-primary: #34292A;
+  /* Marrom Café - textos e elementos base */
+  --color-secondary: #A47765;
+  /* Terra-Cota Suave - botões e detalhes */
+  --color-accent: #2A3B4E;
+  /* Azul Marinho - títulos e contrastes elegantes */
+  --color-background: #F3EBE0;
+  /* Bege Neutro - fundo principal */
+  --color-surface: #FFFFFF;
+  /* superfícies internas claras */
+
+  /* Variáveis do sistema (compatibilidade) */
+  --background: #F3EBE0;
+  --foreground: #34292A;
+  --card: #FFFFFF;
+  --card-foreground: #34292A;
+  --popover: #FFFFFF;
+  --popover-foreground: #34292A;
+  --primary: #A47765;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F3EBE0;
+  --secondary-foreground: #34292A;
+  --muted: #F3EBE0;
+  --muted-foreground: #6B5B5B;
+  --accent: #2A3B4E;
+  --accent-foreground: #FFFFFF;
+  --destructive: #DC2626;
+  --destructive-foreground: #FFFFFF;
+  --border: #E5D5C8;
+  --input: #E5D5C8;
+  --ring: #A47765;
+  --chart-1: #A47765;
+  --chart-2: #2A3B4E;
+  --chart-3: #34292A;
+  --chart-4: #8B6F47;
+  --chart-5: #6B5B5B;
+  --radius: 0.75rem;
+  --sidebar: #F3EBE0;
+  --sidebar-foreground: #34292A;
+  --sidebar-primary: #A47765;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #E5D5C8;
+  --sidebar-accent-foreground: #34292A;
+  --sidebar-border: #E5D5C8;
+  --sidebar-ring: #A47765;
+}
+
+.dark {
+  /* Casa di Ana - Modo Escuro */
+  --color-primary: #F3EBE0;
+  --color-secondary: #D4A574;
+  --color-accent: #5A7A8C;
+  --color-background: #1A1A1A;
+  --color-surface: #2A2A2A;
+
+  --background: #1A1A1A;
+  --foreground: #F3EBE0;
+  --card: #2A2A2A;
+  --card-foreground: #F3EBE0;
+  --popover: #2A2A2A;
+  --popover-foreground: #F3EBE0;
+  --primary: #D4A574;
+  --primary-foreground: #1A1A1A;
+  --secondary: #2A2A2A;
+  --secondary-foreground: #F3EBE0;
+  --muted: #2A2A2A;
+  --muted-foreground: #A0A0A0;
+  --accent: #5A7A8C;
+  --accent-foreground: #F3EBE0;
+  --destructive: #DC2626;
+  --destructive-foreground: #F3EBE0;
+  --border: #404040;
+  --input: #404040;
+  --ring: #D4A574;
+  --chart-1: #D4A574;
+  --chart-2: #5A7A8C;
+  --chart-3: #F3EBE0;
+  --chart-4: #B8956B;
+  --chart-5: #A0A0A0;
+  --radius: 0.75rem;
+  --sidebar: #1A1A1A;
+  --sidebar-foreground: #F3EBE0;
+  --sidebar-primary: #D4A574;
+  --sidebar-primary-foreground: #1A1A1A;
+  --sidebar-accent: #2A2A2A;
+  --sidebar-accent-foreground: #F3EBE0;
+  --sidebar-border: #404040;
+  --sidebar-ring: #D4A574;
+}
+
+@theme inline {
+  /* Casa di Ana - Fontes */
+  --font-sans: "Geist", "Geist Fallback";
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --font-serif: "Playfair Display", serif;
+  --font-body: "Lora", serif;
+  --font-script: "Dancing Script", cursive;
+
+  /* Casa di Ana - Cores */
+  --color-primary: #34292A;
+  --color-secondary: #A47765;
+  --color-accent: #2A3B4E;
+  --color-background: #F3EBE0;
+  --color-surface: #FFFFFF;
+
+  /* Sistema de cores */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    font-family: var(--font-body);
+    background-color: var(--color-background);
+    color: var(--color-primary);
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  /* Casa di Ana - Tipografia */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-serif);
+    color: var(--color-primary);
+    font-weight: 600;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  .signature,
+  .quote {
+    font-family: var(--font-script);
+    color: var(--color-secondary);
+  }
+
+  /* Casa di Ana - Estilos específicos */
+  .casa-hero {
+    background: linear-gradient(135deg, #F3EBE0 0%, #E8D5C4 100%);
+  }
+
+  .casa-card {
+    @apply p-6 rounded-xl shadow-md border border-border/50;
+    background-color: #FFFFFF;
+  }
+
+  .casa-button {
+    @apply text-white transition-all duration-200 rounded-xl px-6 py-3 font-serif;
+    background-color: #A47765;
+  }
+
+  .casa-button:hover {
+    background-color: #2A3B4E;
+  }
+
+  .casa-button-outline {
+    @apply transition-all duration-200 rounded-xl px-6 py-3 font-serif;
+    border: 2px solid #A47765;
+    color: #A47765;
+  }
+
+  .casa-button-outline:hover {
+    background-color: #A47765;
+    color: white;
+  }
+
+  /* Estilos específicos para botões Casa di Ana */
+  .bg-casa-secondary {
+    background-color: #A47765 !important;
+  }
+
+  .text-casa-secondary {
+    color: #A47765 !important;
+  }
+
+  .border-casa-secondary {
+    border-color: #A47765 !important;
+  }
+
+  .hover\:bg-casa-secondary:hover {
+    background-color: #A47765 !important;
+    color: white !important;
+  }
+
+  .hover\:text-casa-secondary:hover {
+    color: #A47765 !important;
+  }
+
+  .hover\:bg-casa-accent:hover {
+    background-color: #2A3B4E !important;
+  }
+
+  /* Estilos específicos para badges Casa di Ana */
+  [data-slot="badge"] {
+    font-family: "Playfair Display", serif !important;
+  }
+
+  [data-slot="badge"].bg-casa-secondary {
+    background-color: #A47765 !important;
+    color: white !important;
+  }
+
+  [data-slot="badge"].text-casa-secondary {
+    color: #A47765 !important;
+  }
+
+  [data-slot="badge"].border-casa-secondary {
+    border-color: #A47765 !important;
+  }
+}
+
+/* Casa di Ana - Classes de cor personalizadas */
+.bg-casa-primary {
+  background-color: #34292A !important;
+}
+
+.bg-casa-secondary {
+  background-color: #A47765 !important;
+}
+
+.bg-casa-accent {
+  background-color: #2A3B4E !important;
+}
+
+.bg-casa-background {
+  background-color: #F3EBE0 !important;
+}
+
+.bg-casa-surface {
+  background-color: #FFFFFF !important;
+}
+
+.text-casa-primary {
+  color: #34292A !important;
+}
+
+.text-casa-secondary {
+  color: #A47765 !important;
+}
+
+.text-casa-accent {
+  color: #2A3B4E !important;
+}
+
+.border-casa-primary {
+  border-color: #34292A !important;
+}
+
+.border-casa-secondary {
+  border-color: #A47765 !important;
+}
+
+.border-casa-accent {
+  border-color: #2A3B4E !important;
+}
+
+/* Variações de opacidade */
+.bg-casa-primary\/10 {
+  background-color: rgba(52, 41, 42, 0.1) !important;
+}
+
+.bg-casa-secondary\/10 {
+  background-color: rgba(164, 119, 101, 0.1) !important;
+}
+
+.bg-casa-accent\/10 {
+  background-color: rgba(42, 59, 78, 0.1) !important;
+}
+
+.bg-casa-secondary\/20 {
+  background-color: rgba(164, 119, 101, 0.2) !important;
+}
+
+.bg-casa-accent\/15 {
+  background-color: rgba(42, 59, 78, 0.15) !important;
+}
+
+.bg-casa-primary\/10 {
+  background-color: rgba(52, 41, 42, 0.1) !important;
+}
+
+.text-casa-primary\/60 {
+  color: rgba(52, 41, 42, 0.6) !important;
+}
+
+.text-casa-primary\/70 {
+  color: rgba(52, 41, 42, 0.7) !important;
+}
+
+.text-casa-primary\/80 {
+  color: rgba(52, 41, 42, 0.8) !important;
+}
+
+.text-casa-secondary\/60 {
+  color: rgba(164, 119, 101, 0.6) !important;
+}
+
+.bg-casa-surface\/30 {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.bg-casa-surface\/50 {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.bg-casa-surface\/80 {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Forçar estilos para botões e badges Casa di Ana */
+button[data-slot="button"].bg-casa-secondary,
+button[data-slot="button"]:has(.bg-casa-secondary) {
+  background-color: #A47765 !important;
+  color: white !important;
+}
+
+button[data-slot="button"].text-casa-secondary,
+button[data-slot="button"]:has(.text-casa-secondary) {
+  color: #A47765 !important;
+}
+
+button[data-slot="button"].border-casa-secondary,
+button[data-slot="button"]:has(.border-casa-secondary) {
+  border-color: #A47765 !important;
+}
+
+/* Hover específico para botão outline "Nossa História" */
+button[data-slot="button"]:hover.hover\:bg-casa-secondary,
+button[data-slot="button"]:hover:has(.hover\:bg-casa-secondary) {
+  background-color: #A47765 !important;
+  color: white !important;
+}
+
+span[data-slot="badge"].bg-casa-secondary,
+span[data-slot="badge"]:has(.bg-casa-secondary) {
+  background-color: #A47765 !important;
+  color: white !important;
+}
+
+span[data-slot="badge"].text-casa-secondary,
+span[data-slot="badge"]:has(.text-casa-secondary) {
+  color: #A47765 !important;
+}
+
+span[data-slot="badge"].border-casa-secondary,
+span[data-slot="badge"]:has(.border-casa-secondary) {
+  border-color: #A47765 !important;
+}
