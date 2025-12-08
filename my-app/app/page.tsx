@@ -48,18 +48,8 @@ export default function Home() {
                   feitos com carinho e tradição, criando momentos únicos de aconchego e memória.
                 </p>
 
-                {/* Badges de destaque */}
-                <div className="flex flex-wrap justify-center gap-3 pt-4">
-                  <Badge variant="casa" className="text-sm px-4 py-2">
-                    Pães Artesanais
-                  </Badge>
-                  <Badge variant="casa" className="text-sm px-4 py-2">
-                    Bebidas
-                  </Badge>
-                  <Badge variant="casa" className="text-sm px-4 py-2">
-                    Doces Tradicionais
-                  </Badge>
-                </div>
+
+
               </div>
 
               {/* Botões de ação */}
@@ -71,8 +61,8 @@ export default function Home() {
                 </Link>
                 <Link href="#historia" className="block w-full sm:w-auto relative z-20">
                   <Button size="lg" variant="casa" className="w-full sm:w-auto px-8 py-4 text-lg">
-                  Nossa História
-                </Button>
+                    Nossa História
+                  </Button>
                 </Link>
               </div>
 

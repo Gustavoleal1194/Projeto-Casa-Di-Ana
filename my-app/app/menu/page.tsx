@@ -50,11 +50,11 @@ export default function MenuPage() {
               <div className="flex items-center gap-4 text-sm text-casa-primary/70">
                 <div className="flex items-center gap-1">
                   <Clock className="h-4 w-4" />
-                  <span>Aberto até 20h</span>
+                  <span>Aberto de terça a sabado das 8h até 20h</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <MapPin className="h-4 w-4" />
-                  <span>Rua das Flores, 123</span>
+                  <span>Rua Vereador francisco lopes, 299</span>
                 </div>
               </div>
             </div>
