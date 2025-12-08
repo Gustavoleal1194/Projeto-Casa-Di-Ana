@@ -1,12 +1,37 @@
-import { MenuCarousel } from "@/components/menu-carousel"
+import { MenuCarousel, type MenuCarouselItem } from "@/components/menu-carousel"
 import { MenuGrid } from "@/components/menu-grid"
+import { defaultMenuSections } from "@/data/menu-sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Header } from "@/components/header"
 import Link from "next/link"
 import { ArrowLeft, Clock, MapPin } from "lucide-react"
 
+// Função para pegar um item de cada grupo para o carrossel
+function getCarouselItemsFromSections(): MenuCarouselItem[] {
+  const carouselItems: MenuCarouselItem[] = []
+
+  // Pega um item de cada seção (Cafés Quentes, Cafés Gelados, Lanches Artesanais)
+  defaultMenuSections.forEach((section) => {
+    if (section.items.length > 0) {
+      // Pega o primeiro item de cada seção (ou pode ser aleatório)
+      const item = section.items[0]
+      carouselItems.push({
+        id: item.id,
+        name: item.name,
+        description: item.description,
+        price: item.price,
+        category: section.title,
+        image: item.image,
+      })
+    }
+  })
+
+  return carouselItems
+}
+
 export default function MenuPage() {
+  const carouselItems = getCarouselItemsFromSections()
   return (
     <>
       <Header />
@@ -92,7 +117,7 @@ export default function MenuPage() {
                 Nossas especialidades preparadas especialmente para hoje
               </p>
             </div>
-            <MenuCarousel />
+            <MenuCarousel items={carouselItems} />
           </div>
 
           {/* Grid completo do menu */}

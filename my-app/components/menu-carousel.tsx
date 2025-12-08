@@ -1,11 +1,21 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useCallback } from "react"
+import Image from "next/image"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
-const menuItems = [
+export type MenuCarouselItem = {
+  id: number
+  name: string
+  description: string
+  price: string
+  category: string
+  image?: string
+}
+
+const defaultMenuItems: MenuCarouselItem[] = [
   {
     id: 1,
     name: "Pão Artesanal da Casa",
@@ -16,7 +26,7 @@ const menuItems = [
   },
   {
     id: 2,
-    "name": "Torta de Maçã da Vovó",
+    name: "Torta de Maçã da Vovó",
     description: "Massa folhada caseira com maçãs caramelizadas e canela, receita de família",
     price: "R$ 18,00",
     category: "Tortas Tradicionais",
@@ -27,7 +37,7 @@ const menuItems = [
     name: "Café Especial da Casa",
     description: "Blend exclusivo torrado na hora, com notas de chocolate e caramelo",
     price: "R$ 8,00",
-    category: "Cafés Especiais",
+    category: "Bebidas",
     image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=600&fit=crop&crop=center",
   },
   {
@@ -40,9 +50,38 @@ const menuItems = [
   },
 ]
 
-export function MenuCarousel() {
+type MenuCarouselProps = {
+  items?: MenuCarouselItem[]
+}
+
+export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isAnimating, setIsAnimating] = useState(false)
+  const totalItems = items.length || 1
+
+  const handleNext = useCallback(() => {
+    if (isAnimating) return
+    setIsAnimating(true)
+    setCurrentIndex((prev) => (prev + 1) % totalItems)
+    setTimeout(() => setIsAnimating(false), 600)
+  }, [isAnimating, totalItems])
+
+  const handlePrev = useCallback(() => {
+    if (isAnimating) return
+    setIsAnimating(true)
+    setCurrentIndex((prev) => (prev - 1 + totalItems) % totalItems)
+    setTimeout(() => setIsAnimating(false), 600)
+  }, [isAnimating, totalItems])
+
+  const goToSlide = useCallback(
+    (index: number) => {
+    if (isAnimating || index === currentIndex) return
+    setIsAnimating(true)
+    setCurrentIndex(index)
+    setTimeout(() => setIsAnimating(false), 600)
+    },
+    [currentIndex, isAnimating],
+  )
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -50,33 +89,12 @@ export function MenuCarousel() {
     }, 5000)
 
     return () => clearInterval(timer)
-  }, [currentIndex])
-
-  const handleNext = () => {
-    if (isAnimating) return
-    setIsAnimating(true)
-    setCurrentIndex((prev) => (prev + 1) % menuItems.length)
-    setTimeout(() => setIsAnimating(false), 600)
-  }
-
-  const handlePrev = () => {
-    if (isAnimating) return
-    setIsAnimating(true)
-    setCurrentIndex((prev) => (prev - 1 + menuItems.length) % menuItems.length)
-    setTimeout(() => setIsAnimating(false), 600)
-  }
-
-  const goToSlide = (index: number) => {
-    if (isAnimating || index === currentIndex) return
-    setIsAnimating(true)
-    setCurrentIndex(index)
-    setTimeout(() => setIsAnimating(false), 600)
-  }
+  }, [handleNext])
 
   return (
     <div className="relative mx-auto max-w-4xl">
       <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-casa-surface shadow-xl border border-border/50">
-        {menuItems.map((item, index) => (
+        {items.map((item, index) => (
           <div
             key={item.id}
             className={cn(
@@ -85,7 +103,14 @@ export function MenuCarousel() {
             )}
           >
             {item.image ? (
-              <img src={item.image} alt={item.name} className="h-full w-full object-cover" />
+              <Image
+                src={item.image}
+                alt={item.name}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
+                className="object-cover"
+                priority={index === currentIndex}
+              />
             ) : (
               <div className="h-full w-full bg-casa-background flex items-center justify-center">
                 <div className="text-center p-8">
@@ -93,7 +118,7 @@ export function MenuCarousel() {
                     <span className="text-4xl">
                       {item.category === "Pães Artesanais" ? "🥖" :
                         item.category === "Tortas Tradicionais" ? "🥧" :
-                          item.category === "Cafés Especiais" ? "☕" : "🍰"}
+                          item.category === "Bebidas" ? "☕" : "🍰"}
                     </span>
                   </div>
                 </div>
@@ -135,7 +160,7 @@ export function MenuCarousel() {
       </Button>
 
       <div className="mt-6 flex justify-center gap-2">
-        {menuItems.map((_, index) => (
+        {items.map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
