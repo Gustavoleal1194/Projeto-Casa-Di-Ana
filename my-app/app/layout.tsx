@@ -1,20 +1,21 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono, Playfair_Display, Lora, Dancing_Script } from "next/font/google"
+import { Geist, Geist_Mono, Poppins, Inter, Caveat } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" })
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono" })
-const playfair = Playfair_Display({
+const poppins = Poppins({
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
   variable: "--font-serif",
 })
-const lora = Lora({
+const inter = Inter({
   subsets: ["latin"],
   variable: "--font-body",
 })
-const dancing = Dancing_Script({
+const caveat = Caveat({
   subsets: ["latin"],
   variable: "--font-script",
 })
@@ -32,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${geist.variable} ${geistMono.variable} ${playfair.variable} ${lora.variable} ${dancing.variable} font-body antialiased`}>
+      <body className={`${geist.variable} ${geistMono.variable} ${poppins.variable} ${inter.variable} ${caveat.variable} font-body antialiased`}>
         {children}
         <Analytics />
       </body>

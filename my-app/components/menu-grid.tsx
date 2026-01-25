@@ -34,8 +34,8 @@ export function MenuGrid({ sections = defaultMenuSections }: MenuGridProps) {
               className={cn(
                 "whitespace-nowrap px-3 py-1.5 rounded-full border transition-colors font-serif text-xs md:text-sm",
                 isActive
-                  ? "bg-casa-secondary text-white border-casa-secondary shadow-md"
-                  : "bg-white/80 text-casa-primary border-border hover:bg-casa-secondary/20",
+                  ? "bg-white text-[#5e6979] border-white shadow-md"
+                  : "bg-white/20 text-white border-white/40 hover:bg-white/30",
               )}
             >
               {section.title}
@@ -47,14 +47,14 @@ export function MenuGrid({ sections = defaultMenuSections }: MenuGridProps) {
       {currentSection && (
         <section className="space-y-8">
           <div className="text-center space-y-3">
-            <h3 className="font-serif text-3xl text-casa-primary">{currentSection.title}</h3>
-            <p className="text-casa-primary/70 font-body max-w-2xl mx-auto">{currentSection.description}</p>
+            <h3 className="font-serif text-3xl text-white">{currentSection.title}</h3>
+            <p className="text-white/90 font-body max-w-2xl mx-auto">{currentSection.description}</p>
           </div>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {currentSection.items.map((item) => (
         <Card
           key={item.id}
-          className="group overflow-hidden transition-all duration-300 hover:shadow-xl casa-card hover:scale-105"
+          className="group overflow-hidden transition-all duration-300 hover:shadow-xl bg-white hover:scale-105"
           onMouseEnter={() => setHoveredId(item.id)}
           onMouseLeave={() => setHoveredId(null)}
         >
@@ -71,24 +71,24 @@ export function MenuGrid({ sections = defaultMenuSections }: MenuGridProps) {
 
             <div
               className={cn(
-                "absolute inset-0 bg-gradient-to-t from-casa-primary/80 via-casa-primary/20 to-transparent transition-opacity duration-300",
+                "absolute inset-0 bg-gradient-to-t from-[#5e6979]/80 via-[#5e6979]/20 to-transparent transition-opacity duration-300",
                       hoveredId === item.id ? "opacity-100" : "opacity-0"
                     )}
                   />
 
                   {item.tag && (
-                    <Badge className="absolute left-3 top-3 bg-casa-secondary/90 text-white font-serif" variant="casa">
+                    <Badge className="absolute left-3 top-3 bg-white/90 text-[#5e6979] font-serif border-white" variant="casa-outline">
                       {item.tag}
             </Badge>
                   )}
           </div>
 
           <CardContent className="p-5">
-                  <h4 className="mb-2 font-serif text-lg font-semibold text-balance text-casa-primary">{item.name}</h4>
-                  <p className="mb-3 text-pretty text-sm leading-relaxed text-casa-primary/70 font-body">
+                  <h4 className="mb-2 font-serif text-lg font-semibold text-balance text-[#5e6979]">{item.name}</h4>
+                  <p className="mb-3 text-pretty text-sm leading-relaxed text-[#5e6979]/70 font-body">
                     {item.description}
                   </p>
-            <p className="text-lg font-serif font-semibold text-casa-secondary">{item.price}</p>
+            <p className="text-lg font-serif font-semibold text-[#5e6979]">{item.price}</p>
           </CardContent>
         </Card>
       ))}

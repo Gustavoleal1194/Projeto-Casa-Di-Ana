@@ -99,9 +99,9 @@
   /* Casa di Ana - Fontes */
   --font-sans: "Geist", "Geist Fallback";
   --font-mono: "Geist Mono", "Geist Mono Fallback";
-  --font-serif: "Playfair Display", serif;
-  --font-body: "Lora", serif;
-  --font-script: "Dancing Script", cursive;
+  --font-serif: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-script: "Caveat", cursive;
 
   /* Casa di Ana - Cores */
   --color-primary: #34292A;
@@ -253,7 +253,7 @@
 
   /* Estilos específicos para badges Casa di Ana */
   [data-slot="badge"] {
-    font-family: "Playfair Display", serif !important;
+    font-family: "Poppins", sans-serif !important;
   }
 
   [data-slot="badge"].bg-casa-secondary {

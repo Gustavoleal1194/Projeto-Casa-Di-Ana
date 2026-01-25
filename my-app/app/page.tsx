@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Header />
       <main className="min-h-screen" style={{
-        backgroundImage: "url('/images/10.jpg')",
+        backgroundImage: "url('/images/frente.jpeg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -68,8 +68,8 @@ export default function Home() {
 
               {/* Informações de funcionamento */}
               <div className="pt-12 text-base text-white font-body font-semibold">
-                <p>Aberto diariamente das 7h às 20h</p>
-                <p className="mt-1">Rua das Flores, 123 - Centro</p>
+                <p>Aberto de terça a sabado das 8h até 20h</p>
+                <p className="mt-1">Rua Vereador francisco lopes, 299</p>
               </div>
             </div>
           </div>
@@ -159,7 +159,7 @@ export default function Home() {
         {/* Nossa História */}
         <section id="historia" className="py-20 px-4 bg-casa-surface/80">
           <div className="max-w-5xl mx-auto text-center space-y-6">
-            <h2 className="font-serif text-4xl text-casa-primary">Nossa História</h2>
+            <h2 className="font-serif text-4xl text-casa-primary">Nossa história</h2>
             <p className="text-lg text-casa-primary/80 font-body leading-relaxed">
               A Casa Di Ana nasceu do sonho de resgatar memórias afetivas por meio de sabores artesanais.
               Selecionamos ingredientes frescos, respeitamos o tempo de cada receita e celebramos a hospitalidade

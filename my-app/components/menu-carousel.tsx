@@ -140,7 +140,7 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
       <Button
         variant="casa-outline"
         size="icon"
-        className="absolute left-4 top-1/2 h-10 w-10 -translate-y-1/2 rounded-full bg-casa-surface/90 backdrop-blur-sm hover:bg-casa-secondary hover:text-white border-casa-secondary"
+        className="absolute left-4 top-1/2 h-10 w-10 -translate-y-1/2 rounded-full bg-white/90 backdrop-blur-sm hover:bg-white text-[#5e6979] hover:text-[#5e6979] border-white shadow-md"
         onClick={handlePrev}
         disabled={isAnimating}
       >
@@ -151,7 +151,7 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
       <Button
         variant="casa-outline"
         size="icon"
-        className="absolute right-4 top-1/2 h-10 w-10 -translate-y-1/2 rounded-full bg-casa-surface/90 backdrop-blur-sm hover:bg-casa-secondary hover:text-white border-casa-secondary"
+        className="absolute right-4 top-1/2 h-10 w-10 -translate-y-1/2 rounded-full bg-white/90 backdrop-blur-sm hover:bg-white text-[#5e6979] hover:text-[#5e6979] border-white shadow-md"
         onClick={handleNext}
         disabled={isAnimating}
       >
@@ -166,7 +166,7 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
             onClick={() => goToSlide(index)}
             className={cn(
               "h-2 rounded-full transition-all duration-300",
-              index === currentIndex ? "w-8 bg-casa-secondary" : "w-2 bg-border hover:bg-casa-secondary/50",
+              index === currentIndex ? "w-8 bg-white" : "w-2 bg-white/40 hover:bg-white/60",
             )}
             aria-label={`Ir para item ${index + 1}`}
           />
