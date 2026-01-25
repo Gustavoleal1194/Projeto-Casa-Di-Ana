@@ -410,34 +410,47 @@ span[data-slot="badge"]:has(.border-casa-secondary) {
 
 /* Background responsivo para página principal */
 .home-background {
-  background-image: url('/images/frente.jpeg');
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  background-position: center center;
+  position: relative;
+  background-image: url('/images/frente.jpeg') !important;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll !important;
+  background-size: 60% !important;
+  background-position: center center !important;
+  /* Usa 60% para fazer a imagem aparecer mais distante/pequena */
 }
 
-/* Mobile: ajustar para melhor visualização sem esticamento excessivo */
+/* Mobile: ajuste para imagem mais distante */
 @media (max-width: 640px) {
   .home-background {
-    background-size: cover;
-    background-position: center 15%;
-    /* Foca na parte superior central, onde geralmente está o conteúdo principal */
-    /* Isso evita que a imagem seja cortada de forma desagradável */
+    background-size: 50% !important;
+    background-position: center center !important;
+    /* Diminui ainda mais no mobile para efeito mais distante */
+    background-attachment: scroll !important;
   }
 }
 
-/* Tablet pequeno: ajuste intermediário */
-@media (min-width: 641px) and (max-width: 768px) {
+/* Tablet: ajuste intermediário */
+@media (min-width: 641px) and (max-width: 1024px) {
   .home-background {
-    background-position: center 20%;
+    background-size: 55% !important;
+    background-position: center center !important;
+    background-attachment: scroll !important;
   }
 }
 
-/* Desktop: comportamento padrão com fixed */
-@media (min-width: 769px) {
+/* Desktop: efeito parallax com fixed */
+@media (min-width: 1025px) {
   .home-background {
-    background-attachment: fixed;
-    background-position: center center;
+    background-size: 65% !important;
+    background-position: center center !important;
+    background-attachment: fixed !important;
+  }
+}
+
+/* Fallback para telas muito largas */
+@media (min-width: 1920px) {
+  .home-background {
+    background-size: 70% !important;
+    background-position: center center !important;
   }
 }

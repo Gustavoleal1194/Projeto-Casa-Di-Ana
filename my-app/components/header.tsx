@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export function Header() {
     return (
-        <header className="bg-casa-secondary py-3 sm:py-4 px-4">
+        <header className="bg-casa-secondary py-3 sm:py-4 px-4 relative z-50 shadow-lg">
             <div className="max-w-6xl mx-auto flex justify-center items-center">
                 <Image
                     src="/images/headerCasaDiana.png"

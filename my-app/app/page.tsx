@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="min-h-screen home-background">
+      <main className="min-h-screen home-background relative">
         {/* Hero Section */}
         <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-8 md:py-0">
           {/* Overlay com 10% de opacidade para melhorar legibilidade */}
