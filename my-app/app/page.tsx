@@ -9,13 +9,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="min-h-screen" style={{
-        backgroundImage: "url('/images/frente.jpeg')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'scroll'
-      }}>
+      <main className="min-h-screen home-background">
         {/* Hero Section */}
         <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-8 md:py-0">
           {/* Overlay com 10% de opacidade para melhorar legibilidade */}

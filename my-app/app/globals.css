@@ -407,3 +407,37 @@ span[data-slot="badge"].border-casa-secondary,
 span[data-slot="badge"]:has(.border-casa-secondary) {
   border-color: #A47765 !important;
 }
+
+/* Background responsivo para página principal */
+.home-background {
+  background-image: url('/images/frente.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Mobile: ajustar para melhor visualização sem esticamento excessivo */
+@media (max-width: 640px) {
+  .home-background {
+    background-size: cover;
+    background-position: center 15%;
+    /* Foca na parte superior central, onde geralmente está o conteúdo principal */
+    /* Isso evita que a imagem seja cortada de forma desagradável */
+  }
+}
+
+/* Tablet pequeno: ajuste intermediário */
+@media (min-width: 641px) and (max-width: 768px) {
+  .home-background {
+    background-position: center 20%;
+  }
+}
+
+/* Desktop: comportamento padrão com fixed */
+@media (min-width: 769px) {
+  .home-background {
+    background-attachment: fixed;
+    background-position: center center;
+  }
+}
