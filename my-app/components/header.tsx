@@ -2,14 +2,14 @@ import Image from "next/image"
 
 export function Header() {
     return (
-        <header className="bg-casa-secondary py-4 px-4">
+        <header className="bg-casa-secondary py-3 sm:py-4 px-4">
             <div className="max-w-6xl mx-auto flex justify-center items-center">
                 <Image
                     src="/images/headerCasaDiana.png"
                     alt="Casa di Ana - Logo"
                     width={200}
                     height={80}
-                    className="object-contain"
+                    className="object-contain w-32 sm:w-40 md:w-48 lg:w-[200px] h-auto"
                     priority
                 />
             </div>
