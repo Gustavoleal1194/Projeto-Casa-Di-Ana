@@ -57,7 +57,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Café do Mané – Prensa Francesa",
                 description: "Café encorpado, doce e com textura amanteigada.",
                 price: "R$ 18,00",
-                image: "/images/bebidas/Mane.jpg",
+                image: "/images/bebidas/Expresso.jpg",
                 tag: "Café do Mané"
             },
             {
@@ -65,7 +65,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Café do Luiz Paulo – Coado V60",
                 description: "Café especial acima de 85 pts · Mantiqueira · Grão Star Maya.",
                 price: "R$ 20,00",
-                image: "https://images.unsplash.com/photo-1473920840830-bc3e237f2a59?w=800",
+                image: "/images/bebidas/Expresso.jpg",
                 tag: "Café do Luiz Paulo"
             },
             {
@@ -81,7 +81,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Café do Luiz Paulo – Prensa Francesa",
                 description: "Café encorpado com notas doces e textura cremosa.",
                 price: "R$ 22,00",
-                image: "https://images.unsplash.com/photo-1507133750040-4a8f570215a7?w=800",
+                image: "/images/bebidas/Expresso.jpg",
                 tag: "Café do Luiz Paulo"
             }
         ]
@@ -96,7 +96,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Azevedo – Expresso Tônica",
                 description: "Espresso com água tônica e toque cítrico refrescante.",
                 price: "R$ 20,00",
-                image: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800"
+                image: "/images/bebidas/azevedo.jpg"
             },
             {
                 id: 14,
