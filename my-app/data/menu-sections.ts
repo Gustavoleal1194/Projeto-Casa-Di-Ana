@@ -319,7 +319,7 @@ export const defaultMenuSections: MenuSection[] = [
     },
     {
         id: "aguas-refrigerantes",
-        title: "Águas, Refrigerantes e Cervejas",
+        title: "Águas e Refrigerantes",
         description: "",
         items: [
             {

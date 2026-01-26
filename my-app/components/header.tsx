@@ -2,10 +2,10 @@ import Image from "next/image"
 
 export function Header() {
     return (
-        <header className="bg-casa-secondary py-3 sm:py-4 px-4 relative z-50 shadow-lg">
+        <header className="py-3 sm:py-4 px-4 relative z-50 shadow-lg" style={{ backgroundColor: 'rgb(50, 85, 110)' }}>
             <div className="max-w-6xl mx-auto flex justify-center items-center">
                 <Image
-                    src="/images/headerCasaDiana.png"
+                    src="/images/headerCasaDiana-removebg-preview.png"
                     alt="Casa di Ana - Logo"
                     width={200}
                     height={80}
