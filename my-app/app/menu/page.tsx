@@ -6,6 +6,7 @@ import { menuDoDiaItems } from "@/data/menu-do-dia"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Header } from "@/components/header"
+import { ContactModal } from "@/components/contact-modal"
 import Link from "next/link"
 import { ArrowLeft, Clock, MapPin } from "lucide-react"
 
@@ -56,7 +57,7 @@ export default function MenuPage() {
               <div className="flex items-center gap-4 text-sm text-white/90">
                 <div className="flex items-center gap-1">
                   <Clock className="h-4 w-4" />
-                  <span>Aberto de terça a sabado das 8h até 20h</span>
+                  <span>Aberto de terça a sabado das 8h até 19h</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <MapPin className="h-4 w-4" />
@@ -145,15 +146,10 @@ export default function MenuPage() {
                 Venha nos visitar
               </h3>
               <p className="text-white/90 font-body">
-                Rua Vereador francisco lopes, 299 | Aberto de terça a sabado das 8h até 20h domingos e feriados das 8h até 17h
+                Rua Vereador francisco lopes, 299 | Aberto de terça a sabado das 8h até 19h domingos e feriados das 8h até 17h
               </p>
               <div className="flex justify-center gap-4 pt-4">
-                <Button 
-                  size="lg"
-                  className="border-2 border-white text-white hover:bg-white hover:text-[#5e6979] shadow-sm hover:shadow-md"
-                >
-                  Contato
-                </Button>
+                <ContactModal />
               </div>
             </div>
           </div>
