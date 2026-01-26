@@ -411,20 +411,19 @@ span[data-slot="badge"]:has(.border-casa-secondary) {
 /* Background responsivo para página principal */
 .home-background {
   position: relative;
-  background-image: url('/images/frente.jpeg') !important;
+  background-image: url('/images/frente.webp') !important;
   background-repeat: no-repeat !important;
   background-attachment: scroll !important;
-  background-size: 60% !important;
+  background-size: cover !important;
   background-position: center center !important;
-  /* Usa 60% para fazer a imagem aparecer mais distante/pequena */
+  /* Usa cover para preencher todo o espaço */
 }
 
-/* Mobile: ajuste para imagem mais distante */
+/* Mobile: ajuste para preencher todo o espaço */
 @media (max-width: 640px) {
   .home-background {
-    background-size: 50% !important;
+    background-size: cover !important;
     background-position: center center !important;
-    /* Diminui ainda mais no mobile para efeito mais distante */
     background-attachment: scroll !important;
   }
 }
@@ -432,7 +431,7 @@ span[data-slot="badge"]:has(.border-casa-secondary) {
 /* Tablet: ajuste intermediário */
 @media (min-width: 641px) and (max-width: 1024px) {
   .home-background {
-    background-size: 55% !important;
+    background-size: cover !important;
     background-position: center center !important;
     background-attachment: scroll !important;
   }
@@ -441,7 +440,7 @@ span[data-slot="badge"]:has(.border-casa-secondary) {
 /* Desktop: efeito parallax com fixed */
 @media (min-width: 1025px) {
   .home-background {
-    background-size: 65% !important;
+    background-size: cover !important;
     background-position: center center !important;
     background-attachment: fixed !important;
   }
@@ -450,7 +449,7 @@ span[data-slot="badge"]:has(.border-casa-secondary) {
 /* Fallback para telas muito largas */
 @media (min-width: 1920px) {
   .home-background {
-    background-size: 70% !important;
+    background-size: cover !important;
     background-position: center center !important;
   }
 }
