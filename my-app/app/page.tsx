@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="min-h-screen relative">
+      <main className="min-h-screen relative bg-[#5e6979]">
         <BackgroundContainer />
         {/* Hero Section */}
         <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-8 md:py-0">
