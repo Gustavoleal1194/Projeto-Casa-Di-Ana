@@ -145,7 +145,7 @@ export default function MenuPage() {
                 Venha nos visitar
               </h3>
               <p className="text-white/90 font-body">
-                Rua Vereador francisco lopes, 299 | Aberto de terça a sabado das 8h até 20h
+                Rua Vereador francisco lopes, 299 | Aberto de terça a sabado das 8h até 20h domingos e feriados das 8h até 17h
               </p>
               <div className="flex justify-center gap-4 pt-4">
                 <Button 

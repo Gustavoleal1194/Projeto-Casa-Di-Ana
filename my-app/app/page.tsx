@@ -61,7 +61,7 @@ export default function Home() {
 
               {/* Informações de funcionamento */}
               <div className="pt-8 md:pt-12 text-sm sm:text-base text-white font-body font-semibold px-4">
-                <p>Aberto de terça a sabado das 8h até 20h</p>
+                <p>Aberto de terça a sabado das 8h até 19h Domingos e feriados das 8h até 17h</p>
                 <p className="mt-1">Rua Vereador francisco lopes, 299</p>
               </div>
             </div>
