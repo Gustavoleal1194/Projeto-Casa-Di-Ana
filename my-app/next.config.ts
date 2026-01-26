@@ -19,6 +19,26 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "www.comidaereceitas.com.br",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.vucasolution.com.br",
+      },
+      {
+        protocol: "https",
+        hostname: "gryyplgyeyqb.compat.objectstorage.sa-saopaulo-1.oraclecloud.com",
+      },
+      {
+        protocol: "https",
+        hostname: "malte.agilecdn.com.br",
+      },
+      {
+        protocol: "https",
+        hostname: "br.openfoodfacts.org",
+      },
+      {
+        protocol: "https",
+        hostname: "www.aguasantaines.com.br",
+      },
     ],
   },
 }

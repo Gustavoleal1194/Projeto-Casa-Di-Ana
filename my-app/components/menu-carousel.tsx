@@ -109,6 +109,7 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
                 className="object-cover"
+                style={{ objectPosition: "center" }}
                 priority={index === currentIndex}
               />
             ) : (

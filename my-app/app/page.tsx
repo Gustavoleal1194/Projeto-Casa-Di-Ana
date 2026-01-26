@@ -4,12 +4,14 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Header } from "@/components/header"
+import { BackgroundContainer } from "@/components/background-container"
 
 export default function Home() {
   return (
     <>
       <Header />
-      <main className="min-h-screen home-background relative">
+      <main className="min-h-screen relative">
+        <BackgroundContainer />
         {/* Hero Section */}
         <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-8 md:py-0">
           {/* Overlay com 10% de opacidade para melhorar legibilidade */}
@@ -117,7 +119,7 @@ export default function Home() {
                     </div>
                     <h3 className="font-serif text-xl sm:text-2xl text-casa-primary mb-2 sm:mb-3">Cardapio Casa Di Ana</h3>
                     <p className="text-sm sm:text-base text-casa-primary/80 font-body">
-                      Explore nosso cardápio completo com cafés quentes, cafés gelados e lanches artesanais
+                      Cardápio completo com cafés quentes, cafés gelados e lanches
                     </p>
                   </CardContent>
                 </Card>
@@ -136,7 +138,7 @@ export default function Home() {
                         className="object-cover"
                       />
                     </div>
-                    <h3 className="font-serif text-xl sm:text-2xl text-casa-primary mb-2 sm:mb-3">Doces Tradicionais</h3>
+                    <h3 className="font-serif text-xl sm:text-2xl text-casa-primary mb-2 sm:mb-3">Especiais do dia</h3>
                     <p className="text-sm sm:text-base text-casa-primary/80 font-body">
                       Receitas de família que passam de geração em geração
                     </p>

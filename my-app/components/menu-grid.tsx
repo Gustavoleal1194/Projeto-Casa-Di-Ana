@@ -58,15 +58,16 @@ export function MenuGrid({ sections = defaultMenuSections }: MenuGridProps) {
           onMouseEnter={() => setHoveredId(item.id)}
           onMouseLeave={() => setHoveredId(null)}
         >
-                <div className="relative w-full h-64 overflow-hidden rounded-xl">
+                <div className="relative w-full h-64 overflow-hidden rounded-xl bg-casa-background">
                   <Image
                 src={item.image}
                 alt={item.name}
                     fill
                 className={cn(
-                      "object-cover transition-all duration-700",
+                      "object-contain transition-all duration-700",
                       hoveredId === item.id ? "scale-105" : "scale-100"
                     )}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
 
             <div

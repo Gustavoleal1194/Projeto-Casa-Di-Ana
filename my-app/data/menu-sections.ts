@@ -25,7 +25,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Café do Mané – Expresso Simples",
                 description: "Café especial do Cerrado Mineiro · Grão Topázio · Método expresso.",
                 price: "R$ 9,00",
-                image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800",
+                image: "/images/bebidas/Expresso.jpg",
                 tag: "Café do Mané"
             },
             {
@@ -33,7 +33,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Café do Mané – Expresso Duplo",
                 description: "Café especial do Cerrado Mineiro · Grão Topázio · Dose dupla.",
                 price: "R$ 15,00",
-                image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800",
+                image: "/images/bebidas/Expresso.jpg",
                 tag: "Café do Mané"
             },
             {
@@ -146,6 +146,13 @@ export const defaultMenuSections: MenuSection[] = [
                 description: "Capuccino em pó com toque de caramelo salgado.",
                 price: "R$ 18,00",
                 image: "/images/bebidas/Juca.jpg"
+            },
+            {
+                id: 21,
+                name: "Simone – Capuccino Italiano",
+                description: "Capuccino italiano com borda de doce de leite.",
+                price: "R$ 18,00",
+                image: "/images/bebidas/Simone.jpg"
             }
         ]
     },
@@ -159,14 +166,14 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Bia – Matcha (Leite Integral)",
                 description: "Matcha cremoso, preparado com leite integral.",
                 price: "R$ 25,00",
-                image: "https://images.unsplash.com/photo-1507914372368-bd133b41fab5?w=800"
+                image: "/images/bebidas/Matcha-grande.jpg"
             },
             {
                 id: 23,
                 name: "Bia – Matcha (Leite Vegetal)",
                 description: "Matcha com leite vegetal.",
                 price: "R$ 28,00",
-                image: "https://images.unsplash.com/photo-1507914372368-bd133b41fab5?w=800"
+                image: "/images/bebidas/Matcha-grande.jpg"
             },
             {
                 id: 24,
@@ -201,7 +208,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Guga – Café Gelado",
                 description: "Café extraído e servido gelado.",
                 price: "R$ 18,00",
-                image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"
+                image: "/images/bebidas/Guga.jpg"
             },
             {
                 id: 44,
@@ -215,14 +222,14 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Vó Daísa",
                 description: "Café gelado, calda de cana e rapadura, toque de limão siciliano.",
                 price: "R$ 22,00",
-                image: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800"
+                image: "/images/bebidas/vódaysa.jpg"
             },
             {
                 id: 28,
                 name: "Sandra – Capuccino Gelado",
                 description: "Capuccino gelado cremoso.",
                 price: "R$ 20,00",
-                image: "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800"
+                image: "/images/bebidas/Sandra.jpg"
             },
             {
                 id: 29,
@@ -292,7 +299,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Suco de Laranja (Kmais Integral)",
                 description: "Laranja integral espremida na hora.",
                 price: "R$ 9,00",
-                image: "https://images.unsplash.com/photo-1571049755112-47debb0a9a79?w=800"
+                image: "/images/bebidas/kmais.jpeg"
             },
             {
                 id: 36,
@@ -327,21 +334,28 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Água",
                 description: "Com ou sem gás.",
                 price: "R$ 5,00",
-                image: "https://images.unsplash.com/photo-1527169402691-feff5539e52c?w=800"
+                image: "https://www.aguasantaines.com.br/wp-content/webp-express/webp-images/uploads/elementor/thumbs/garrafas-de-agua-mineral-santa-ines-rab1q2p4jzac8i9c5yjq5p56b9pnxdeqqvyg4epgxs.png.webp"
             },
             {
                 id: 40,
                 name: "Coca-Cola KS",
                 description: "Garrafa KS.",
                 price: "R$ 8,00",
-                image: "https://images.unsplash.com/photo-1558640478-361e0b9f2179?w=800"
+                image: "https://cdn.vucasolution.com.br/upload/w_800/https://gryyplgyeyqb.compat.objectstorage.sa-saopaulo-1.oraclecloud.com/vuca-cdn/giggabar/arqs/produtos/gdxx6x4laqlsziljrjaz.jpg"
             },
             {
                 id: 41,
+                name: "Coca-Cola Zero KS",
+                description: "Refrigerante zero açúcar (KS).",
+                price: "R$ 8,00",
+                image: "https://malte.agilecdn.com.br/189_1.jpg?v=353-2322567333"
+            },
+            {
+                id: 42,
                 name: "Guaraná",
                 description: "Refrigerante gelado.",
                 price: "R$ 8,00",
-                image: "https://images.unsplash.com/photo-1558640478-361e0b9f2179?w=800"
+                image: "https://br.openfoodfacts.org/cgi/product_image.pl?code=7891991008761&imgid=3"
             },
             {
                 id: 45,
@@ -419,7 +433,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Quim – Queijo Quente",
                 description: "Pão Brioche de longa fermentação com mix de queijos.",
                 price: "R$ 22,00",
-                image: "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=800"
+                image: "/images/Comidas/Quinn.jpg"
             },
             {
                 id: 52,
@@ -482,14 +496,14 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Pedro",
                 description: "Pão ciabatta de fermentação natural, maionese Dijon e mel, mignon empanado com fatias de queijo, tomate, picles de cebola roxa e rúcula selvática.",
                 price: "R$ 49,00",
-                image: "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=800"
+                image: "/images/Comidas/Pedro.jpg"
             },
             {
                 id: 59,
-                name: "Cadu",
+                name: "Coda",
                 description: "Sanduíche de pastrami em pão ciabatta de longa fermentação, queijo suíço, mostarda fermentada, picles de pepino e cebola roxa.",
                 price: "R$ 52,00",
-                image: "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=800"
+                image: "/images/Comidas/Coda.jpg"
             }
         ]
     },
@@ -559,7 +573,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Pain au Chocolat",
                 description: "Unidade",
                 price: "R$ 18,00",
-                image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800"
+                image: "/images/Comidas/Pain suisse.jpg"
             },
             {
                 id: 67,
