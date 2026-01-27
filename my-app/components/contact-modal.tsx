@@ -10,8 +10,8 @@ type ContactModalProps = {
 }
 
 export function ContactModal({
-  whatsappUrl = "https://wa.me/5500000000000",
-  instagramUrl = "https://instagram.com",
+  whatsappUrl = "https://wa.me/5518996008500",
+  instagramUrl = "https://www.instagram.com/casadiana_pp/",
 }: ContactModalProps) {
   const [isOpen, setIsOpen] = useState(false)
 
