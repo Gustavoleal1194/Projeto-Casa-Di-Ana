@@ -61,6 +61,18 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
   const [isAnimating, setIsAnimating] = useState(false)
   const totalItems = items.length || 1
 
+  const handleHashClick = useCallback((event: React.MouseEvent, href?: string) => {
+    if (!href || !href.startsWith("#")) return
+    event.preventDefault()
+    const target = document.getElementById(href.slice(1))
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
+    if (window.location.hash !== href) {
+      window.history.replaceState(null, "", href)
+    }
+  }, [])
+
   const handleNext = useCallback(() => {
     if (isAnimating) return
     setIsAnimating(true)
@@ -115,6 +127,7 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
                   "absolute inset-0",
                   item.href ? "cursor-pointer" : ""
                 )}
+                onClick={(event: React.MouseEvent) => handleHashClick(event, item.href)}
               >
             {item.image ? (
               <Image
