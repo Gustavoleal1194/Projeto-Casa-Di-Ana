@@ -111,10 +111,17 @@ export default function MenuPage() {
               </p>
             </div>
             <MenuCarousel items={carouselItems} />
+            <div className="mt-6 flex flex-wrap justify-center gap-3">
+              <Link href="#cardapio-completo">
+                <Badge className="cursor-pointer bg-white/15 text-white hover:bg-white/25 border border-white/30">
+                  Cardápio Completo
+                </Badge>
+              </Link>
+            </div>
           </div>
 
           {/* Seção Menu do Dia */}
-          <div className="mb-20 max-w-6xl mx-auto">
+          <div id="menu-do-dia" className="mb-20 max-w-6xl mx-auto scroll-mt-24">
             <div className="text-center mb-12">
               <h2 className="font-serif text-3xl md:text-4xl text-white mb-3">
                 Menu do Dia
@@ -127,8 +134,15 @@ export default function MenuPage() {
           </div>
 
           {/* Seção Cardápio Completo */}
-          <div className="max-w-6xl mx-auto">
+          <div id="cardapio-completo" className="max-w-6xl mx-auto scroll-mt-24">
             <div className="text-center mb-12">
+              <div className="mb-4 flex justify-center">
+                <Link href="#menu-do-dia">
+                  <Badge className="cursor-pointer bg-white/15 text-white hover:bg-white/25 border border-white/30">
+                    Menu do Dia
+                  </Badge>
+                </Link>
+              </div>
               <h2 className="font-serif text-3xl md:text-4xl text-white mb-3">
                 Cardápio Completo
               </h2>
