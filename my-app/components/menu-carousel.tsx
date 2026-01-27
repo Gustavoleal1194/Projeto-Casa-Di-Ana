@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react"
 import Image from "next/image"
+import Link from "next/link"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
@@ -13,6 +14,7 @@ export type MenuCarouselItem = {
   price: string
   category: string
   image?: string
+  href?: string
 }
 
 const defaultMenuItems: MenuCarouselItem[] = [
@@ -94,14 +96,25 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
   return (
     <div className="relative mx-auto max-w-4xl">
       <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-casa-surface shadow-xl border border-border/50">
-        {items.map((item, index) => (
-          <div
-            key={item.id}
-            className={cn(
-              "absolute inset-0 transition-all duration-700 ease-in-out",
-              index === currentIndex ? "opacity-100 scale-100" : "opacity-0 scale-105 pointer-events-none",
-            )}
-          >
+        {items.map((item, index) => {
+          const Wrapper = item.href ? Link : "div"
+          const wrapperProps = item.href ? { href: item.href } : {}
+
+          return (
+            <div
+              key={item.id}
+              className={cn(
+                "absolute inset-0 transition-all duration-700 ease-in-out",
+                index === currentIndex ? "opacity-100 scale-100" : "opacity-0 scale-105 pointer-events-none",
+              )}
+            >
+              <Wrapper
+                {...wrapperProps}
+                className={cn(
+                  "absolute inset-0",
+                  item.href ? "cursor-pointer" : ""
+                )}
+              >
             {item.image ? (
               <Image
                 src={item.image}
@@ -125,17 +138,19 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
                 </div>
               </div>
             )}
-            <div className="absolute inset-0 bg-gradient-to-t from-casa-primary/90 via-casa-primary/30 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-6">
-              <span className="mb-3 inline-block rounded-full bg-casa-secondary px-3 py-1 text-xs font-serif font-medium text-white">
-                {item.category}
-              </span>
-              <h3 className="mb-3 font-serif text-2xl md:text-3xl font-light text-balance text-white">{item.name}</h3>
-              <p className="mb-4 text-pretty text-sm md:text-base leading-relaxed text-white/90 font-body max-w-2xl">{item.description}</p>
-              <p className="text-2xl md:text-3xl font-serif font-semibold text-white">{item.price}</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-casa-primary/90 via-casa-primary/30 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <span className="mb-3 inline-block rounded-full bg-casa-secondary px-3 py-1 text-xs font-serif font-medium text-white">
+                    {item.category}
+                  </span>
+                  <h3 className="mb-3 font-serif text-2xl md:text-3xl font-light text-balance text-white">{item.name}</h3>
+                  <p className="mb-4 text-pretty text-sm md:text-base leading-relaxed text-white/90 font-body max-w-2xl">{item.description}</p>
+                  <p className="text-2xl md:text-3xl font-serif font-semibold text-white">{item.price}</p>
+                </div>
+              </Wrapper>
             </div>
-          </div>
-        ))}
+          )
+        })}
       </div>
 
       <Button

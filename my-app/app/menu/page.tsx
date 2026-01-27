@@ -19,6 +19,7 @@ function getCarouselItemsFromMenuDoDia(items: typeof menuDoDiaItems): MenuCarous
     price: item.price,
     category: item.tag || "Especial do Dia",
     image: item.image,
+    href: `#menu-do-dia-item-${item.id}`,
   }))
 }
 
