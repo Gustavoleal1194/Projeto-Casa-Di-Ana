@@ -110,8 +110,8 @@ export default function Home() {
                   <CardContent className="p-4 sm:p-6 md:p-8 text-center">
                     <div className="relative w-full h-32 sm:h-40 md:h-32 mx-auto mb-4 sm:mb-5 md:mb-6 rounded-lg overflow-hidden">
                       <Image
-                        src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=400&fit=crop&crop=center"
-                        alt="Bebidas artesanais"
+                        src="/images/Comidas/lanche com ovo.jpg"
+                        alt="Cardápio Casa Di Ana"
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                         className="object-cover"
