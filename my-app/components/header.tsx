@@ -5,7 +5,7 @@ export function Header() {
         <header className="py-3 sm:py-4 px-4 relative z-50 shadow-lg" style={{ backgroundColor: 'rgb(50, 85, 110)' }}>
             <div className="max-w-6xl mx-auto flex justify-center items-center">
                 <Image
-                    src="/images/logobusto-processed(lightpdf.com).jpg"
+                    src="/images/headerpronto.png"
                     alt="Casa di Ana - Logo"
                     width={200}
                     height={80}
