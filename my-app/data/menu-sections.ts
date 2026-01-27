@@ -33,7 +33,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Café do Mané – Expresso Duplo",
                 description: "Café especial do Cerrado Mineiro · Grão Topázio · Dose dupla.",
                 price: "R$ 15,00",
-                image: "/images/bebidas/Expresso.jpg",
+                image: "/images/bebidas/expresso duplo.jpeg",
                 tag: "Café do Mané"
             },
             {
@@ -49,7 +49,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Café do Mané – Clever",
                 description: "Extração densa, corpo mais presente e sabor intenso.",
                 price: "R$ 16,00",
-                image: "https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=800",
+                image: "/images/bebidas/café clever.jpeg",
                 tag: "Café do Mané"
             },
             {
@@ -73,7 +73,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Café do Luiz Paulo – Clever",
                 description: "Extração com maior densidade e doçura marcante.",
                 price: "R$ 20,00",
-                image: "https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=800",
+                image: "/images/bebidas/C'lever Luiz Paulo.jpeg",
                 tag: "Café do Luiz Paulo"
             },
             {
@@ -81,7 +81,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Café do Luiz Paulo – Prensa Francesa",
                 description: "Café encorpado com notas doces e textura cremosa.",
                 price: "R$ 22,00",
-                image: "/images/bebidas/Expresso.jpg",
+                image: "/images/bebidas/Prensa francesa Luiz Paulo.jpeg",
                 tag: "Café do Luiz Paulo"
             }
         ]

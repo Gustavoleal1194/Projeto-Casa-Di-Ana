@@ -27,12 +27,17 @@ export function MenuDoDiaGrid({ items }: MenuDoDiaGridProps) {
           <div className="relative w-full h-64 overflow-hidden rounded-xl bg-casa-background">
             <Image
               src={item.image}
+              alt=""
+              fill
+              className="object-cover blur-2xl scale-110"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              aria-hidden="true"
+            />
+            <Image
+              src={item.image}
               alt={item.name}
               fill
-              className={cn(
-                "object-contain transition-all duration-700",
-                hoveredId === item.id ? "scale-105" : "scale-100"
-              )}
+              className="object-contain w-full h-full transition-all duration-700"
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
 

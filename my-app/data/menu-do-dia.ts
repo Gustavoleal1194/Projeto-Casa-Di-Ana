@@ -72,5 +72,33 @@ export const menuDoDiaItems: MenuItem[] = [
     description: "Item do dia.",
     price: "Sob consulta",
     image: "/images/Dodia/Torta Holandesa.jpeg"
+  },
+  {
+    id: 2012,
+    name: "Bolo de Chocolate com Ganache de Maracujá",
+    description: "Item do dia.",
+    price: "Sob consulta",
+    image: "/images/Dodia/Bolo de chocolate com ganache de maracujá.jpeg"
+  },
+  {
+    id: 2013,
+    name: "Cheescake de Frutas Vermelhas",
+    description: "Item do dia.",
+    price: "Sob consulta",
+    image: "/images/Dodia/Cheescake de frutas vermelhas.jpeg"
+  },
+  {
+    id: 2014,
+    name: "New York Roll de Frutas Vermelhas",
+    description: "Item do dia.",
+    price: "Sob consulta",
+    image: "/images/Dodia/New York roll de frutas vermelhas.jpeg"
+  },
+  {
+    id: 2015,
+    name: "Releitura do Floresta Negra com Amarena",
+    description: "Item do dia.",
+    price: "Sob consulta",
+    image: "/images/Dodia/Releitura do floresta negra com amarena.jpeg"
   }
 ]
