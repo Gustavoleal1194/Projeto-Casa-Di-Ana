@@ -29,10 +29,11 @@ export const metadata: Metadata = {
     : undefined,
   icons: {
     icon: [
-      { url: "/images/headerpronto.png", type: "image/png" },
+      { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon.ico", type: "image/x-icon" },
     ],
-    apple: "/images/headerpronto.png",
-    shortcut: "/images/headerpronto.png",
+    apple: "/apple-icon.png",
+    shortcut: "/favicon-32x32.png",
   },
   openGraph: {
     title: "Casa di Ana | Sabores que acolhem memórias",
