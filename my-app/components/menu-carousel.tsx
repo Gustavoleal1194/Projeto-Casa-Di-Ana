@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useCallback } from "react"
 import Image from "next/image"
-import Link from "next/link"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
@@ -109,9 +108,7 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
     <div className="relative mx-auto max-w-4xl">
       <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-casa-surface shadow-xl border border-border/50">
         {items.map((item, index) => {
-          const isHashLink = item.href?.startsWith("#")
-          const Wrapper = item.href ? (isHashLink ? "a" : Link) : "div"
-          const wrapperProps = item.href ? { href: item.href } : {}
+          const href = item.href || "#menu-do-dia"
 
           return (
             <div
@@ -121,13 +118,10 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
                 index === currentIndex ? "opacity-100 scale-100" : "opacity-0 scale-105 pointer-events-none",
               )}
             >
-              <Wrapper
-                {...wrapperProps}
-                className={cn(
-                  "absolute inset-0 block pointer-events-auto",
-                  item.href ? "cursor-pointer" : ""
-                )}
-                onClick={(event: React.MouseEvent) => handleHashClick(event, item.href)}
+              <a
+                href={href}
+                className="absolute inset-0 block cursor-pointer pointer-events-auto"
+                onClick={(event: React.MouseEvent) => handleHashClick(event, href)}
               >
             {item.image ? (
               <Image
@@ -161,7 +155,7 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
                   <p className="mb-4 text-pretty text-sm md:text-base leading-relaxed text-white/90 font-body max-w-2xl">{item.description}</p>
                   <p className="text-2xl md:text-3xl font-serif font-semibold text-white">{item.price}</p>
                 </div>
-              </Wrapper>
+              </a>
             </div>
           )
         })}
