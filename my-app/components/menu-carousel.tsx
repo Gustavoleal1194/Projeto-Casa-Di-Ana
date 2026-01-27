@@ -124,7 +124,7 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
               <Wrapper
                 {...wrapperProps}
                 className={cn(
-                  "absolute inset-0",
+                  "absolute inset-0 block pointer-events-auto",
                   item.href ? "cursor-pointer" : ""
                 )}
                 onClick={(event: React.MouseEvent) => handleHashClick(event, item.href)}
