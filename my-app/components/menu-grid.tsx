@@ -24,7 +24,7 @@ export function MenuGrid({ sections = defaultMenuSections }: MenuGridProps) {
 
   return (
     <div className="space-y-10">
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 pb-2">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 [@media(max-width:240px)]:grid-cols-1 gap-2 pb-2">
         {sections.map((section) => {
           const isActive = section.id === activeSectionId
           return (
@@ -32,7 +32,7 @@ export function MenuGrid({ sections = defaultMenuSections }: MenuGridProps) {
               key={section.id}
               onClick={() => setActiveSectionId(section.id)}
               className={cn(
-                "whitespace-nowrap px-3 py-1.5 rounded-full border transition-colors font-serif text-xs md:text-sm",
+                "whitespace-normal text-center px-2 py-2 rounded-full border transition-colors font-serif text-[11px] leading-tight sm:text-xs md:text-sm",
                 isActive
                   ? "bg-white text-[#5e6979] border-white shadow-md"
                   : "bg-white/20 text-white border-white/40 hover:bg-white/30",
