@@ -97,7 +97,8 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
     <div className="relative mx-auto max-w-4xl">
       <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-casa-surface shadow-xl border border-border/50">
         {items.map((item, index) => {
-          const Wrapper = item.href ? Link : "div"
+          const isHashLink = item.href?.startsWith("#")
+          const Wrapper = item.href ? (isHashLink ? "a" : Link) : "div"
           const wrapperProps = item.href ? { href: item.href } : {}
 
           return (
