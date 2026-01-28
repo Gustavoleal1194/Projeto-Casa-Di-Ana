@@ -7,7 +7,7 @@ export function Header() {
             style={{
                 backgroundColor: "#364B5B",
                 backgroundImage:
-                    "repeating-linear-gradient(90deg, #364B5B 0 37px, #ffffff 37px 74px)",
+                    "repeating-linear-gradient(90deg, #364B5B 0 22px, #ffffff 22px 44px)",
             }}
         >
             <div className="max-w-6xl mx-auto flex h-full items-center justify-center">
