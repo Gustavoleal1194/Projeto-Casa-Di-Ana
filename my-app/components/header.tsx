@@ -2,14 +2,21 @@ import Image from "next/image"
 
 export function Header() {
     return (
-        <header className="py-3 sm:py-4 px-4 relative z-50 shadow-lg" style={{ backgroundColor: '#3A5868' }}>
-            <div className="max-w-6xl mx-auto flex justify-center items-center">
+        <header
+            className="relative z-50 shadow-lg h-24 sm:h-28 md:h-32"
+            style={{
+                backgroundColor: "#364B5B",
+                backgroundImage:
+                    "repeating-linear-gradient(90deg, #364B5B 0 37px, #ffffff 37px 74px)",
+            }}
+        >
+            <div className="max-w-6xl mx-auto flex h-full items-center justify-center">
                 <Image
-                    src="/images/header1003.jpeg"
+                    src="/images/fundobranco.png"
                     alt="Casa di Ana - Logo"
                     width={200}
                     height={80}
-                    className="object-contain w-32 sm:w-40 md:w-48 lg:w-[200px] h-auto"
+                    className="h-full w-auto object-contain"
                     priority
                 />
             </div>
