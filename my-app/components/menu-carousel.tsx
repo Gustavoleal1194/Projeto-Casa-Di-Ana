@@ -63,9 +63,13 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
   const handleHashClick = useCallback((event: React.MouseEvent, href?: string) => {
     if (!href || !href.startsWith("#")) return
     event.preventDefault()
-    const target = document.getElementById(href.slice(1))
+    const id = href.slice(1)
+    const target = document.getElementById(id)
     if (target) {
-      target.scrollIntoView({ behavior: "smooth", block: "start" })
+      const headerOffset = 120
+      const rect = target.getBoundingClientRect()
+      const top = window.pageYOffset + rect.top - headerOffset
+      window.scrollTo({ top, behavior: "smooth" })
     }
     if (window.location.hash !== href) {
       window.history.replaceState(null, "", href)
