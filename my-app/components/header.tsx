@@ -2,10 +2,10 @@ import Image from "next/image"
 
 export function Header() {
     return (
-        <header className="py-3 sm:py-4 px-4 relative z-50 shadow-lg" style={{ backgroundColor: 'rgb(50, 85, 110)' }}>
+        <header className="py-3 sm:py-4 px-4 relative z-50 shadow-lg" style={{ backgroundColor: '#3A5868' }}>
             <div className="max-w-6xl mx-auto flex justify-center items-center">
                 <Image
-                    src="/images/headerpronto.png"
+                    src="/images/header1001.png"
                     alt="Casa di Ana - Logo"
                     width={200}
                     height={80}
