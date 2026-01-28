@@ -20,7 +20,7 @@ export function MenuDoDiaGrid({ items }: MenuDoDiaGridProps) {
         <Card
           key={item.id}
           id={`menu-do-dia-item-${item.id}`}
-          className="group overflow-hidden transition-all duration-300 hover:shadow-xl bg-white hover:scale-105"
+          className="group overflow-hidden transition-all duration-300 hover:shadow-xl bg-white hover:scale-105 scroll-mt-24"
           onMouseEnter={() => setHoveredId(item.id)}
           onMouseLeave={() => setHoveredId(null)}
         >

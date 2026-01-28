@@ -64,13 +64,22 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
     if (!href || !href.startsWith("#")) return
     event.preventDefault()
     const id = href.slice(1)
-    const target = document.getElementById(id)
-    if (target) {
+    const scrollToTarget = () => {
+      const target = document.getElementById(id)
+      if (!target) return false
       const headerOffset = 120
       const rect = target.getBoundingClientRect()
-      const top = window.pageYOffset + rect.top - headerOffset
+      const top = window.scrollY + rect.top - headerOffset
       window.scrollTo({ top, behavior: "smooth" })
+      return true
     }
+
+    if (!scrollToTarget()) {
+      window.requestAnimationFrame(() => {
+        scrollToTarget()
+      })
+    }
+
     if (window.location.hash !== href) {
       window.history.replaceState(null, "", href)
     }
