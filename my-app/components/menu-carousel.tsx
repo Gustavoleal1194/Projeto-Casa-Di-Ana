@@ -104,9 +104,9 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
                 index === currentIndex ? "opacity-100 scale-100" : "opacity-0 scale-105 pointer-events-none",
               )}
             >
-              <div className="absolute inset-0 block">
+              <div className="absolute inset-0">
                 {item.image ? (
-                  <div className="absolute inset-0">
+                  <>
                     <Image
                       src={item.image}
                       alt=""
@@ -126,32 +126,21 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
                       style={{ objectPosition: "center" }}
                       priority={index === currentIndex}
                     />
-                  </div>
+                  </>
                 ) : (
                   <div className="h-full w-full bg-casa-background flex items-center justify-center">
                     <div className="text-center p-8">
                       <div className="w-20 h-20 mx-auto mb-4 bg-casa-secondary/20 rounded-full flex items-center justify-center">
-                        <span className="text-4xl">
-                          {item.category === "Pães Artesanais"
-                            ? "🥖"
-                            : item.category === "Tortas Tradicionais"
-                              ? "🥧"
-                              : item.category === "Bebidas"
-                                ? "☕"
-                                : "🍰"}
-                        </span>
+                        <span className="text-4xl">🍰</span>
                       </div>
                     </div>
                   </div>
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-casa-primary/90 via-casa-primary/30 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <span className="mb-3 inline-block rounded-full bg-casa-secondary px-3 py-1 text-xs font-serif font-medium text-white">
-                    {item.category}
-                  </span>
-                  <h3 className="mb-3 font-serif text-2xl md:text-3xl font-light text-balance text-white">{item.name}</h3>
-                  <p className="mb-4 text-pretty text-sm md:text-base leading-relaxed text-white/90 font-body max-w-2xl">{item.description}</p>
-                  <p className="text-2xl md:text-3xl font-serif font-semibold text-white">{item.price}</p>
+                  <h3 className="mb-1 font-serif text-2xl md:text-3xl font-light text-balance text-white">
+                    {item.name}
+                  </h3>
                 </div>
               </div>
             </div>
