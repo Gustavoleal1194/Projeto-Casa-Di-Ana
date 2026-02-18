@@ -84,8 +84,8 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
   }, [handleNext])
 
   return (
-    <div className="relative mx-auto max-w-4xl">
-      <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-casa-surface shadow-xl border border-border/50">
+    <div className="relative mx-auto max-w-sm">
+      <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-casa-surface shadow-xl border border-border/50">
         {items.map((item, index) => {
           return (
             <div
@@ -97,15 +97,18 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
             >
               <div className="absolute inset-0">
                 {item.image ? (
-                  <Image
-                    src={item.image}
-                    alt={item.name}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
-                    className="object-cover"
-                    style={{ objectPosition: "center" }}
-                    priority={index === currentIndex}
-                  />
+                  <>
+                    <div className="absolute inset-0 bg-black/10" />
+                    <Image
+                      src={item.image}
+                      alt={item.name}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
+                      className="object-cover"
+                      style={{ objectPosition: "center" }}
+                      priority={index === currentIndex}
+                    />
+                  </>
                 ) : (
                   <div className="h-full w-full bg-casa-background flex items-center justify-center">
                     <div className="text-center p-8">
