@@ -2,8 +2,6 @@
 
 import { useState, useEffect, useCallback } from "react"
 import Image from "next/image"
-import { ChevronLeft, ChevronRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
 export type MenuCarouselItem = {
@@ -67,23 +65,6 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
     setTimeout(() => setIsAnimating(false), 600)
   }, [isAnimating, totalItems])
 
-  const handlePrev = useCallback(() => {
-    if (isAnimating) return
-    setIsAnimating(true)
-    setCurrentIndex((prev) => (prev - 1 + totalItems) % totalItems)
-    setTimeout(() => setIsAnimating(false), 600)
-  }, [isAnimating, totalItems])
-
-  const goToSlide = useCallback(
-    (index: number) => {
-    if (isAnimating || index === currentIndex) return
-    setIsAnimating(true)
-    setCurrentIndex(index)
-    setTimeout(() => setIsAnimating(false), 600)
-    },
-    [currentIndex, isAnimating],
-  )
-
   useEffect(() => {
     const timer = setInterval(() => {
       handleNext()
@@ -106,27 +87,15 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
             >
               <div className="absolute inset-0">
                 {item.image ? (
-                  <>
-                    <Image
-                      src={item.image}
-                      alt=""
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
-                      className="object-cover blur-2xl scale-110"
-                      style={{ objectPosition: "center" }}
-                      aria-hidden="true"
-                      priority={index === currentIndex}
-                    />
-                    <Image
-                      src={item.image}
-                      alt={item.name}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
-                      className="object-contain"
-                      style={{ objectPosition: "center" }}
-                      priority={index === currentIndex}
-                    />
-                  </>
+                  <Image
+                    src={item.image}
+                    alt={item.name}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
+                    className="object-cover"
+                    style={{ objectPosition: "center" }}
+                    priority={index === currentIndex}
+                  />
                 ) : (
                   <div className="h-full w-full bg-casa-background flex items-center justify-center">
                     <div className="text-center p-8">
@@ -146,42 +115,6 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
             </div>
           )
         })}
-      </div>
-
-      <Button
-        variant="casa-outline"
-        size="icon"
-        className="absolute left-4 top-1/2 h-10 w-10 -translate-y-1/2 rounded-full bg-white/90 backdrop-blur-sm hover:bg-white text-[#5e6979] hover:text-[#5e6979] border-white shadow-md"
-        onClick={handlePrev}
-        disabled={isAnimating}
-      >
-        <ChevronLeft className="h-5 w-5" />
-        <span className="sr-only">Item anterior</span>
-      </Button>
-
-      <Button
-        variant="casa-outline"
-        size="icon"
-        className="absolute right-4 top-1/2 h-10 w-10 -translate-y-1/2 rounded-full bg-white/90 backdrop-blur-sm hover:bg-white text-[#5e6979] hover:text-[#5e6979] border-white shadow-md"
-        onClick={handleNext}
-        disabled={isAnimating}
-      >
-        <ChevronRight className="h-5 w-5" />
-        <span className="sr-only">Próximo item</span>
-      </Button>
-
-      <div className="mt-6 flex justify-center gap-2">
-        {items.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => goToSlide(index)}
-            className={cn(
-              "h-2 rounded-full transition-all duration-300",
-              index === currentIndex ? "w-8 bg-white" : "w-2 bg-white/40 hover:bg-white/60",
-            )}
-            aria-label={`Ir para item ${index + 1}`}
-          />
-        ))}
       </div>
     </div>
   )
