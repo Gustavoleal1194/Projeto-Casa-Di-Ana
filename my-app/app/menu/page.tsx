@@ -1,7 +1,7 @@
 import { MenuCarousel, type MenuCarouselItem } from "@/components/menu-carousel"
 import { MenuGrid } from "@/components/menu-grid"
 import { MenuDoDiaGrid } from "@/components/menu-do-dia-grid"
-import { defaultMenuSections } from "@/data/menu-sections"
+import { defaultMenuSections, type MenuItem } from "@/data/menu-sections"
 import { menuDoDiaItems } from "@/data/menu-do-dia"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -10,8 +10,8 @@ import { ContactModal } from "@/components/contact-modal"
 import Link from "next/link"
 import { ArrowLeft, Clock, MapPin } from "lucide-react"
 
-// Função para converter itens do Menu do Dia para o formato do carrossel
-function getCarouselItemsFromMenuDoDia(items: typeof menuDoDiaItems): MenuCarouselItem[] {
+// Função para converter itens do Menu do Dia / novidades para o formato do carrossel
+function getCarouselItemsFromMenuDoDia(items: MenuItem[]): MenuCarouselItem[] {
   return items.map((item) => ({
     id: item.id,
     name: item.name,
@@ -23,8 +23,29 @@ function getCarouselItemsFromMenuDoDia(items: typeof menuDoDiaItems): MenuCarous
   }))
 }
 
+const novidadesForaDoCardapioItems: MenuItem[] = [
+  {
+    id: 3001,
+    name: "Henrique",
+    description:
+      "Croissant, maionese de limão siciliano, tomate fresco, salada de alface, queijo suíço, picles de cebola roxa, raspas de limão e salame.",
+    price: "Sob consulta",
+    image: "/images/Comidas/Henrique.jpeg",
+  },
+  {
+    id: 3002,
+    name: "Cissy – Croissant Casquinha",
+    description: "Croissant com requeijão tostado.",
+    price: "Sob consulta",
+    image: "/images/Comidas/cissy.jpeg",
+  },
+]
+
 export default function MenuPage() {
-  const carouselItems = getCarouselItemsFromMenuDoDia(menuDoDiaItems)
+  const carouselItems = getCarouselItemsFromMenuDoDia([
+    ...novidadesForaDoCardapioItems,
+    ...menuDoDiaItems,
+  ])
   
   // Função para obter o dia e mês atual por extenso
   const getCurrentDate = () => {
@@ -119,6 +140,20 @@ export default function MenuPage() {
                 </Badge>
               </Link>
             </div>
+          </div>
+
+          {/* Seção Novidades fora do cardápio */}
+          <div className="mb-20 max-w-6xl mx-auto scroll-mt-24">
+            <div className="text-center mb-12">
+              <h2 className="font-serif text-3xl md:text-4xl text-white mb-3">
+                Novidades fora do cardápio
+              </h2>
+              <p className="text-white/90 font-body max-w-2xl mx-auto">
+                Criações especiais que não fazem parte do cardápio fixo. Consulte a equipe sobre a
+                disponibilidade do dia.
+              </p>
+            </div>
+            <MenuDoDiaGrid items={novidadesForaDoCardapioItems} />
           </div>
 
           {/* Seção Menu do Dia */}

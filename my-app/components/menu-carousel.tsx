@@ -60,31 +60,6 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
   const [isAnimating, setIsAnimating] = useState(false)
   const totalItems = items.length || 1
 
-  const handleHashClick = useCallback((event: React.MouseEvent, href?: string) => {
-    if (!href || !href.startsWith("#")) return
-    event.preventDefault()
-    const id = href.slice(1)
-    const scrollToTarget = () => {
-      const target = document.getElementById(id)
-      if (!target) return false
-      const headerOffset = 120
-      const rect = target.getBoundingClientRect()
-      const top = window.scrollY + rect.top - headerOffset
-      window.scrollTo({ top, behavior: "smooth" })
-      return true
-    }
-
-    if (!scrollToTarget()) {
-      window.requestAnimationFrame(() => {
-        scrollToTarget()
-      })
-    }
-
-    if (window.location.hash !== href) {
-      window.history.replaceState(null, "", href)
-    }
-  }, [])
-
   const handleNext = useCallback(() => {
     if (isAnimating) return
     setIsAnimating(true)
@@ -121,8 +96,6 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
     <div className="relative mx-auto max-w-4xl">
       <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-casa-surface shadow-xl border border-border/50">
         {items.map((item, index) => {
-          const href = item.href || "#menu-do-dia"
-
           return (
             <div
               key={item.id}
@@ -131,34 +104,46 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
                 index === currentIndex ? "opacity-100 scale-100" : "opacity-0 scale-105 pointer-events-none",
               )}
             >
-              <a
-                href={href}
-                className="absolute inset-0 block cursor-pointer pointer-events-auto"
-                onClick={(event: React.MouseEvent) => handleHashClick(event, href)}
-              >
-            {item.image ? (
-              <Image
-                src={item.image}
-                alt={item.name}
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
-                className="object-cover"
-                style={{ objectPosition: "center" }}
-                priority={index === currentIndex}
-              />
-            ) : (
-              <div className="h-full w-full bg-casa-background flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-20 h-20 mx-auto mb-4 bg-casa-secondary/20 rounded-full flex items-center justify-center">
-                    <span className="text-4xl">
-                      {item.category === "Pães Artesanais" ? "🥖" :
-                        item.category === "Tortas Tradicionais" ? "🥧" :
-                          item.category === "Bebidas" ? "☕" : "🍰"}
-                    </span>
+              <div className="absolute inset-0 block">
+                {item.image ? (
+                  <div className="absolute inset-0">
+                    <Image
+                      src={item.image}
+                      alt=""
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
+                      className="object-cover blur-2xl scale-110"
+                      style={{ objectPosition: "center" }}
+                      aria-hidden="true"
+                      priority={index === currentIndex}
+                    />
+                    <Image
+                      src={item.image}
+                      alt={item.name}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
+                      className="object-contain"
+                      style={{ objectPosition: "center" }}
+                      priority={index === currentIndex}
+                    />
                   </div>
-                </div>
-              </div>
-            )}
+                ) : (
+                  <div className="h-full w-full bg-casa-background flex items-center justify-center">
+                    <div className="text-center p-8">
+                      <div className="w-20 h-20 mx-auto mb-4 bg-casa-secondary/20 rounded-full flex items-center justify-center">
+                        <span className="text-4xl">
+                          {item.category === "Pães Artesanais"
+                            ? "🥖"
+                            : item.category === "Tortas Tradicionais"
+                              ? "🥧"
+                              : item.category === "Bebidas"
+                                ? "☕"
+                                : "🍰"}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-casa-primary/90 via-casa-primary/30 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <span className="mb-3 inline-block rounded-full bg-casa-secondary px-3 py-1 text-xs font-serif font-medium text-white">
@@ -168,7 +153,7 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
                   <p className="mb-4 text-pretty text-sm md:text-base leading-relaxed text-white/90 font-body max-w-2xl">{item.description}</p>
                   <p className="text-2xl md:text-3xl font-serif font-semibold text-white">{item.price}</p>
                 </div>
-              </a>
+              </div>
             </div>
           )
         })}

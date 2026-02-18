@@ -185,20 +185,6 @@ export const defaultMenuSections: MenuSection[] = [
         ]
     },
     {
-        id: "chas",
-        title: "Chás",
-        description: "",
-        items: [
-            {
-                id: 25,
-                name: "Chás Quentes",
-                description: "Consultar as ervas do dia.",
-                price: "R$ 16,00",
-                image: "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800"
-            }
-        ]
-    },
-    {
         id: "cafes-gelados",
         title: "Bebidas Geladas",
         description: "",
@@ -504,20 +490,6 @@ export const defaultMenuSections: MenuSection[] = [
                 description: "Sanduíche de pastrami em pão ciabatta de longa fermentação, queijo suíço, mostarda fermentada, picles de pepino e cebola roxa.",
                 price: "R$ 52,00",
                 image: "/images/Comidas/Coda.jpg"
-            }
-        ]
-    },
-    {
-        id: "happy-hour",
-        title: "Petiscos - (Happy Hour)",
-        description: "A partir das 18h00",
-        items: [
-            {
-                id: 60,
-                name: "Antepastos do Fino",
-                description: "Cesto de pães, petiscos feitos na casa, e antepastos do dia.",
-                price: "R$ 80,00",
-                image: "https://images.unsplash.com/photo-1544025162-d76694265947?w=800"
             }
         ]
     },
