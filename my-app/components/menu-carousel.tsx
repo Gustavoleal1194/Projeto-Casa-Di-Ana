@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useCallback } from "react"
+import { useState, useEffect, useCallback, useRef } from "react"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
 
@@ -56,12 +56,21 @@ type MenuCarouselProps = {
 export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isAnimating, setIsAnimating] = useState(false)
+  const touchStartX = useRef<number | null>(null)
+  const touchEndX = useRef<number | null>(null)
   const totalItems = items.length || 1
 
   const handleNext = useCallback(() => {
     if (isAnimating) return
     setIsAnimating(true)
     setCurrentIndex((prev) => (prev + 1) % totalItems)
+    setTimeout(() => setIsAnimating(false), 600)
+  }, [isAnimating, totalItems])
+
+  const handlePrev = useCallback(() => {
+    if (isAnimating) return
+    setIsAnimating(true)
+    setCurrentIndex((prev) => (prev - 1 + totalItems) % totalItems)
     setTimeout(() => setIsAnimating(false), 600)
   }, [isAnimating, totalItems])
 
@@ -83,9 +92,38 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
     return () => clearInterval(timer)
   }, [handleNext])
 
+  const onTouchStart = (event: React.TouchEvent<HTMLDivElement>) => {
+    touchStartX.current = event.changedTouches[0]?.clientX ?? null
+    touchEndX.current = null
+  }
+
+  const onTouchMove = (event: React.TouchEvent<HTMLDivElement>) => {
+    touchEndX.current = event.changedTouches[0]?.clientX ?? null
+  }
+
+  const onTouchEnd = () => {
+    if (touchStartX.current === null || touchEndX.current === null) return
+
+    const swipeDistance = touchStartX.current - touchEndX.current
+    const minSwipeDistance = 40
+
+    if (Math.abs(swipeDistance) < minSwipeDistance) return
+
+    if (swipeDistance > 0) {
+      handleNext()
+    } else {
+      handlePrev()
+    }
+  }
+
   return (
-    <div className="relative mx-auto max-w-sm">
-      <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-casa-surface shadow-xl border border-border/50">
+    <div className="relative mx-auto max-w-sm md:max-w-md lg:max-w-lg">
+      <div
+        className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-casa-surface shadow-xl border border-border/50"
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
+      >
         {items.map((item, index) => {
           return (
             <div
