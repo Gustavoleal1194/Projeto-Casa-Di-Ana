@@ -503,21 +503,21 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Creme Pâtissière",
                 description: "Unidade",
                 price: "R$ 13,00",
-                image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800"
+                image: "/images/Comidas/Sonhos.jpeg"
             },
             {
                 id: 62,
                 name: "Pistache",
                 description: "Unidade",
                 price: "R$ 16,00",
-                image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800"
+                image: "/images/Comidas/Sonhos.jpeg"
             },
             {
                 id: 63,
                 name: "Doce de Leite",
                 description: "Unidade",
                 price: "R$ 15,00",
-                image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800"
+                image: "/images/Comidas/Sonhos.jpeg"
             }
         ]
     },
@@ -531,7 +531,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Croissant",
                 description: "Unidade",
                 price: "R$ 15,00",
-                image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800"
+                image: "/images/Comidas/Croissant.jpeg"
             },
             {
                 id: 65,
@@ -545,28 +545,14 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Pain au Chocolat",
                 description: "Unidade",
                 price: "R$ 18,00",
-                image: "/images/Comidas/Pain suisse.jpg"
-            },
-            {
-                id: 67,
-                name: "Cruffin",
-                description: "Unidade",
-                price: "R$ 20,00",
-                image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800"
-            },
-            {
-                id: 68,
-                name: "Focaccia",
-                description: "Unidade",
-                price: "R$ 20,00",
-                image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800"
+                image: "/images/Dodia/Pain au Chocolat.jpeg"
             },
             {
                 id: 69,
                 name: "Pastel de Nata",
                 description: "Unidade",
                 price: "R$ 13,00",
-                image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800"
+                image: "/images/Dodia/Pastel de nata.jpeg"
             }
         ]
     }

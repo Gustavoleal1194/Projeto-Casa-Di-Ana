@@ -32,20 +32,6 @@ export const menuDoDiaItems: MenuItem[] = [
     image: "/images/Dodia/Danishs variados.jpeg"
   },
   {
-    id: 2005,
-    name: "Danish Variados 2",
-    description: "Item do dia.",
-    price: "Sob consulta",
-    image: "/images/Dodia/DanishVariados2.jpeg"
-  },
-  {
-    id: 2006,
-    name: "Opera",
-    description: "Item do dia.",
-    price: "Sob consulta",
-    image: "/images/Dodia/Opera.jpeg"
-  },
-  {
     id: 2007,
     name: "Pain au Chocolat",
     description: "Item do dia.",
@@ -74,13 +60,6 @@ export const menuDoDiaItems: MenuItem[] = [
     image: "/images/Dodia/Torta Holandesa.jpeg"
   },
   {
-    id: 2012,
-    name: "Bolo de Chocolate com Ganache de Maracujá",
-    description: "Item do dia.",
-    price: "Sob consulta",
-    image: "/images/Dodia/Bolo de chocolate com ganache de maracujá.jpeg"
-  },
-  {
     id: 2013,
     name: "Cheescake de Frutas Vermelhas",
     description: "Item do dia.",
@@ -93,12 +72,5 @@ export const menuDoDiaItems: MenuItem[] = [
     description: "Item do dia.",
     price: "Sob consulta",
     image: "/images/Dodia/New York roll de frutas vermelhas.jpeg"
-  },
-  {
-    id: 2015,
-    name: "Releitura do Floresta Negra com Amarena",
-    description: "Item do dia.",
-    price: "Sob consulta",
-    image: "/images/Dodia/Releitura do floresta negra com amarena.jpeg"
   }
 ]
