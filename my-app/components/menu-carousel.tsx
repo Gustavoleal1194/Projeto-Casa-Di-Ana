@@ -65,6 +65,16 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
     setTimeout(() => setIsAnimating(false), 600)
   }, [isAnimating, totalItems])
 
+  const goToSlide = useCallback(
+    (index: number) => {
+      if (isAnimating || index === currentIndex) return
+      setIsAnimating(true)
+      setCurrentIndex(index)
+      setTimeout(() => setIsAnimating(false), 600)
+    },
+    [currentIndex, isAnimating],
+  )
+
   useEffect(() => {
     const timer = setInterval(() => {
       handleNext()
@@ -105,16 +115,23 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
                     </div>
                   </div>
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-casa-primary/90 via-casa-primary/30 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="mb-1 font-serif text-2xl md:text-3xl font-light text-balance text-white">
-                    {item.name}
-                  </h3>
-                </div>
               </div>
             </div>
           )
         })}
+      </div>
+      <div className="mt-6 flex justify-center gap-2">
+        {items.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => goToSlide(index)}
+            className={cn(
+              "h-2 rounded-full transition-all duration-300",
+              index === currentIndex ? "w-8 bg-white" : "w-2 bg-white/40 hover:bg-white/60",
+            )}
+            aria-label={`Ir para item ${index + 1}`}
+          />
+        ))}
       </div>
     </div>
   )
