@@ -116,6 +116,19 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
     }
   }
 
+  const onTapCarousel = (event: React.MouseEvent<HTMLDivElement>) => {
+    const rect = event.currentTarget.getBoundingClientRect()
+    const tapX = event.clientX - rect.left
+    const isLeftSide = tapX < rect.width / 2
+
+    // Regra solicitada: esquerda = próxima, direita = anterior
+    if (isLeftSide) {
+      handleNext()
+    } else {
+      handlePrev()
+    }
+  }
+
   return (
     <div className="relative mx-auto max-w-sm md:max-w-md lg:max-w-lg">
       <div
@@ -123,6 +136,7 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
+        onClick={onTapCarousel}
       >
         {items.map((item, index) => {
           return (
