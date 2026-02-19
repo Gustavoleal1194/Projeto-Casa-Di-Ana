@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { MenuCarousel } from "@/components/menu-carousel"
-import { MenuGrid } from "@/components/menu-grid"
+import { MenuDoDiaGrid } from "@/components/menu-do-dia-grid"
 import { bakeryCarouselItems, bakerySections } from "@/data/panificacao"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -36,10 +36,7 @@ export default function PanificacaoPage() {
 
             <MenuCarousel items={bakeryCarouselItems} />
 
-            <div className="space-y-6">
-              <h2 className="font-serif text-3xl text-center text-white">Escolha sua categoria</h2>
-              <MenuGrid sections={bakerySections} />
-            </div>
+            <MenuDoDiaGrid items={bakerySections[0]?.items ?? []} />
           </div>
         </section>
       </main>
