@@ -121,11 +121,11 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
     const tapX = event.clientX - rect.left
     const isLeftSide = tapX < rect.width / 2
 
-    // Regra solicitada: esquerda = próxima, direita = anterior
+    // Comportamento natural: esquerda = anterior, direita = próxima
     if (isLeftSide) {
-      handleNext()
-    } else {
       handlePrev()
+    } else {
+      handleNext()
     }
   }
 
