@@ -64,6 +64,20 @@ export default function Home() {
                 <p>Aberto de terça a sabado das 8h até 19h Domingos e feriados das 8h até 17h</p>
                 <p className="mt-1">Rua Vereador francisco lopes, 299</p>
               </div>
+
+              <div className="px-4 pt-4">
+                <div className="mx-auto w-full max-w-xl overflow-hidden rounded-2xl border border-white/20 bg-black/20 shadow-lg">
+                  <video
+                    src="/videos/VideoSimone.mp4"
+                    className="h-full w-full"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    controls
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
