@@ -130,9 +130,9 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
   }
 
   return (
-    <div className="relative mx-auto max-w-sm md:max-w-md lg:max-w-lg">
+    <div className="relative mx-auto max-w-sm md:max-w-xl lg:max-w-2xl">
       <div
-        className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-casa-surface shadow-xl border border-border/50"
+        className="relative aspect-[4/5] md:aspect-[3/2] overflow-hidden rounded-2xl bg-casa-surface shadow-xl border border-border/50"
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
