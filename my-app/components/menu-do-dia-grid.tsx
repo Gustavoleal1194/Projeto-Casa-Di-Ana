@@ -15,7 +15,7 @@ export function MenuDoDiaGrid({ items }: MenuDoDiaGridProps) {
   const [hoveredId, setHoveredId] = useState<number | null>(null)
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {items.map((item) => (
           <Card
             key={item.id}
@@ -30,7 +30,7 @@ export function MenuDoDiaGrid({ items }: MenuDoDiaGridProps) {
                 alt={item.name}
                 fill
                 className="object-cover w-full h-full transition-all duration-700"
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
 
               <div
