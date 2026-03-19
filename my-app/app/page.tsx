@@ -101,7 +101,7 @@ export default function Home() {
               <Link href="/panificacao" className="block">
                 <Card className="bg-white/90 backdrop-blur-sm border-casa-secondary/30 group hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
                   <CardContent className="p-4 sm:p-6 md:p-8 text-center">
-                    <div className="relative w-full h-32 sm:h-40 md:h-32 mx-auto mb-4 sm:mb-5 md:mb-6 rounded-lg overflow-hidden">
+                    <div className="relative w-full aspect-[4/3] mx-auto mb-4 sm:mb-5 md:mb-6 overflow-hidden rounded-lg bg-white/10">
                       <Image
                         src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&h=400&fit=crop&crop=center"
                         alt="Pães Artesanais"
@@ -122,9 +122,9 @@ export default function Home() {
               <Link href="/menu#cardapio-completo" className="block">
                 <Card className="bg-white/90 backdrop-blur-sm border-casa-accent/30 group hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
                   <CardContent className="p-4 sm:p-6 md:p-8 text-center">
-                    <div className="relative w-full h-32 sm:h-40 md:h-32 mx-auto mb-4 sm:mb-5 md:mb-6 rounded-lg overflow-hidden">
+                    <div className="relative w-full aspect-[4/3] mx-auto mb-4 sm:mb-5 md:mb-6 overflow-hidden rounded-lg bg-white/10">
                       <Image
-                        src="/images/Comidas/lanche com ovo.jpg"
+                        src="/images/Comidas/Henrique.jpeg"
                         alt="Cardápio Casa Di Ana"
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
@@ -143,7 +143,7 @@ export default function Home() {
               <Link href="/menu#menu-cardapio" className="block sm:col-span-2 md:col-span-1">
                 <Card className="bg-white/90 backdrop-blur-sm border-casa-secondary/30 group hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
                   <CardContent className="p-4 sm:p-6 md:p-8 text-center">
-                    <div className="relative w-full h-32 sm:h-40 md:h-32 mx-auto mb-4 sm:mb-5 md:mb-6 rounded-lg overflow-hidden">
+                    <div className="relative w-full aspect-[4/3] mx-auto mb-4 sm:mb-5 md:mb-6 overflow-hidden rounded-lg bg-white/10">
                       <Image
                         src="/images/Dodia/Pastel de nata.jpeg"
                         alt="Especiais do dia"
