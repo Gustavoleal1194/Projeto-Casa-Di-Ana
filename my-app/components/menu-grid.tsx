@@ -49,7 +49,7 @@ export function MenuGrid({ sections = defaultMenuSections }: MenuGridProps) {
             <p className="text-white/90 font-body max-w-2xl mx-auto">{currentSection.description}</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {currentSection.items.map((item) => (
               <Card
                 key={item.id}
@@ -63,7 +63,7 @@ export function MenuGrid({ sections = defaultMenuSections }: MenuGridProps) {
                     alt={item.name}
                     fill
                     className="object-cover w-full h-full transition-all duration-700"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
 
                   <div
