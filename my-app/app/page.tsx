@@ -66,10 +66,10 @@ export default function Home() {
               </div>
 
               <div className="px-4 pt-4">
-                <div className="mx-auto w-full max-w-xs md:max-w-sm lg:max-w-md overflow-hidden rounded-2xl shadow-lg">
+                <div className="mx-auto w-full max-w-[240px] md:max-w-xs lg:max-w-sm aspect-[9/16] overflow-hidden rounded-2xl shadow-lg">
                   <video
                     src="/videos/VideoSimone.mp4"
-                    className="w-full h-auto max-h-[65vh] object-contain"
+                    className="w-full h-full object-cover"
                     autoPlay
                     muted
                     loop
