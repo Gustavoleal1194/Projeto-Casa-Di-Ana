@@ -16,7 +16,7 @@ export function MenuDoDiaGrid({ items }: MenuDoDiaGridProps) {
   const [hoveredId, setHoveredId] = useState<number | null>(null)
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       {items.map((item) => (
           <Card
             key={item.id}
@@ -25,14 +25,14 @@ export function MenuDoDiaGrid({ items }: MenuDoDiaGridProps) {
             onMouseEnter={() => setHoveredId(item.id)}
             onMouseLeave={() => setHoveredId(null)}
           >
-            <div className={cn("relative w-full rounded-xl bg-white overflow-hidden", GRID_IMAGE_ASPECT)}>
+            <div className={cn("relative w-full rounded-xl overflow-hidden bg-white", GRID_IMAGE_ASPECT)}>
               <Image
                 src={item.image}
                 alt={item.name}
                 fill
                 className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
                 style={{ objectPosition: item.imagePosition ?? DEFAULT_IMAGE_POSITION }}
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
               />
 
               <div
