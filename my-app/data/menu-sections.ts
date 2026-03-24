@@ -258,21 +258,21 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Julia – Smoothie Manga & Maracujá",
                 description: "Smoothie refrescante de manga com maracujá.",
                 price: "R$ 28,00",
-                image: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800"
+                image: "/images/bebidas/smothiemanga.jpg"
             },
             {
                 id: 33,
                 name: "Rafa – Smoothie Frutas Vermelhas",
                 description: "Frutas vermelhas congeladas e batidas.",
                 price: "R$ 32,00",
-                image: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800"
+                image: "/images/bebidas/smothie rafa.jpg"
             },
             {
                 id: 34,
                 name: "Jade – Smoothie Doce de Leite com Paçoca",
                 description: "Doce de leite com Paçoca, Leite Integral ou Vegetal.",
                 price: "R$ 35,00",
-                image: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800"
+                image: "/images/bebidas/jade2.jpg"
             }
         ]
     },
@@ -293,21 +293,21 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Suco do Gê – Maracujá com Capim Cidreira",
                 description: "Refrescante e aromático.",
                 price: "R$ 17,00",
-                image: "https://images.unsplash.com/photo-1571049755112-47debb0a9a79?w=800"
+                image: "/images/bebidas/sucodoge2.jpg"
             },
             {
                 id: 37,
                 name: "Tatha – Suco de Framboesa",
                 description: "Suco natural de framboesa.",
                 price: "R$ 28,00",
-                image: "https://images.unsplash.com/photo-1571049755112-47debb0a9a79?w=800"
+                image: "/images/bebidas/tatha.jpg"
             },
             {
                 id: 38,
                 name: "Maria – Suco Detox",
                 description: "Abacaxi, gengibre, couve, limão siciliano e cardamomo.",
                 price: "R$ 24,00",
-                image: "https://images.unsplash.com/photo-1571049755112-47debb0a9a79?w=800"
+                image: "/images/bebidas/maria.jpg"
             }
         ]
     },
@@ -342,7 +342,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Guaraná",
                 description: "Refrigerante gelado.",
                 price: "R$ 8,00",
-                image: "https://br.openfoodfacts.org/cgi/product_image.pl?code=7891991008761&imgid=3"
+                image: "/images/Comidas/guarana.webp"
             }
         ]
     },
@@ -420,7 +420,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Mariana – Croissant",
                 description: "Acompanha geleia de frutas vermelhas, manteiga ou requeijão.",
                 price: "R$ 22,00",
-                image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800"
+                image: "/images/Comidas/Croissant.jpeg"
             },
             {
                 id: 51,
@@ -434,14 +434,14 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "João – Misto Quente",
                 description: "Pão Brioche de longa fermentação ou mini baguete com presunto royale e mix de queijos.",
                 price: "R$ 30,00",
-                image: "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=800"
+                image: "/images/Comidas/MistoQuente.jpg"
             },
             {
                 id: 53,
                 name: "Marina – Bauru",
                 description: "Pão de longa fermentação recheado com mix de queijos, tomates assados e picles a parte.",
                 price: "R$ 35,00",
-                image: "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=800"
+                image: "/images/Comidas/Bauru.jpg"
             }
         ]
     },
@@ -498,7 +498,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Júlia",
                 description: "Caprese - Pão focaccia de fermentação natural, pesto de manjericão, queijo, tomates assados e frescos com muçarela de búfala e rúcula selvática.",
                 price: "R$ 45,00",
-                image: "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=800"
+                image: "/images/Comidas/julia.jpg"
             },
             {
                 id: 58,
@@ -513,6 +513,13 @@ export const defaultMenuSections: MenuSection[] = [
                 description: "Sanduíche de pastrami em pão ciabatta de longa fermentação, queijo suíço, mostarda fermentada, picles de pepino e cebola roxa.",
                 price: "R$ 52,00",
                 image: "/images/Comidas/Coda.jpg"
+            },
+            {
+                id: 60,
+                name: "Henrique",
+                description: "Croissant, maionese de limão siciliano, tomate fresco, salada de alface, queijo suíço, picles de cebola roxa, raspas de limão e salame.",
+                price: "R$ 52,00",
+                image: "/images/Comidas/Henrique.jpeg"
             }
         ]
     },
