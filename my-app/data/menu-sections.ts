@@ -6,6 +6,8 @@ export type MenuItem = {
     image: string
     tag?: string
     available?: boolean
+    /** Ponto focal da imagem (CSS object-position). Ex: "top", "center", "bottom 20%". */
+    imagePosition?: string
 }
 
 export type MenuSection = {

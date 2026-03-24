@@ -5,9 +5,9 @@ import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { cn } from "@/lib/utils"
+import { GRID_IMAGE_ASPECT, DEFAULT_IMAGE_POSITION } from "@/lib/card-image-layout"
 import { defaultMenuSections, type MenuItem, type MenuSection } from "@/data/menu-sections"
 
-// Re-exportar tipos para compatibilidade
 export type { MenuItem, MenuSection }
 
 type MenuGridProps = {
@@ -78,12 +78,13 @@ export function MenuGrid({ sections = defaultMenuSections }: MenuGridProps) {
                 onMouseEnter={() => setHoveredId(item.id)}
                 onMouseLeave={() => setHoveredId(null)}
               >
-                <div className="relative w-full h-64 overflow-hidden rounded-xl bg-casa-background">
+                <div className={cn("relative w-full overflow-hidden rounded-xl bg-white", GRID_IMAGE_ASPECT)}>
                   <Image
                     src={item.image}
                     alt={item.name}
                     fill
-                    className="object-cover w-full h-full transition-all duration-700"
+                    className="object-cover transition-all duration-700"
+                    style={{ objectPosition: item.imagePosition ?? DEFAULT_IMAGE_POSITION }}
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
 

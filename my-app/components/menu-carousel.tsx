@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback, useRef } from "react"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
+import { CAROUSEL_ASPECT } from "@/lib/card-image-layout"
 
 export type MenuCarouselItem = {
   id: number
@@ -121,7 +122,6 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
     const tapX = event.clientX - rect.left
     const isLeftSide = tapX < rect.width / 2
 
-    // Comportamento natural: esquerda = anterior, direita = próxima
     if (isLeftSide) {
       handlePrev()
     } else {
@@ -132,7 +132,10 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
   return (
     <div className="relative mx-auto max-w-sm md:max-w-xl lg:max-w-2xl">
       <div
-        className="relative aspect-[4/5] md:aspect-[3/2] overflow-hidden rounded-2xl bg-casa-surface shadow-xl border border-border/50"
+        className={cn(
+          "relative overflow-hidden rounded-2xl bg-white shadow-xl border border-border/50",
+          CAROUSEL_ASPECT,
+        )}
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
@@ -150,14 +153,13 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
               <div className="absolute inset-0">
                 {item.image ? (
                   <>
-                    <div className="absolute inset-0 bg-black/10" />
+                    <div className="absolute inset-0 bg-black/10 z-10" />
                     <Image
                       src={item.image}
                       alt={item.name}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
-                      className="object-cover"
-                      style={{ objectPosition: "center" }}
+                      className="object-cover object-center"
                       priority={index === currentIndex}
                     />
                   </>

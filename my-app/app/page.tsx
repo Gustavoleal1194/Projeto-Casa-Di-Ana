@@ -5,6 +5,8 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Header } from "@/components/header"
 import { BackgroundContainer } from "@/components/background-container"
+import { cn } from "@/lib/utils"
+import { HERO_CARD_ASPECT } from "@/lib/card-image-layout"
 
 export default function Home() {
   return (
@@ -14,10 +16,8 @@ export default function Home() {
         <BackgroundContainer />
         {/* Hero Section */}
         <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-8 md:py-0">
-          {/* Overlay com 10% de opacidade para melhorar legibilidade */}
           <div className="absolute inset-0 bg-black/10"></div>
 
-          {/* Background decorativo com texturas artesanais */}
           <div className="absolute inset-0 -z-10">
             <div className="absolute left-1/4 top-1/4 h-48 w-48 md:h-96 md:w-96 rounded-full bg-casa-secondary/10 blur-3xl"></div>
             <div className="absolute bottom-1/4 right-1/4 h-40 w-40 md:h-80 md:w-80 rounded-full bg-casa-accent/8 blur-3xl"></div>
@@ -26,7 +26,6 @@ export default function Home() {
 
           <div className="w-full max-w-4xl text-center relative z-10">
             <div className="space-y-6 md:space-y-8">
-              {/* Subtítulo */}
               <div className="space-y-3 md:space-y-4">
                 <div className="flex items-center justify-center gap-2 md:gap-4">
                   <span className="h-px w-8 md:w-16 bg-casa-secondary/60"></span>
@@ -37,7 +36,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Descrição principal */}
               <div className="max-w-2xl mx-auto space-y-3 md:space-y-4 px-4">
                 <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed text-white font-body font-semibold">
                   Uma padaria artesanal onde cada sabor conta uma história. Descubra nossos pães, doces e bebidas especiais
@@ -45,7 +43,6 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* Botões de ação */}
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center pt-4 md:pt-6 relative z-20 px-4">
                 <Link href="/menu" className="block relative z-20 w-full sm:w-auto">
                   <Button size="lg" className="w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 text-base md:text-lg relative z-20 bg-casa-accent hover:bg-casa-accent/90 text-white border-casa-accent">
@@ -59,7 +56,6 @@ export default function Home() {
                 </Link>
               </div>
 
-              {/* Informações de funcionamento */}
               <div className="pt-8 md:pt-12 text-sm sm:text-base text-white font-body font-semibold px-4">
                 <p>Aberto de terça a sabado das 8h até 19h Domingos e feriados das 8h até 17h</p>
                 <p className="mt-1">Rua Vereador francisco lopes, 299</p>
@@ -84,7 +80,6 @@ export default function Home() {
 
         {/* Seção de destaques */}
         <section className="py-12 sm:py-16 md:py-20 px-4 relative">
-          {/* Overlay com 10% de opacidade para melhorar legibilidade */}
           <div className="absolute inset-0 bg-black/10"></div>
           <div className="max-w-6xl mx-auto relative z-10">
             <div className="text-center mb-8 sm:mb-12 md:mb-16">
@@ -101,13 +96,13 @@ export default function Home() {
               <Link href="/panificacao" className="block">
                 <Card className="bg-white/90 backdrop-blur-sm border-casa-secondary/30 group hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
                   <CardContent className="p-4 sm:p-6 md:p-8 text-center">
-                    <div className="relative w-full aspect-[4/3] mx-auto mb-4 sm:mb-5 md:mb-6 overflow-hidden rounded-lg bg-white/10">
+                    <div className={cn("relative w-full mx-auto mb-4 sm:mb-5 md:mb-6 overflow-hidden rounded-lg bg-white", HERO_CARD_ASPECT)}>
                       <Image
                         src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&h=400&fit=crop&crop=center"
                         alt="Pães Artesanais"
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-                        className="object-cover"
+                        className="object-cover object-center"
                       />
                     </div>
                     <h3 className="font-serif text-xl sm:text-2xl text-casa-primary mb-2 sm:mb-3">Pães Artesanais</h3>
@@ -122,13 +117,13 @@ export default function Home() {
               <Link href="/menu#cardapio-completo" className="block">
                 <Card className="bg-white/90 backdrop-blur-sm border-casa-accent/30 group hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
                   <CardContent className="p-4 sm:p-6 md:p-8 text-center">
-                    <div className="relative w-full aspect-[4/3] mx-auto mb-4 sm:mb-5 md:mb-6 overflow-hidden rounded-lg bg-white/10">
+                    <div className={cn("relative w-full mx-auto mb-4 sm:mb-5 md:mb-6 overflow-hidden rounded-lg bg-white", HERO_CARD_ASPECT)}>
                       <Image
                         src="/images/Comidas/Henrique.jpeg"
                         alt="Cardápio Casa Di Ana"
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-                        className="object-cover"
+                        className="object-cover object-center"
                       />
                     </div>
                     <h3 className="font-serif text-xl sm:text-2xl text-casa-primary mb-2 sm:mb-3">Cardapio Casa Di Ana</h3>
@@ -143,13 +138,13 @@ export default function Home() {
               <Link href="/menu#menu-cardapio" className="block sm:col-span-2 md:col-span-1">
                 <Card className="bg-white/90 backdrop-blur-sm border-casa-secondary/30 group hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
                   <CardContent className="p-4 sm:p-6 md:p-8 text-center">
-                    <div className="relative w-full aspect-[4/3] mx-auto mb-4 sm:mb-5 md:mb-6 overflow-hidden rounded-lg bg-white/10">
+                    <div className={cn("relative w-full mx-auto mb-4 sm:mb-5 md:mb-6 overflow-hidden rounded-lg bg-white", HERO_CARD_ASPECT)}>
                       <Image
                         src="/images/Dodia/Pastel de nata.jpeg"
                         alt="Especiais do dia"
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-                        className="object-cover"
+                        className="object-cover object-center"
                       />
                     </div>
                     <h3 className="font-serif text-xl sm:text-2xl text-casa-primary mb-2 sm:mb-3">Especiais do dia</h3>

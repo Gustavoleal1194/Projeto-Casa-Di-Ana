@@ -5,6 +5,7 @@ import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { cn } from "@/lib/utils"
+import { GRID_IMAGE_ASPECT, DEFAULT_IMAGE_POSITION } from "@/lib/card-image-layout"
 import type { MenuItem } from "@/data/menu-sections"
 
 type MenuDoDiaGridProps = {
@@ -24,18 +25,19 @@ export function MenuDoDiaGrid({ items }: MenuDoDiaGridProps) {
             onMouseEnter={() => setHoveredId(item.id)}
             onMouseLeave={() => setHoveredId(null)}
           >
-            <div className="relative w-full h-64 overflow-hidden rounded-xl bg-casa-background">
+            <div className={cn("relative w-full rounded-xl bg-white overflow-hidden", GRID_IMAGE_ASPECT)}>
               <Image
                 src={item.image}
                 alt={item.name}
                 fill
-                className="object-cover w-full h-full transition-all duration-700"
+                className="object-cover transition-all duration-700"
+                style={{ objectPosition: item.imagePosition ?? DEFAULT_IMAGE_POSITION }}
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
 
               <div
                 className={cn(
-                  "absolute inset-0 bg-gradient-to-t from-[#5e6979]/80 via-[#5e6979]/20 to-transparent transition-opacity duração-300",
+                  "absolute inset-0 bg-gradient-to-t from-[#5e6979]/80 via-[#5e6979]/20 to-transparent transition-opacity duration-300",
                   hoveredId === item.id ? "opacity-100" : "opacity-0",
                 )}
               />
