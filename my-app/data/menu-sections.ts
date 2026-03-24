@@ -41,7 +41,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Café do Mané – Coado V60",
                 description: "Extração equilibrada · Notas doces e acidez delicada.",
                 price: "R$ 16,00",
-                image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800",
+                image: "/images/bebidas/coado2.jpg",
                 tag: "Café do Mané"
             },
             {
@@ -49,7 +49,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Café do Mané – Clever",
                 description: "Extração densa, corpo mais presente e sabor intenso.",
                 price: "R$ 16,00",
-                image: "/images/bebidas/café clever.jpeg",
+                image: "/images/bebidas/coado2.jpg",
                 tag: "Café do Mané"
             },
             {
@@ -57,7 +57,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Café do Mané – Prensa Francesa",
                 description: "Café encorpado, doce e com textura amanteigada.",
                 price: "R$ 18,00",
-                image: "/images/bebidas/Expresso.jpg",
+                image: "/images/bebidas/coado2.jpg",
                 tag: "Café do Mané"
             },
             {
@@ -65,7 +65,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Café do Luiz Paulo – Coado V60",
                 description: "Café especial acima de 85 pts · Mantiqueira · Grão Star Maya.",
                 price: "R$ 20,00",
-                image: "/images/bebidas/Expresso.jpg",
+                image: "/images/bebidas/coado2.jpg",
                 tag: "Café do Luiz Paulo"
             },
             {
@@ -73,7 +73,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Café do Luiz Paulo – Clever",
                 description: "Extração com maior densidade e doçura marcante.",
                 price: "R$ 20,00",
-                image: "/images/bebidas/C'lever Luiz Paulo.jpeg",
+                image: "/images/bebidas/coado2.jpg",
                 tag: "Café do Luiz Paulo"
             },
             {
@@ -81,7 +81,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Café do Luiz Paulo – Prensa Francesa",
                 description: "Café encorpado com notas doces e textura cremosa.",
                 price: "R$ 22,00",
-                image: "/images/bebidas/Prensa francesa Luiz Paulo.jpeg",
+                image: "/images/bebidas/coado2.jpg",
                 tag: "Café do Luiz Paulo"
             }
         ]
@@ -285,7 +285,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Suco de Laranja (Kmais Integral)",
                 description: "Laranja integral espremida na hora.",
                 price: "R$ 9,00",
-                image: "/images/bebidas/kmais.jpeg"
+                image: "/images/bebidas/kmais.jpg"
             },
             {
                 id: 36,
@@ -327,7 +327,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Coca-Cola KS",
                 description: "Garrafa KS.",
                 price: "R$ 8,00",
-                image: "https://cdn.vucasolution.com.br/upload/w_800/https://gryyplgyeyqb.compat.objectstorage.sa-saopaulo-1.oraclecloud.com/vuca-cdn/giggabar/arqs/produtos/gdxx6x4laqlsziljrjaz.jpg"
+                image: "/images/bebidas/cocaksimg.jpg"
             },
             {
                 id: 41,
@@ -342,35 +342,42 @@ export const defaultMenuSections: MenuSection[] = [
                 description: "Refrigerante gelado.",
                 price: "R$ 8,00",
                 image: "https://br.openfoodfacts.org/cgi/product_image.pl?code=7891991008761&imgid=3"
-            },
+            }
+        ]
+    },
+    {
+        id: "cervejas",
+        title: "Cervejas",
+        description: "",
+        items: [
             {
                 id: 45,
                 name: "Heineken",
                 description: "Cerveja importada.",
                 price: "R$ 14,00",
-                image: "https://images.unsplash.com/photo-1608270586620-248524c67de9?w=800"
+                image: "/images/bebidas/heineken-jp.jpg"
             },
             {
                 id: 46,
                 name: "Corona",
                 description: "Cerveja importada.",
                 price: "R$ 14,00",
-                image: "https://images.unsplash.com/photo-1608270586620-248524c67de9?w=800"
+                image: "/images/bebidas/corona2.webp"
             },
             {
                 id: 47,
                 name: "Stella Artois Purê Gold",
                 description: "Cerveja sem glúten.",
                 price: "R$ 14,00",
-                image: "https://images.unsplash.com/photo-1608270586620-248524c67de9?w=800",
+                image: "/images/bebidas/stellaPure.webp",
                 tag: "SEM GLUTEN"
             },
             {
                 id: 48,
-                name: "Cerveja sem Álcool",
+                name: "Corona Zero Álcool",
                 description: "Cerveja sem álcool.",
                 price: "R$ 17,00",
-                image: "https://images.unsplash.com/photo-1608270586620-248524c67de9?w=800"
+                image: "/images/bebidas/corona_zero.JPG"
             }
         ]
     },
@@ -488,8 +495,8 @@ export const defaultMenuSections: MenuSection[] = [
         ]
     },
     {
-        id: "sonhos",
-        title: "Sonhos",
+        id: "confeitaria",
+        title: "Confeitaria",
         description: "",
         items: [
             {
@@ -512,6 +519,27 @@ export const defaultMenuSections: MenuSection[] = [
                 description: "Unidade",
                 price: "R$ 18,00",
                 image: "/images/Comidas/Sonhos.jpeg"
+            },
+            {
+                id: 73,
+                name: "Bolo Recheado (Fatia)",
+                description: "Fatia",
+                price: "R$ 28,00",
+                image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800"
+            },
+            {
+                id: 74,
+                name: "Bolo da Vovó",
+                description: "Pequeno ou médio.",
+                price: "R$ 12,00 (pequeno) | R$ 18,00 (médio)",
+                image: "/images/Dodia/bolo de cenora com chocolate.jpeg"
+            },
+            {
+                id: 75,
+                name: "Tortas Individuais Diversas",
+                description: "Pequeno ou médio.",
+                price: "R$ 25,00 (pequeno) | R$ 29,00 (médio)",
+                image: "/images/Dodia/Torta Holandesa.jpeg"
             }
         ]
     },
@@ -522,27 +550,62 @@ export const defaultMenuSections: MenuSection[] = [
         items: [
             {
                 id: 64,
+                name: "New York Roll",
+                description: "Unidade",
+                price: "R$ 28,00",
+                image: "/images/Dodia/New York roll de frutas vermelhas.jpeg"
+            },
+            {
+                id: 65,
+                name: "Cinnamon Roll",
+                description: "Unidade",
+                price: "R$ 25,00",
+                image: "https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=800"
+            },
+            {
+                id: 66,
+                name: "Roll de Passas",
+                description: "Unidade",
+                price: "R$ 25,00",
+                image: "https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=800"
+            },
+            {
+                id: 67,
+                name: "Pain Suisse",
+                description: "Unidade",
+                price: "R$ 28,00",
+                image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800"
+            },
+            {
+                id: 68,
                 name: "Croissant",
                 description: "Unidade",
                 price: "R$ 17,00",
                 image: "/images/Comidas/Croissant.jpeg"
             },
             {
-                id: 65,
+                id: 69,
                 name: "Croissant de Amêndoas",
                 description: "Unidade",
                 price: "R$ 28,00",
                 image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800"
             },
             {
-                id: 66,
+                id: 70,
                 name: "Pain au Chocolat",
                 description: "Unidade",
                 price: "R$ 24,00",
                 image: "/images/Dodia/Pain au Chocolat.jpeg"
             },
             {
-                id: 69,
+                id: 71,
+                name: "Roseta",
+                description: "Unidade",
+                price: "R$ 26,00",
+                image: "/images/Dodia/Roseta.jpeg"
+            },
+            {
+                id: 72,
                 name: "Pastel de Nata",
                 description: "Unidade",
                 price: "R$ 15,00",

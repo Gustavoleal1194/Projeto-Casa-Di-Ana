@@ -29,8 +29,8 @@ export default function PanificacaoPage() {
               <p className="text-sm uppercase tracking-[0.4em] text-white/80">Panificação</p>
               <h1 className="font-serif text-4xl md:text-5xl text-white">Forno da Casa</h1>
               <p className="text-white/90 font-body max-w-3xl mx-auto">
-                Pães, folhados e doces saindo do forno durante todo o dia, preparados com fermentação natural e ingredientes
-                selecionados.
+                Nossos pães são feitos com fermentação natural, fermentação longa com levain e farinhas 00 importadas
+                italianas e francesas.
               </p>
             </div>
 
