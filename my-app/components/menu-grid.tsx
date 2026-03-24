@@ -14,6 +14,19 @@ type MenuGridProps = {
   sections?: MenuSection[]
 }
 
+function renderDescriptionWithBold(description: string) {
+  return description.split(/(\*\*.*?\*\*)/g).map((part, index) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return (
+        <strong key={index} className="whitespace-nowrap">
+          {part.slice(2, -2)}
+        </strong>
+      )
+    }
+    return <span key={index}>{part}</span>
+  })
+}
+
 export function MenuGrid({ sections = defaultMenuSections }: MenuGridProps) {
   const [hoveredId, setHoveredId] = useState<number | null>(null)
   const [activeSectionId, setActiveSectionId] = useState(sections[0]?.id ?? "")
@@ -88,7 +101,7 @@ export function MenuGrid({ sections = defaultMenuSections }: MenuGridProps) {
                     {item.name}
                   </h4>
                   <p className="mb-3 text-pretty text-sm leading-relaxed text-[#5e6979]/70 font-body">
-                    {item.description}
+                    {renderDescriptionWithBold(item.description)}
                   </p>
                   <p className="text-lg font-serif font-semibold text-[#5e6979]">{item.price}</p>
                 </CardContent>

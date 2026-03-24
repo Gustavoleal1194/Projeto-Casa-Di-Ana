@@ -104,14 +104,14 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Wolneyzão – Macchiatto P",
                 description: "Dose pequena com leite vaporizado na medida.",
                 price: "R$ 10,00",
-                image: "https://images.unsplash.com/photo-1507914372368-bd133b41fab5?w=800"
+                image: "/images/bebidas/machiatoP.jpg"
             },
             {
                 id: 15,
                 name: "Wolneyzão – Macchiatto G",
                 description: "Versão grande com textura cremosa.",
                 price: "R$ 16,00",
-                image: "https://images.unsplash.com/photo-1507914372368-bd133b41fab5?w=800"
+                image: "/images/bebidas/machiatoG.jpg"
             },
             {
                 id: 16,
@@ -202,7 +202,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Legnini – Expresso Tônica",
                 description: "Expresso Tônica gelado. Opcional: bater com açúcar mascavo.",
                 price: "R$ 22,00",
-                image: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800"
+                image: "/images/bebidas/legini2.jpg"
             },
             {
                 id: 27,
@@ -216,35 +216,35 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Sandra – Capuccino Gelado",
                 description: "Capuccino gelado cremoso.",
                 price: "R$ 20,00",
-                image: "/images/bebidas/Sandra.jpg"
+                image: "/images/bebidas/Sandrinha.jpg"
             },
             {
                 id: 29,
                 name: "Frapê da Carol – Nutella",
                 description: "Cremoso, doce e preparado com Nutella.",
                 price: "R$ 29,00",
-                image: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800"
+                image: "/images/bebidas/frapeNutella.jpg"
             },
             {
                 id: 30,
                 name: "Frapê do Felipe – Pistache",
                 description: "Frapê artesanal de pistache.",
                 price: "R$ 35,00",
-                image: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800"
+                image: "/images/bebidas/frapePistache.jpg"
             },
             {
                 id: 31,
                 name: "Gaby – Chá de Hibisco com Manga",
                 description: "Infusão gelada com frutas tropicais.",
                 price: "R$ 20,00",
-                image: "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800"
+                image: "/images/bebidas/Gabi.jpg"
             },
             {
                 id: 32,
-                name: "Gaby – Chá Mate com Limão",
+                name: "Chá Mate com Limão",
                 description: "Chá mate gelado com limão.",
                 price: "R$ 16,00",
-                image: "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800"
+                image: "/images/bebidas/cha2.jpg"
             }
         ]
     },
@@ -392,14 +392,14 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Aperol Spritz",
                 description: "Drink clássico e refrescante.",
                 price: "R$ 38,00",
-                image: "https://images.unsplash.com/photo-1527169402691-feff5539e52c?w=800"
+                image: "/images/bebidas/Aperol.jpg"
             },
             {
                 id: 43,
                 name: "Limoncello Spritz",
                 description: "Drink cítrico preparado com limoncello.",
                 price: "R$ 40,00",
-                image: "https://images.unsplash.com/photo-1527169402691-feff5539e52c?w=800"
+                image: "/images/bebidas/lemon.jpg"
             }
         ]
     },
@@ -446,6 +446,27 @@ export const defaultMenuSections: MenuSection[] = [
         ]
     },
     {
+        id: "ovos",
+        title: "Ovos",
+        description: "",
+        items: [
+            {
+                id: 76,
+                name: "Cido",
+                description: "Ovos mexidos (ponto mais) com flor de sal e ceboulette. Acompanha baguete fatiada e tostada. **Opcional: bacon (+R$ 8,00).**",
+                price: "R$ 18,00",
+                image: "/images/Comidas/Cido.jpg"
+            },
+            {
+                id: 77,
+                name: "Odete",
+                description: "Ovos cremosos com toque de creme de leite fresco, flor de sal, noz moscada e ceboulette. Acompanha baguete fatiada e tostada. **Opcional: bacon (+R$ 8,00).**",
+                price: "R$ 20,00",
+                image: "/images/Comidas/odete2.jpg"
+            }
+        ]
+    },
+    {
         id: "bowls-saudaveis",
         title: "Bowls & Saudáveis",
         description: "",
@@ -455,7 +476,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Iogurte Caseiro",
                 description: "Com frutas do dia, granola, chás e mel nacional.",
                 price: "R$ 32,00",
-                image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800"
+                image: "/images/Comidas/Iogurte.jpg"
             },
          
         ]
@@ -470,7 +491,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Luigi",
                 description: "Pão focaccia de fermentação natural, pesto de pistache, fatias finas de mortadela Ceratti, muçarela e rúcula selvática.",
                 price: "R$ 52,00",
-                image: "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=800"
+                image: "/images/Comidas/Luigi.jpg"
             },
             {
                 id: 57,
@@ -533,7 +554,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Bolo da Vovó",
                 description: "Pequeno ou médio.",
                 price: "R$ 12,00 (pequeno) | R$ 18,00 (médio)",
-                image: "/images/Dodia/bolo de cenora com chocolate.jpeg"
+                image: "/images/Dodia/bolo vovó.jpg"
             },
             {
                 id: 75,

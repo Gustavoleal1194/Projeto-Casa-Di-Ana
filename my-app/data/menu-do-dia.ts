@@ -35,6 +35,38 @@ export const menuDoDiaItems: MenuItem[] = [
     description: "Item do dia.",
     price: "R$ 28,00",
     image: "/images/Dodia/Cheescake de frutas vermelhas.jpeg",
+    available: false
+  },
+  {
+    id: 2014,
+    name: "Torta Folhada Fechada",
+    description: "Item do dia.",
+    price: "Sob consulta",
+    image: "/images/Dodia/Fechada.jpg",
+    available: true
+  },
+  {
+    id: 2015,
+    name: "Croissant de Chocolate com Nutella",
+    description: "Item do dia.",
+    price: "Sob consulta",
+    image: "/images/Dodia/CroissantChocolate.jpg",
+    available: true
+  },
+  {
+    id: 2016,
+    name: "Trança Folhada de Frutas Vermelhas",
+    description: "Item do dia.",
+    price: "Sob consulta",
+    image: "/images/Dodia/TrancaFolhadaFrutas.jpg",
+    available: true
+  },
+  {
+    id: 2017,
+    name: "Croissant de Creme Pâtissière",
+    description: "Item do dia.",
+    price: "Sob consulta",
+    image: "/images/Dodia/CroissantCreme2.jpg",
     available: true
   },
 

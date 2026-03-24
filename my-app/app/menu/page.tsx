@@ -37,7 +37,7 @@ const novidadesForaDoCardapioItems: MenuItem[] = [
     name: "Cissy – Croissant Casquinha",
     description: "Croissant com requeijão tostado.",
     price: "R$ 28,00",
-    image: "/images/Comidas/cissy.jpeg",
+    image: "/images/Dodia/CroissantCas.jpg",
   },
 ]
 
