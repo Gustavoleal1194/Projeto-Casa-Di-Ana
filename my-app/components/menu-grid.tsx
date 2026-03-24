@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useRef, useState } from "react"
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -30,18 +30,26 @@ function renderDescriptionWithBold(description: string) {
 export function MenuGrid({ sections = defaultMenuSections }: MenuGridProps) {
   const [hoveredId, setHoveredId] = useState<number | null>(null)
   const [activeSectionId, setActiveSectionId] = useState(sections[0]?.id ?? "")
+  const menuStartRef = useRef<HTMLDivElement | null>(null)
 
   const currentSection = sections.find((section) => section.id === activeSectionId) ?? sections[0]
 
+  const handleSectionClick = (sectionId: string) => {
+    setActiveSectionId(sectionId)
+    requestAnimationFrame(() => {
+      menuStartRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })
+    })
+  }
+
   return (
-    <div className="space-y-10">
+    <div ref={menuStartRef} className="space-y-10">
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 [@media(max-width:240px)]:grid-cols-1 gap-2 pb-2">
         {sections.map((section) => {
           const isActive = section.id === activeSectionId
           return (
             <button
               key={section.id}
-              onClick={() => setActiveSectionId(section.id)}
+              onClick={() => handleSectionClick(section.id)}
               className={cn(
                 "whitespace-normal text-center px-2 py-2 rounded-full border transition-colors font-serif text-[11px] leading-tight sm:text-xs md:text-sm",
                 isActive
