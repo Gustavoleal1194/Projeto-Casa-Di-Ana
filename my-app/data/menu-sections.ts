@@ -172,7 +172,7 @@ export const defaultMenuSections: MenuSection[] = [
                 id: 23,
                 name: "Bia – Matcha (Leite Vegetal)",
                 description: "Matcha com leite vegetal.",
-                price: "R$ 28,00",
+                price: "R$ 30,00",
                 image: "/images/bebidas/Matcha-grande.jpg"
             },
             {
@@ -200,7 +200,7 @@ export const defaultMenuSections: MenuSection[] = [
                 id: 44,
                 name: "Legnini – Expresso Tônica",
                 description: "Expresso Tônica gelado. Opcional: bater com açúcar mascavo.",
-                price: "R$ 18,00",
+                price: "R$ 22,00",
                 image: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800"
             },
             {
@@ -242,7 +242,7 @@ export const defaultMenuSections: MenuSection[] = [
                 id: 32,
                 name: "Gaby – Chá Mate com Limão",
                 description: "Chá mate gelado com limão.",
-                price: "R$ 14,00",
+                price: "R$ 16,00",
                 image: "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800"
             }
         ]
@@ -268,8 +268,8 @@ export const defaultMenuSections: MenuSection[] = [
             },
             {
                 id: 34,
-                name: "Jade – Smoothie Proteico",
-                description: "Banana, cacau, pasta de amendoim e leite vegetal.",
+                name: "Jade – Smoothie Doce de Leite com Paçoca",
+                description: "Doce de leite com Paçoca, Leite Integral ou Vegetal.",
                 price: "R$ 35,00",
                 image: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800"
             }
@@ -298,7 +298,7 @@ export const defaultMenuSections: MenuSection[] = [
                 id: 37,
                 name: "Tatha – Suco de Framboesa",
                 description: "Suco natural de framboesa.",
-                price: "R$ 20,00",
+                price: "R$ 28,00",
                 image: "https://images.unsplash.com/photo-1571049755112-47debb0a9a79?w=800"
             },
             {
@@ -319,7 +319,7 @@ export const defaultMenuSections: MenuSection[] = [
                 id: 39,
                 name: "Água",
                 description: "Com ou sem gás.",
-                price: "R$ 5,00",
+                price: "R$ 6,00",
                 image: "https://www.aguasantaines.com.br/wp-content/webp-express/webp-images/uploads/elementor/thumbs/garrafas-de-agua-mineral-santa-ines-rab1q2p4jzac8i9c5yjq5p56b9pnxdeqqvyg4epgxs.png.webp"
             },
             {
@@ -411,28 +411,28 @@ export const defaultMenuSections: MenuSection[] = [
                 id: 50,
                 name: "Mariana – Croissant",
                 description: "Acompanha geleia de frutas vermelhas, manteiga ou requeijão.",
-                price: "—",
+                price: "R$ 22,00",
                 image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800"
             },
             {
                 id: 51,
                 name: "Quim – Queijo Quente",
                 description: "Pão Brioche de longa fermentação com mix de queijos.",
-                price: "R$ 22,00",
+                price: "R$ 28,00",
                 image: "/images/Comidas/Quinn.jpg"
             },
             {
                 id: 52,
                 name: "João – Misto Quente",
                 description: "Pão Brioche de longa fermentação ou mini baguete com presunto royale e mix de queijos.",
-                price: "R$ 26,00",
+                price: "R$ 30,00",
                 image: "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=800"
             },
             {
                 id: 53,
                 name: "Marina – Bauru",
                 description: "Pão de longa fermentação recheado com mix de queijos, tomates assados e picles a parte.",
-                price: "R$ 28,00",
+                price: "R$ 35,00",
                 image: "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=800"
             }
         ]
@@ -446,16 +446,10 @@ export const defaultMenuSections: MenuSection[] = [
                 id: 54,
                 name: "Iogurte Caseiro",
                 description: "Com frutas do dia, granola, chás e mel nacional.",
-                price: "R$ 26,00",
+                price: "R$ 32,00",
                 image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800"
             },
-            {
-                id: 55,
-                name: "Pudim de Chia",
-                description: "Com frutas vermelhas.",
-                price: "R$ 23,00",
-                image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800"
-            }
+         
         ]
     },
     {
@@ -502,21 +496,21 @@ export const defaultMenuSections: MenuSection[] = [
                 id: 61,
                 name: "Creme Pâtissière",
                 description: "Unidade",
-                price: "R$ 13,00",
+                price: "R$ 15,00",
                 image: "/images/Comidas/Sonhos.jpeg"
             },
             {
                 id: 62,
                 name: "Pistache",
                 description: "Unidade",
-                price: "R$ 16,00",
+                price: "R$ 19,00",
                 image: "/images/Comidas/Sonhos.jpeg"
             },
             {
                 id: 63,
                 name: "Doce de Leite",
                 description: "Unidade",
-                price: "R$ 15,00",
+                price: "R$ 18,00",
                 image: "/images/Comidas/Sonhos.jpeg"
             }
         ]
@@ -530,28 +524,28 @@ export const defaultMenuSections: MenuSection[] = [
                 id: 64,
                 name: "Croissant",
                 description: "Unidade",
-                price: "R$ 15,00",
+                price: "R$ 17,00",
                 image: "/images/Comidas/Croissant.jpeg"
             },
             {
                 id: 65,
                 name: "Croissant de Amêndoas",
                 description: "Unidade",
-                price: "R$ 20,00",
+                price: "R$ 28,00",
                 image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800"
             },
             {
                 id: 66,
                 name: "Pain au Chocolat",
                 description: "Unidade",
-                price: "R$ 18,00",
+                price: "R$ 24,00",
                 image: "/images/Dodia/Pain au Chocolat.jpeg"
             },
             {
                 id: 69,
                 name: "Pastel de Nata",
                 description: "Unidade",
-                price: "R$ 13,00",
+                price: "R$ 15,00",
                 image: "/images/Dodia/Pastel de nata.jpeg"
             }
         ]
