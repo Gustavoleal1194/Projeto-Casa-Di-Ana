@@ -30,7 +30,7 @@ export function MenuDoDiaGrid({ items }: MenuDoDiaGridProps) {
                 src={item.image}
                 alt={item.name}
                 fill
-                className="object-cover transition-all duration-700"
+                className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
                 style={{ objectPosition: item.imagePosition ?? DEFAULT_IMAGE_POSITION }}
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
