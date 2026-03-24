@@ -5,8 +5,8 @@
  * Proporção 3:4 retrato nos grids (casa com as fotos verticais do restaurante).
  */
 
-/** Grid / Menu do dia — levemente retrato (4:5), padrão Instagram/Rappi para food cards. */
-export const GRID_IMAGE_ASPECT = "aspect-[4/5]"
+/** Grid / Menu do dia — quadrado (1:1), padrão iFood/Rappi para food cards. */
+export const GRID_IMAGE_ASPECT = "aspect-square"
 
 /** Carrossel — retrato no mobile, paisagem no desktop. */
 export const CAROUSEL_ASPECT = "aspect-[3/4] md:aspect-[4/3]"
