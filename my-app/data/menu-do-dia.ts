@@ -3,14 +3,7 @@ import type { MenuItem } from "./menu-sections"
 // Produtos rotativos do Menu do Dia
 // Estes produtos não estão no cardápio completo ou são servidos de forma rotativa
 export const menuDoDiaItems: MenuItem[] = [
-  {
-    id: 2001,
-    name: "Bolo da vovó",
-    description: "Bolo do dia com cobertura.",
-    price: "Sob consulta",
-    image: "/images/Dodia/bolo de cenora com chocolate.jpeg"
-  },
-
+  
   {
     id: 2003,
     name: "Brownie",

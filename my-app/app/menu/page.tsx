@@ -79,7 +79,8 @@ export default function MenuPage() {
               <div className="flex items-center gap-4 text-sm text-white/90">
                 <div className="flex items-center gap-1">
                   <Clock className="h-4 w-4" />
-                  <span>Aberto de terça a sabado das 8h até 19h</span>
+                  <span>Aberto de terça a sábado, das 8h30 às 19h.
+                  Aos domingos, das 8h30 às 17h.</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <MapPin className="h-4 w-4" />
