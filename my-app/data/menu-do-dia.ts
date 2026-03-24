@@ -10,7 +10,7 @@ export const menuDoDiaItems: MenuItem[] = [
     description: "Item do dia.",
     price: "R$ 18,00",
     image: "/images/Dodia/Brownie.jpeg",
-    available: true
+    available: false
   },
   {
     id: 2004,
