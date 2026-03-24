@@ -136,7 +136,7 @@ export default function MenuPage() {
             <MenuCarousel items={carouselItems} />
             <div className="mt-6 flex flex-wrap justify-center gap-3">
               <Link href="#cardapio-completo">
-                <Badge className="cursor-pointer bg-white/15 text-white hover:bg-white/25 border border-white/30">
+                <Badge className="cursor-pointer px-5 py-2 text-base font-semibold bg-white/15 text-white hover:bg-white/25 border border-white/30">
                   Cardápio Completo
                 </Badge>
               </Link>
