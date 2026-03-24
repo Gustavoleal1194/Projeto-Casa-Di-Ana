@@ -42,9 +42,10 @@ const novidadesForaDoCardapioItems: MenuItem[] = [
 ]
 
 export default function MenuPage() {
+  const availableMenuDoDiaItems = menuDoDiaItems.filter((item) => item.available !== false)
   const carouselItems = getCarouselItemsFromMenuDoDia([
     ...novidadesForaDoCardapioItems,
-    ...menuDoDiaItems,
+    ...availableMenuDoDiaItems,
   ])
   
   // Função para obter o dia e mês atual por extenso
@@ -150,8 +151,7 @@ export default function MenuPage() {
                 Novidades fora do cardápio
               </h2>
               <p className="text-white/90 font-body max-w-2xl mx-auto">
-                Criações especiais que não fazem parte do cardápio fixo. Consulte a equipe sobre a
-                disponibilidade do dia.
+                Novidades que ainda não estão no cardapio
               </p>
             </div>
             <MenuDoDiaGrid items={novidadesForaDoCardapioItems} />
@@ -167,7 +167,7 @@ export default function MenuPage() {
                 Produtos especiais e rotativos preparados especialmente para hoje. Estes itens não estão no cardápio completo e mudam regularmente.
               </p>
             </div>
-            <MenuDoDiaGrid items={menuDoDiaItems} />
+            <MenuDoDiaGrid items={availableMenuDoDiaItems} />
           </div>
 
           {/* Seção Cardápio Completo */}

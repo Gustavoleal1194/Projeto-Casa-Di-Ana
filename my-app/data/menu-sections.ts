@@ -5,6 +5,7 @@ export type MenuItem = {
     price: string
     image: string
     tag?: string
+    available?: boolean
 }
 
 export type MenuSection = {

@@ -9,14 +9,16 @@ export const menuDoDiaItems: MenuItem[] = [
     name: "Brownie",
     description: "Item do dia.",
     price: "R$ 18,00",
-    image: "/images/Dodia/Brownie.jpeg"
+    image: "/images/Dodia/Brownie.jpeg",
+    available: true
   },
   {
     id: 2004,
     name: "Danishs Variados",
     description: "Item do dia.",
     price: "R$ 29,00",
-    image: "/images/Dodia/Danishs variados.jpeg"
+    image: "/images/Dodia/Danishs variados.jpeg",
+    available: true
   },
 
   {
@@ -24,14 +26,16 @@ export const menuDoDiaItems: MenuItem[] = [
     name: "Torta Holandesa",
     description: "Item do dia.",
     price: "R$ 25,00",
-    image: "/images/Dodia/Torta Holandesa.jpeg"
+    image: "/images/Dodia/Torta Holandesa.jpeg",
+    available: false
   },
   {
     id: 2013,
     name: "Cheescake de Frutas Vermelhas",
     description: "Item do dia.",
     price: "R$ 28,00",
-    image: "/images/Dodia/Cheescake de frutas vermelhas.jpeg"
+    image: "/images/Dodia/Cheescake de frutas vermelhas.jpeg",
+    available: true
   },
 
 ]
