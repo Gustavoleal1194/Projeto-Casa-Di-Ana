@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# imagens de backup e preview do crop-images.mjs
+public/images/_originals/
+public/images/_cropped/
+*.tmp
