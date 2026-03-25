@@ -9,3 +9,21 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Cache agressivo para imagens estáticas (originais em /images/)
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache para imagens otimizadas pelo Next.js
+[[headers]]
+  for = "/_next/image*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, stale-while-revalidate=86400"
+
+# Cache para assets estáticos do Next.js (JS, CSS, fonts)
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+

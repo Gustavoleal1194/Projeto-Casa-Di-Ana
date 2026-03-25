@@ -1,10 +1,9 @@
 "use client"
 
 import { useState, useEffect, useCallback, useRef } from "react"
-import Image from "next/image"
 import { cn } from "@/lib/utils"
 import { CAROUSEL_ASPECT } from "@/lib/card-image-layout"
-import { shimmerPlaceholder } from "@/lib/image-placeholder"
+import { SmartImage } from "@/components/smart-image"
 
 export type MenuCarouselItem = {
   id: number
@@ -155,15 +154,13 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
                 {item.image ? (
                   <>
                     <div className="absolute inset-0 bg-black/10 z-10" />
-                    <Image
+                    <SmartImage
                       src={item.image}
                       alt={item.name}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
                       className="object-cover object-center"
                       priority={index === 0}
-                      placeholder="blur"
-                      blurDataURL={shimmerPlaceholder(800, 600)}
                     />
                   </>
                 ) : (
