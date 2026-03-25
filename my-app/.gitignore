@@ -44,3 +44,7 @@ next-env.d.ts
 public/images/_originals/
 public/images/_cropped/
 *.tmp
+
+# editor / local tooling (não versionar)
+.claude/
+cursor.exe
