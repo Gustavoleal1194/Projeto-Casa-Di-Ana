@@ -358,7 +358,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Heineken",
                 description: "Cerveja importada.",
                 price: "R$ 14,00",
-                image: "/images/bebidas/heineken-jp.jpg"
+                image: "/images/Comidas/heineken-jp.jpg"
             },
             {
                 id: 46,
@@ -478,7 +478,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Iogurte Caseiro",
                 description: "Com frutas do dia, granola, chás e mel nacional.",
                 price: "R$ 32,00",
-                image: "/images/Comidas/Iogurte.jpg"
+                image: "/images/Comidas/iogurtena.jpg"
             },
          
         ]
