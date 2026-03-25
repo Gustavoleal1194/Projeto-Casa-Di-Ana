@@ -3,44 +3,10 @@ import type { NextConfig } from "next"
 const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-      },
-      {
-        protocol: "https",
-        hostname: "cknj.com.br",
-      },
-      {
-        protocol: "https",
-        hostname: "www.receitasedicasdochef.com.br",
-      },
-      {
-        protocol: "https",
-        hostname: "www.comidaereceitas.com.br",
-      },
-      {
-        protocol: "https",
-        hostname: "cdn.vucasolution.com.br",
-      },
-      {
-        protocol: "https",
-        hostname: "gryyplgyeyqb.compat.objectstorage.sa-saopaulo-1.oraclecloud.com",
-      },
-      {
-        protocol: "https",
-        hostname: "malte.agilecdn.com.br",
-      },
-      {
-        protocol: "https",
-        hostname: "br.openfoodfacts.org",
-      },
-      {
-        protocol: "https",
-        hostname: "www.aguasantaines.com.br",
-      },
-    ],
+    deviceSizes: [640, 750, 828, 1080, 1200],
+    imageSizes: [128, 256, 384],
+    minimumCacheTTL: 31536000,
+    remotePatterns: [],
   },
 }
 

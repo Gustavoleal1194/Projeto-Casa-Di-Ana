@@ -323,7 +323,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Água",
                 description: "Com ou sem gás.",
                 price: "R$ 6,00",
-                image: "https://www.aguasantaines.com.br/wp-content/webp-express/webp-images/uploads/elementor/thumbs/garrafas-de-agua-mineral-santa-ines-rab1q2p4jzac8i9c5yjq5p56b9pnxdeqqvyg4epgxs.png.webp"
+                image: "/images/external/agua-mineral.webp"
             },
             {
                 id: 40,
@@ -337,7 +337,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Coca-Cola Zero KS",
                 description: "Refrigerante zero açúcar (KS).",
                 price: "R$ 8,00",
-                image: "https://malte.agilecdn.com.br/189_1.jpg?v=353-2322567333"
+                image: "/images/external/coca-zero.jpg"
             },
             {
                 id: 42,
@@ -415,7 +415,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Chico – Pão na Chapa com Manteiga",
                 description: "Pão de longa fermentação, Baguete ou Brioche.",
                 price: "R$ 9,00",
-                image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800"
+                image: "/images/external/pao-artesanal.jpg"
             },
             {
                 id: 50,
@@ -556,7 +556,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Bolo Recheado (Fatia)",
                 description: "Fatia",
                 price: "R$ 28,00",
-                image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800"
+                image: "/images/external/bolo-recheado.jpg"
             },
             {
                 id: 74,
@@ -591,21 +591,21 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Cinnamon Roll",
                 description: "Unidade",
                 price: "R$ 25,00",
-                image: "https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=800"
+                image: "/images/external/cinnamon-roll.jpg"
             },
             {
                 id: 66,
                 name: "Roll de Passas",
                 description: "Unidade",
                 price: "R$ 25,00",
-                image: "https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=800"
+                image: "/images/external/cinnamon-roll.jpg"
             },
             {
                 id: 67,
                 name: "Pain Suisse",
                 description: "Unidade",
                 price: "R$ 28,00",
-                image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800"
+                image: "/images/external/pao-artesanal.jpg"
             },
             {
                 id: 68,
@@ -619,7 +619,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Croissant de Amêndoas",
                 description: "Unidade",
                 price: "R$ 28,00",
-                image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800"
+                image: "/images/external/pao-artesanal.jpg"
             },
             {
                 id: 70,

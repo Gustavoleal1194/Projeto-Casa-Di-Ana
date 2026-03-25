@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { cn } from "@/lib/utils"
 import { GRID_IMAGE_ASPECT, DEFAULT_IMAGE_POSITION } from "@/lib/card-image-layout"
+import { shimmerPlaceholder } from "@/lib/image-placeholder"
 import type { MenuItem } from "@/data/menu-sections"
 
 type MenuDoDiaGridProps = {
@@ -33,6 +34,8 @@ export function MenuDoDiaGrid({ items }: MenuDoDiaGridProps) {
                 className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
                 style={{ objectPosition: item.imagePosition ?? DEFAULT_IMAGE_POSITION }}
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                placeholder="blur"
+                blurDataURL={shimmerPlaceholder()}
               />
 
               <div

@@ -98,11 +98,12 @@ export default function Home() {
                   <CardContent className="p-4 sm:p-6 md:p-8 text-center">
                     <div className={cn("relative w-full mx-auto mb-4 sm:mb-5 md:mb-6 overflow-hidden rounded-lg bg-white", HERO_CARD_ASPECT)}>
                       <Image
-                        src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&h=400&fit=crop&crop=center"
+                        src="/images/external/pao-artesanal.jpg"
                         alt="Pães Artesanais"
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                         className="object-cover object-center"
+                        priority
                       />
                     </div>
                     <h3 className="font-serif text-xl sm:text-2xl text-casa-primary mb-2 sm:mb-3">Pães Artesanais</h3>
@@ -124,6 +125,7 @@ export default function Home() {
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                         className="object-cover object-center"
+                        priority
                       />
                     </div>
                     <h3 className="font-serif text-xl sm:text-2xl text-casa-primary mb-2 sm:mb-3">Cardapio Casa Di Ana</h3>
@@ -145,6 +147,7 @@ export default function Home() {
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                         className="object-cover object-center"
+                        priority
                       />
                     </div>
                     <h3 className="font-serif text-xl sm:text-2xl text-casa-primary mb-2 sm:mb-3">Especiais do dia</h3>

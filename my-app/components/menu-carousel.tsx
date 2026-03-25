@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback, useRef } from "react"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
 import { CAROUSEL_ASPECT } from "@/lib/card-image-layout"
+import { shimmerPlaceholder } from "@/lib/image-placeholder"
 
 export type MenuCarouselItem = {
   id: number
@@ -22,7 +23,7 @@ const defaultMenuItems: MenuCarouselItem[] = [
     description: "Pão de fermentação natural com farinha orgânica, crosta dourada e miolo macio",
     price: "R$ 12,00",
     category: "Pães Artesanais",
-    image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&h=600&fit=crop&crop=center",
+    image: "/images/external/pao-artesanal.jpg",
   },
   {
     id: 2,
@@ -30,7 +31,7 @@ const defaultMenuItems: MenuCarouselItem[] = [
     description: "Massa folhada caseira com maçãs caramelizadas e canela, receita de família",
     price: "R$ 18,00",
     category: "Tortas Tradicionais",
-    image: "https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=800&h=600&fit=crop&crop=center",
+    image: "/images/external/torta-maca.jpg",
   },
   {
     id: 3,
@@ -38,7 +39,7 @@ const defaultMenuItems: MenuCarouselItem[] = [
     description: "Blend exclusivo torrado na hora, com notas de chocolate e caramelo",
     price: "R$ 8,00",
     category: "Bebidas",
-    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=600&fit=crop&crop=center",
+    image: "/images/external/cafe-especial.jpg",
   },
   {
     id: 4,
@@ -46,7 +47,7 @@ const defaultMenuItems: MenuCarouselItem[] = [
     description: "Receita secreta da Ana com chocolate belga e recheio de brigadeiro",
     price: "R$ 22,00",
     category: "Bolos da Casa",
-    image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=800&h=600&fit=crop&crop=center",
+    image: "/images/external/bolo-chocolate.jpg",
   },
 ]
 
@@ -160,7 +161,9 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
                       className="object-cover object-center"
-                      priority={index === currentIndex}
+                      priority={index === 0}
+                      placeholder="blur"
+                      blurDataURL={shimmerPlaceholder(800, 600)}
                     />
                   </>
                 ) : (
