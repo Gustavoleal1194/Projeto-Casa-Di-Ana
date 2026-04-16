@@ -117,4 +117,12 @@ export const menuDoDiaItems: MenuItem[] = [
     image: "/images/Comidas/TortinhaPera.jpeg",
     available: true
   },
+  {
+    id: 2024,
+    name: "Mil Folhas",
+    description: "Item do dia.",
+    price: "Sob consulta",
+    image: "/images/Comidas/MilFolhas.jpeg",
+    available: true
+  },
 ]
