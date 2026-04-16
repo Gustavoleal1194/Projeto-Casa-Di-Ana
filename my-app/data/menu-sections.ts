@@ -52,7 +52,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Café do Mané – Clever",
                 description: "Extração densa, corpo mais presente e sabor intenso.",
                 price: "R$ 16,00",
-                image: "/images/bebidas/coado2.jpg",
+                image: "/images/bebidas/Clever.jpeg",
                 tag: "Café do Mané"
             },
             {
@@ -60,7 +60,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Café do Mané – Prensa Francesa",
                 description: "Café encorpado, doce e com textura amanteigada.",
                 price: "R$ 18,00",
-                image: "/images/bebidas/coado2.jpg",
+                image: "/images/bebidas/PrensaFran.jpeg",
                 tag: "Café do Mané"
             },
             {
@@ -76,7 +76,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Café do Luiz Paulo – Clever",
                 description: "Extração com maior densidade e doçura marcante.",
                 price: "R$ 20,00",
-                image: "/images/bebidas/coado2.jpg",
+                image: "/images/bebidas/Clever.jpeg",
                 tag: "Café do Luiz Paulo"
             },
             {
@@ -84,7 +84,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Café do Luiz Paulo – Prensa Francesa",
                 description: "Café encorpado com notas doces e textura cremosa.",
                 price: "R$ 22,00",
-                image: "/images/bebidas/coado2.jpg",
+                image: "/images/bebidas/PrensaFran.jpeg",
                 tag: "Café do Luiz Paulo"
             }
         ]
@@ -556,21 +556,14 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Bolo Recheado (Fatia)",
                 description: "Fatia",
                 price: "R$ 28,00",
-                image: "/images/external/bolo-recheado.jpg"
+                image: "/images/Comidas/bolo_fatia.jpeg"
             },
             {
                 id: 74,
                 name: "Bolo da Vovó",
                 description: "Pequeno ou médio.",
                 price: "R$ 12,00 (pequeno) | R$ 18,00 (médio)",
-                image: "/images/Dodia/bolo vovó.jpg"
-            },
-            {
-                id: 75,
-                name: "Tortas Individuais Diversas",
-                description: "Pequeno ou médio.",
-                price: "R$ 25,00 (pequeno) | R$ 29,00 (médio)",
-                image: "/images/Dodia/Torta Holandesa.jpeg"
+                image: "/images/Comidas/boloDaVovo.jpeg"
             }
         ]
     },
