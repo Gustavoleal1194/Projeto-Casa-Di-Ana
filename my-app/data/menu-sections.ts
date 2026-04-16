@@ -415,7 +415,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Chico – Pão na Chapa com Manteiga",
                 description: "Pão de longa fermentação, Baguete ou Brioche.",
                 price: "R$ 9,00",
-                image: "/images/Comidas/Chioco_pao.jpeg"
+                image: "/images/Comidas/Chico_pao.jpeg"
             },
             {
                 id: 50,
@@ -598,7 +598,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Pain Suisse",
                 description: "Unidade",
                 price: "R$ 28,00",
-                image: "/images/external/pao-artesanal.jpg"
+                image: "/images/Comidas/PainSuisse.jpeg"
             },
             {
                 id: 68,
