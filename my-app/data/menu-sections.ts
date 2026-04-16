@@ -522,6 +522,13 @@ export const defaultMenuSections: MenuSection[] = [
                 description: "Croissant, maionese de limão siciliano, tomate fresco, salada de alface, queijo suíço, picles de cebola roxa, raspas de limão e salame.",
                 price: "R$ 52,00",
                 image: "/images/Comidas/Henrique.jpeg"
+            },
+            {
+                id: 75,
+                name: "Murillo - Croissant com salmão e ovo",
+                description: "Item fora do cardápio.",
+                price: "R$ 58,00",
+                image: "/images/Comidas/Lanche_salmao_ovo.jpeg"
             }
         ]
     },
