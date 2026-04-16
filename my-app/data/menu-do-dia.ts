@@ -109,4 +109,12 @@ export const menuDoDiaItems: MenuItem[] = [
     image: "/images/Comidas/CroissantNutellaChocolate.jpeg",
     available: true
   },
+  {
+    id: 2023,
+    name: "Tortinha folhada de pera",
+    description: "Item do dia.",
+    price: "Sob consulta",
+    image: "/images/Comidas/TortinhaPera.jpeg",
+    available: true
+  },
 ]

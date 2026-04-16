@@ -415,7 +415,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Chico – Pão na Chapa com Manteiga",
                 description: "Pão de longa fermentação, Baguete ou Brioche.",
                 price: "R$ 9,00",
-                image: "/images/external/pao-artesanal.jpg"
+                image: "/images/Comidas/Chioco_pao.jpeg"
             },
             {
                 id: 50,
@@ -542,7 +542,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Pistache",
                 description: "Unidade",
                 price: "R$ 19,00",
-                image: "/images/Comidas/Sonhos.jpeg"
+                image: "/images/Comidas/SonhoPistache.jpeg"
             },
             {
                 id: 63,
@@ -591,7 +591,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Cinnamon Roll",
                 description: "Unidade",
                 price: "R$ 25,00",
-                image: "/images/external/cinnamon-roll.jpg"
+                image: "/images/Comidas/Cinnamon_Roll.jpeg"
             },
             {
                 id: 66,
@@ -619,7 +619,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Croissant de Amêndoas",
                 description: "Unidade",
                 price: "R$ 28,00",
-                image: "/images/external/pao-artesanal.jpg"
+                image: "/images/Comidas/CroissantAmendoas.jpeg"
             },
             {
                 id: 70,
@@ -641,6 +641,13 @@ export const defaultMenuSections: MenuSection[] = [
                 description: "Unidade",
                 price: "R$ 15,00",
                 image: "/images/Dodia/Pastel de nata.jpeg"
+            },
+            {
+                id: 73,
+                name: "Tortinha folhada de pera",
+                description: "Unidade",
+                price: "R$ 25,00",
+                image: "/images/Comidas/TortinhaPera.jpeg"
             }
         ]
     }
