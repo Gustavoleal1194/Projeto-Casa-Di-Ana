@@ -98,7 +98,7 @@ export default function Home() {
                   <CardContent className="p-4 sm:p-6 md:p-8 text-center">
                     <div className={cn("relative w-full mx-auto mb-4 sm:mb-5 md:mb-6 overflow-hidden rounded-lg bg-white", HERO_CARD_ASPECT)}>
                       <Image
-                        src="/images/external/pao-artesanal.jpg"
+                        src="/images/Comidas/BriocheDaCasa.jpeg"
                         alt="Pães Artesanais"
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"

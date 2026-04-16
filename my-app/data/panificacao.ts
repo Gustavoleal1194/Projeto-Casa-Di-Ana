@@ -32,7 +32,7 @@ export const bakeryCarouselItems: MenuCarouselItem[] = [
     description: "Massa amanteigada e fofa, doce e delicado.",
     price: "Médio R$ 30,00 | Grande R$ 36,00",
     category: "Pães Artesanais",
-    image: "https://cknj.com.br/teste/wp-content/uploads/2022/09/Pao-Brioche-01-1920x1442.jpg",
+    image: "/images/Comidas/BriocheDaCasa.jpeg",
   },
 ]
 
@@ -68,7 +68,7 @@ export const bakerySections: MenuSection[] = [
         name: "Pão Brioche",
         description: "Massa amanteigada e fofa, doce e delicado.",
         price: "Médio R$ 30,00 | Grande R$ 36,00",
-        image: "https://cknj.com.br/teste/wp-content/uploads/2022/09/Pao-Brioche-01-1920x1442.jpg",
+        image: "/images/Comidas/BriocheDaCasa.jpeg",
       },
     ],
   },

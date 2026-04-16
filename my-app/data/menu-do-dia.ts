@@ -69,5 +69,44 @@ export const menuDoDiaItems: MenuItem[] = [
     image: "/images/Dodia/CroissantCreme2.jpg",
     available: true
   },
-
+  {
+    id: 2018,
+    name: "Torta folhada chocolate com mirtilho",
+    description: "Item do dia.",
+    price: "Sob consulta",
+    image: "/images/Comidas/Torta_Folhada_Chocolate_Mirtilho.jpeg",
+    available: true
+  },
+  {
+    id: 2019,
+    name: "Torta de frango",
+    description: "Item do dia.",
+    price: "Sob consulta",
+    image: "/images/Comidas/TortaDeFrango.jpeg",
+    available: true
+  },
+  {
+    id: 2020,
+    name: "Torta folhada de morango",
+    description: "Item do dia.",
+    price: "Sob consulta",
+    image: "/images/Comidas/TortinhaFolhadaMorango.jpeg",
+    available: true
+  },
+  {
+    id: 2021,
+    name: "Bolo da vovó",
+    description: "Item do dia.",
+    price: "Sob consulta",
+    image: "/images/Comidas/boloDaVovo.jpeg",
+    available: true
+  },
+  {
+    id: 2022,
+    name: "Croissant de nutella com morango",
+    description: "Item do dia.",
+    price: "Sob consulta",
+    image: "/images/Comidas/CroissantNutellaChocolate.jpeg",
+    available: true
+  },
 ]

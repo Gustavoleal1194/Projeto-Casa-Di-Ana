@@ -39,6 +39,13 @@ const novidadesForaDoCardapioItems: MenuItem[] = [
     price: "R$ 28,00",
     image: "/images/Dodia/CroissantCas.jpg",
   },
+  {
+    id: 3003,
+    name: "Murillo - Croissant com salmão e ovo",
+    description: "Item fora do cardápio.",
+    price: "R$ 58,00",
+    image: "/images/Comidas/Lanche_salmao_ovo.jpeg",
+  },
 ]
 
 export default function MenuPage() {
