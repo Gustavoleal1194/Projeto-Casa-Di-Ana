@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from "react"
 import { cn } from "@/lib/utils"
-import { GRID_IMAGE_ASPECT } from "@/lib/card-image-layout"
+import { CAROUSEL_ASPECT } from "@/lib/card-image-layout"
 import { SmartImage } from "@/components/smart-image"
 
 export type MenuCarouselItem = {
@@ -134,7 +134,7 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
       <div
         className={cn(
           "relative overflow-hidden rounded-2xl bg-white shadow-xl border border-border/50",
-          GRID_IMAGE_ASPECT,
+          CAROUSEL_ASPECT,
         )}
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
@@ -152,14 +152,17 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
             >
               <div className="absolute inset-0">
                 {item.image ? (
-                  <SmartImage
-                    src={item.image}
-                    alt={item.name}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
-                    className="object-contain"
-                    priority={index === 0}
-                  />
+                  <>
+                    <div className="absolute inset-0 bg-black/10 z-10" />
+                    <SmartImage
+                      src={item.image}
+                      alt={item.name}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
+                      className="object-cover object-center"
+                      priority={index === 0}
+                    />
+                  </>
                 ) : (
                   <div className="h-full w-full bg-casa-background flex items-center justify-center">
                     <div className="text-center p-8">
