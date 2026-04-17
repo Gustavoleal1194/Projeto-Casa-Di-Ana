@@ -137,7 +137,7 @@ export default function Home() {
               </Link>
 
               {/* Card 3 */}
-              <Link href="/menu#menu-cardapio" className="block sm:col-span-2 md:col-span-1">
+              <Link href="/menu#menu-do-dia" className="block sm:col-span-2 md:col-span-1">
                 <Card className="bg-white/90 backdrop-blur-sm border-casa-secondary/30 group hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
                   <CardContent className="p-4 sm:p-6 md:p-8 text-center">
                     <div className={cn("relative w-full mx-auto mb-4 sm:mb-5 md:mb-6 overflow-hidden rounded-lg bg-white", HERO_CARD_ASPECT)}>

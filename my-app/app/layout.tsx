@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Geist, Geist_Mono, Poppins, Inter, Caveat } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
+import { SiteFooter } from "@/components/site-footer"
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" })
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono" })
@@ -64,6 +65,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={`${geist.variable} ${geistMono.variable} ${poppins.variable} ${inter.variable} ${caveat.variable} font-body antialiased`}>
         {children}
+        <SiteFooter />
         <Analytics />
       </body>
     </html>

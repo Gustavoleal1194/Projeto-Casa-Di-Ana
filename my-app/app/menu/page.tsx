@@ -6,7 +6,6 @@ import { menuDoDiaItems } from "@/data/menu-do-dia"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Header } from "@/components/header"
-import { ContactModal } from "@/components/contact-modal"
 import Link from "next/link"
 import { ArrowLeft, Clock, MapPin } from "lucide-react"
 
@@ -195,21 +194,6 @@ export default function MenuPage() {
               </p>
             </div>
             <MenuGrid />
-          </div>
-
-          {/* Footer do menu */}
-          <div className="mt-20 py-12 bg-white/10 backdrop-blur-sm rounded-2xl text-center border border-white/20">
-            <div className="max-w-2xl mx-auto space-y-4">
-              <h3 className="font-serif text-2xl text-white">
-                Venha nos visitar
-              </h3>
-              <p className="text-white/90 font-body">
-                Rua Vereador francisco lopes, 299 | Aberto de terça a sabado das 8h até 19h domingos e feriados das 8h até 17h
-              </p>
-              <div className="flex justify-center gap-4 pt-4">
-                <ContactModal />
-              </div>
-            </div>
           </div>
         </div>
       </main>
