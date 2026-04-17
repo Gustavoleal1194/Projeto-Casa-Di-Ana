@@ -4,7 +4,7 @@ import { ContactModal } from "@/components/contact-modal"
 
 export function SiteFooter() {
   return (
-    <footer className="mt-20 px-4 pb-10">
+    <footer className="mt-20 px-4 pb-10 bg-[#5e6979]">
       <div className="max-w-6xl mx-auto">
         <div className="py-12 bg-white/10 backdrop-blur-sm rounded-2xl text-center border border-white/20">
           <div className="max-w-2xl mx-auto space-y-4">

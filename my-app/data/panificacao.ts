@@ -27,6 +27,14 @@ export const bakeryCarouselItems: MenuCarouselItem[] = [
     image: "/images/Comidas/ciabata.jpeg",
   },
   {
+    id: 105,
+    name: "Pão de Fubá",
+    description: "Pão de longa fermentação, de fubá com erva doce",
+    price: "Sob consulta",
+    category: "Pães Artesanais",
+    image: "/images/Comidas/Fuba.jpeg",
+  },
+  {
     id: 104,
     name: "Pão Brioche",
     description: "Massa amanteigada e fofa, doce e delicado.",
@@ -62,6 +70,13 @@ export const bakerySections: MenuSection[] = [
         description: "Textura leve e alveolos generosos, perfeito para acompanhar.",
         price: "R$ 8,00",
         image: "/images/Comidas/ciabata.jpeg",
+      },
+      {
+        id: 205,
+        name: "Pão de Fubá",
+        description: "Pão de longa fermentação, de fubá com erva doce",
+        price: "Sob consulta",
+        image: "/images/Comidas/Fuba.jpeg",
       },
       {
         id: 204,
