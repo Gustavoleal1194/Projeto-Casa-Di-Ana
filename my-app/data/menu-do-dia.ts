@@ -41,7 +41,7 @@ export const menuDoDiaItems: MenuItem[] = [
     id: 2014,
     name: "Torta Folhada Fechada",
     description: "Item do dia.",
-    price: "Sob consulta",
+    price: "R$ 31,00",
     image: "/images/Dodia/Fechada.jpg",
     available: true
   },
@@ -49,7 +49,7 @@ export const menuDoDiaItems: MenuItem[] = [
     id: 2015,
     name: "Croissant de Chocolate com Nutella",
     description: "Item do dia.",
-    price: "Sob consulta",
+    price: "R$ 28,00",
     image: "/images/Dodia/CroissantChocolate.jpg",
     available: true
   },
@@ -57,7 +57,7 @@ export const menuDoDiaItems: MenuItem[] = [
     id: 2016,
     name: "Trança Folhada de Frutas Vermelhas",
     description: "Item do dia.",
-    price: "Sob consulta",
+    price: "R$ 30,00",
     image: "/images/Dodia/TrancaFolhadaFrutas.jpg",
     available: true
   },
@@ -65,7 +65,7 @@ export const menuDoDiaItems: MenuItem[] = [
     id: 2017,
     name: "Croissant de Creme Pâtissière",
     description: "Item do dia.",
-    price: "Sob consulta",
+    price: "R$ 24,00",
     image: "/images/Dodia/CroissantCreme2.jpg",
     available: true
   },
@@ -73,7 +73,7 @@ export const menuDoDiaItems: MenuItem[] = [
     id: 2018,
     name: "Torta folhada chocolate com mirtilho",
     description: "Item do dia.",
-    price: "Sob consulta",
+    price: "R$ 35,00",
     image: "/images/Comidas/Torta_Folhada_Chocolate_Mirtilho.jpeg",
     available: true
   },
@@ -81,7 +81,7 @@ export const menuDoDiaItems: MenuItem[] = [
     id: 2019,
     name: "Torta de frango",
     description: "Item do dia.",
-    price: "Sob consulta",
+    price: "R$ 35,00",
     image: "/images/Comidas/TortaDeFrango.jpeg",
     available: true
   },
@@ -97,7 +97,7 @@ export const menuDoDiaItems: MenuItem[] = [
     id: 2021,
     name: "Bolo da vovó",
     description: "Item do dia.",
-    price: "Sob consulta",
+    price: "R$ 12,00",
     image: "/images/Comidas/boloDaVovo.jpeg",
     available: true
   },
@@ -105,7 +105,7 @@ export const menuDoDiaItems: MenuItem[] = [
     id: 2022,
     name: "Croissant de nutella com morango",
     description: "Item do dia.",
-    price: "Sob consulta",
+    price: "R$ 28,00",
     image: "/images/Comidas/CroissantNutellaChocolate.jpeg",
     available: true
   },
@@ -113,7 +113,7 @@ export const menuDoDiaItems: MenuItem[] = [
     id: 2023,
     name: "Tortinha folhada de pera",
     description: "Item do dia.",
-    price: "Sob consulta",
+    price: "R$ 30,00",
     image: "/images/Comidas/TortinhaPera.jpeg",
     available: true
   },
@@ -121,7 +121,7 @@ export const menuDoDiaItems: MenuItem[] = [
     id: 2024,
     name: "Mil Folhas",
     description: "Item do dia.",
-    price: "Sob consulta",
+    price: "R$ 28,00",
     image: "/images/Comidas/MilFolhas.jpeg",
     available: true
   },
@@ -129,7 +129,7 @@ export const menuDoDiaItems: MenuItem[] = [
     id: 2025,
     name: "Strudel de Maçã",
     description: "Item do dia.",
-    price: "Sob consulta",
+    price: "R$ 30,00",
     image: "/images/Comidas/Strudel.jpeg",
     available: true
   },
