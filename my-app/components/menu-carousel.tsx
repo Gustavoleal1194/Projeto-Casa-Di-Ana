@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback, useRef } from "react"
 import { cn } from "@/lib/utils"
 import { CAROUSEL_ASPECT } from "@/lib/card-image-layout"
 import { SmartImage } from "@/components/smart-image"
+import { formatItemTitle } from "@/lib/format-item-title"
 
 export type MenuCarouselItem = {
   id: number
@@ -156,7 +157,7 @@ export function MenuCarousel({ items = defaultMenuItems }: MenuCarouselProps) {
                     <div className="absolute inset-0 bg-black/10 z-10" />
                     <SmartImage
                       src={item.image}
-                      alt={item.name}
+                      alt={formatItemTitle(item.name)}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
                       className="object-cover object-center"

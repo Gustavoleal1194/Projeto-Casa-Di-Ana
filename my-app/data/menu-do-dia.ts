@@ -125,4 +125,12 @@ export const menuDoDiaItems: MenuItem[] = [
     image: "/images/Comidas/MilFolhas.jpeg",
     available: true
   },
+  {
+    id: 2025,
+    name: "Strudel de Maçã",
+    description: "Item do dia.",
+    price: "Sob consulta",
+    image: "/images/Comidas/Strudel.jpeg",
+    available: true
+  },
 ]

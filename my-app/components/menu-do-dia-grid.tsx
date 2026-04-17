@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils"
 import { GRID_IMAGE_ASPECT, DEFAULT_IMAGE_POSITION } from "@/lib/card-image-layout"
 import { SmartImage } from "@/components/smart-image"
 import type { MenuItem } from "@/data/menu-sections"
+import { formatItemTitle } from "@/lib/format-item-title"
 
 type MenuDoDiaGridProps = {
   items: MenuItem[]
@@ -28,7 +29,7 @@ export function MenuDoDiaGrid({ items }: MenuDoDiaGridProps) {
             <div className={cn("relative w-full rounded-xl overflow-hidden bg-white", GRID_IMAGE_ASPECT)}>
               <SmartImage
                 src={item.image}
-                alt={item.name}
+                alt={formatItemTitle(item.name)}
                 fill
                 className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
                 style={{ objectPosition: item.imagePosition ?? DEFAULT_IMAGE_POSITION }}
@@ -54,7 +55,7 @@ export function MenuDoDiaGrid({ items }: MenuDoDiaGridProps) {
 
             <CardContent className="p-5">
               <h4 className="mb-2 font-serif text-lg font-semibold text-balance text-[#5e6979]">
-                {item.name}
+                {formatItemTitle(item.name)}
               </h4>
               <p className="mb-3 text-pretty text-sm leading-relaxed text-[#5e6979]/70 font-body">
                 {item.description}
