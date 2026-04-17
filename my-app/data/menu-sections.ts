@@ -422,7 +422,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Mariana – Croissant",
                 description: "Acompanha geleia de frutas vermelhas, manteiga ou requeijão.",
                 price: "R$ 22,00",
-                image: "/images/Comidas/Croissant.jpeg"
+                image: "/images/Comidas/MarianaCro.jpeg"
             },
             {
                 id: 51,
@@ -598,7 +598,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Roll de Passas",
                 description: "Unidade",
                 price: "R$ 25,00",
-                image: "/images/external/cinnamon-roll.jpg"
+                image: "/images/Comidas/RollPassas.jpeg"
             },
             {
                 id: 67,

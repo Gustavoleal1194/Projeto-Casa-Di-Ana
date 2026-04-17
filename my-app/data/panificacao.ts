@@ -42,6 +42,14 @@ export const bakeryCarouselItems: MenuCarouselItem[] = [
     category: "Pães Artesanais",
     image: "/images/Comidas/BriocheDaCasa.jpeg",
   },
+  {
+    id: 106,
+    name: "Baguete Francesa",
+    description: "Baguete artesanal de fermentação natural, crocante por fora e macia por dentro.",
+    price: "R$ 16,00",
+    category: "Pães Artesanais",
+    image: "/images/Comidas/BagueteFrancesa.jpeg",
+  },
 ]
 
 export const bakerySections: MenuSection[] = [
@@ -84,6 +92,13 @@ export const bakerySections: MenuSection[] = [
         description: "Massa amanteigada e fofa, doce e delicado.",
         price: "Médio R$ 30,00 | Grande R$ 40,00",
         image: "/images/Comidas/BriocheDaCasa.jpeg",
+      },
+      {
+        id: 206,
+        name: "Baguete Francesa",
+        description: "Baguete artesanal de fermentação natural, crocante por fora e macia por dentro.",
+        price: "R$ 25,00",
+        image: "/images/Comidas/BagueteFrancesa.jpeg",
       },
     ],
   },
