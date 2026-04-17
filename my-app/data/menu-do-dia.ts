@@ -89,7 +89,7 @@ export const menuDoDiaItems: MenuItem[] = [
     id: 2020,
     name: "Torta folhada de morango",
     description: "Item do dia.",
-    price: "Sob consulta",
+    price: "R$ 35,00",
     image: "/images/Comidas/TortinhaFolhadaMorango.jpeg",
     available: true
   },
