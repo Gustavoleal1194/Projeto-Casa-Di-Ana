@@ -17,7 +17,7 @@ export const menuDoDiaItems: MenuItem[] = [
     name: "Danishs Variados",
     description: "Item do dia.",
     price: "R$ 29,00",
-    image: "/images/Dodia/Danishs variados.jpeg",
+    image: "/images/Comidas/Danish.jpeg",
     available: true
   },
 

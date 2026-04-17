@@ -562,7 +562,7 @@ export const defaultMenuSections: MenuSection[] = [
                 id: 73,
                 name: "Bolo Recheado (Fatia)",
                 description: "Fatia",
-                price: "R$ 28,00",
+                price: "R$ 35,00",
                 image: "/images/Comidas/bolo_fatia.jpeg"
             },
             {

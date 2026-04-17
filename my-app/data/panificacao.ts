@@ -8,7 +8,7 @@ export const bakeryCarouselItems: MenuCarouselItem[] = [
     description: "Mistura de grãos selecionados, rico em fibras e sabor único.",
     price: "Médio R$ 36,00 | Grande R$ 42,00",
     category: "Pães Artesanais",
-    image: "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=1200&h=800&fit=crop&crop=center",
+    image: "/images/Comidas/Multigrãos.jpeg",
   },
   {
     id: 102,
@@ -16,7 +16,7 @@ export const bakeryCarouselItems: MenuCarouselItem[] = [
     description: "Fermentação natural, crosta dourada e miolo macio.",
     price: "R$ 30,00",
     category: "Pães Artesanais",
-    image: "https://www.receitasedicasdochef.com.br/wp-content/uploads/2021/10/Pao-Rustico-de-Azeitonas.webp",
+    image: "/images/Comidas/Rustico.jpeg",
   },
   {
     id: 103,
@@ -24,7 +24,7 @@ export const bakeryCarouselItems: MenuCarouselItem[] = [
     description: "Textura leve e alveolos generosos, perfeito para acompanhar.",
     price: "R$ 8,00",
     category: "Pães Artesanais",
-    image: "https://www.comidaereceitas.com.br/wp-content/uploads/2014/02/Ciabatta-pao-branco-italiano1-780x519.jpg",
+    image: "/images/Comidas/ciabata.jpeg",
   },
   {
     id: 104,
@@ -47,21 +47,21 @@ export const bakerySections: MenuSection[] = [
         name: "Pão Multi Grãos",
         description: "Mistura de grãos selecionados, rico em fibras e sabor único.",
         price: "Médio R$ 36,00 | Grande R$ 42,00",
-        image: "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=900&h=600&fit=crop&crop=center",
+        image: "/images/Comidas/Multigrãos.jpeg",
       },
       {
         id: 202,
         name: "Pão Rústico",
         description: "Fermentação natural, crosta dourada e miolo macio.",
         price: "R$ 30,00",
-        image: "https://www.receitasedicasdochef.com.br/wp-content/uploads/2021/10/Pao-Rustico-de-Azeitonas.webp",
+        image: "/images/Comidas/Rustico.jpeg",
       },
       {
         id: 203,
         name: "Ciabatta",
         description: "Textura leve e alveolos generosos, perfeito para acompanhar.",
         price: "R$ 8,00",
-        image: "https://www.comidaereceitas.com.br/wp-content/uploads/2014/02/Ciabatta-pao-branco-italiano1-780x519.jpg",
+        image: "/images/Comidas/ciabata.jpeg",
       },
       {
         id: 204,
