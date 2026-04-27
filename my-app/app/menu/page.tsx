@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Header } from "@/components/header"
 import Link from "next/link"
-import { ArrowLeft, Clock, MapPin } from "lucide-react"
+import { ArrowLeft } from "lucide-react"
 
 // Função para converter itens do Menu do Dia / novidades para o formato do carrossel
 function getCarouselItemsFromMenuDoDia(items: MenuItem[]): MenuCarouselItem[] {
@@ -90,17 +90,11 @@ export default function MenuPage() {
                 </Button>
               </Link>
 
-              <div className="flex items-center gap-4 text-sm text-white/90">
-                <div className="flex items-center gap-1">
-                  <Clock className="h-4 w-4" />
-                  <span>Aberto de terça a sábado, das 8h30 às 19h.
-                  Aos domingos, das 8h30 às 17h.</span>
-                </div>
-                <div className="flex items-center gap-1">
-                  <MapPin className="h-4 w-4" />
-                  <span>Rua Vereador francisco lopes, 299</span>
-                </div>
-              </div>
+              <Link href="#cardapio-completo">
+                <Button variant="outline" size="sm" className="text-white border-white/50 bg-white/10 hover:bg-white/20">
+                  Voltar ao menu completo
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
