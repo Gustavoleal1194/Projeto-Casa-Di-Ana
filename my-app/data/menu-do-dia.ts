@@ -71,7 +71,7 @@ export const menuDoDiaItems: MenuItem[] = [
   },
   {
     id: 2018,
-    name: "Torta folhada chocolate com mirtilho",
+    name: "Torta Folhada de Chocolate com Amarena",
     description: "Item do dia.",
     price: "R$ 35,00",
     image: "/images/Comidas/Torta_Folhada_Chocolate_Mirtilho.jpeg",
@@ -131,6 +131,14 @@ export const menuDoDiaItems: MenuItem[] = [
     description: "Item do dia.",
     price: "R$ 30,00",
     image: "/images/Comidas/Strudel.jpeg",
+    available: true
+  },
+  {
+    id: 2026,
+    name: "Quindim",
+    description: "Item do dia.",
+    price: "R$ 13,00",
+    image: "/images/Comidas/quidim.jpeg",
     available: true
   },
 ]

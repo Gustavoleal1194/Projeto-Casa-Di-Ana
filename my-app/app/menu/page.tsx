@@ -45,6 +45,13 @@ const novidadesForaDoCardapioItems: MenuItem[] = [
     price: "R$ 58,00",
     image: "/images/Comidas/Lanche_salmao_ovo.jpeg",
   },
+  {
+    id: 3004,
+    name: "Chá Giovanna",
+    description: "Chá matte gelado, calda de cana e rapadura, toque de limão siciliano.",
+    price: "R$ 22,00",
+    image: "/images/bebidas/cha_gi.jpeg",
+  },
 ]
 
 export default function MenuPage() {

@@ -247,6 +247,13 @@ export const defaultMenuSections: MenuSection[] = [
                 description: "Chá mate gelado com limão.",
                 price: "R$ 16,00",
                 image: "/images/bebidas/cha2.jpg"
+            },
+            {
+                id: 78,
+                name: "Chá Giovanna",
+                description: "Chá matte gelado, calda de cana e rapadura, toque de limão siciliano.",
+                price: "R$ 22,00",
+                image: "/images/bebidas/cha_gi.jpeg"
             }
         ]
     },
@@ -571,6 +578,13 @@ export const defaultMenuSections: MenuSection[] = [
                 description: "Pequeno ou médio.",
                 price: "R$ 12,00 (pequeno) | R$ 18,00 (médio)",
                 image: "/images/Comidas/boloDaVovo.jpeg"
+            },
+            {
+                id: 79,
+                name: "Quindim",
+                description: "Unidade",
+                price: "R$ 13,00",
+                image: "/images/Comidas/quidim.jpeg"
             }
         ]
     },
