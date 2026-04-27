@@ -6,6 +6,7 @@ import { menuDoDiaItems } from "@/data/menu-do-dia"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Header } from "@/components/header"
+import { ScrollToCardapioButton } from "@/components/scroll-to-cardapio-button"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 
@@ -90,11 +91,7 @@ export default function MenuPage() {
                 </Button>
               </Link>
 
-              <Link href="#cardapio-completo">
-                <Button variant="outline" size="sm" className="text-white border-white/50 bg-white/10 hover:bg-white/20">
-                  Voltar ao menu completo
-                </Button>
-              </Link>
+              <ScrollToCardapioButton className="text-white border-white/50 bg-white/10 hover:bg-white/20" />
             </div>
           </div>
         </div>
