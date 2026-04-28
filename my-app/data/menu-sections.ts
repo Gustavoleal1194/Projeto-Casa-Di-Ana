@@ -260,21 +260,21 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Soda de Maçã Verde",
                 description: "Soda italiana de maçã verde.",
                 price: "R$ 20,00",
-                image: "/images/bebidas/sodaMaca.jpeg"
+                image: "/images/bebidas/SodaMaca.jpeg"
             },
             {
                 id: 81,
                 name: "Soda Pink Limonade",
                 description: "Soda Italiana de pink limonade com suco de limão siciliano.",
                 price: "R$ 20,00",
-                image: "/images/bebidas/sodaPink.jpeg"
+                image: "/images/bebidas/SodaPink.jpeg"
             },
             {
                 id: 82,
                 name: "Latte Gelado",
                 description: "Leite gelado, com Xarope de baunilha, e espresso.",
                 price: "R$ 22,00",
-                image: "/images/bebidas/lateGelato.jpeg"
+                image: "/images/bebidas/latteGelato.jpeg"
             }
         ]
     },
