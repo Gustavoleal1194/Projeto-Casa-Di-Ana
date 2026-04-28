@@ -10,7 +10,7 @@ export function SiteFooter() {
           <div className="max-w-2xl mx-auto space-y-4">
             <h3 className="font-serif text-2xl text-white">Venha nos visitar</h3>
             <p className="text-white/90 font-body">
-              Rua Vereador francisco lopes, 299 | Aberto de terça a sabado das 8h até 19h domingos e feriados das 8h até
+              Rua Vereador francisco lopes, 299 | Aberto de terça a sabado das 8h30 até 19h domingos e feriados das 8h30 até
               17h
             </p>
             <div className="flex justify-center gap-4 pt-4">
