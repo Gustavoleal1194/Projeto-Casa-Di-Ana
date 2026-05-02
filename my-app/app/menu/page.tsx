@@ -42,7 +42,7 @@ const novidadesForaDoCardapioItems: MenuItem[] = [
   {
     id: 3003,
     name: "Murillo - Croissant com salmão e ovo",
-    description: "Item fora do cardápio.",
+    description: "Coalhada com rapas de limão, cebola roxa, alcaparras, tomate caqui, sal, pimenta, azeite na baguete.",
     price: "R$ 58,00",
     image: "/images/Comidas/Lanche_salmao_ovo.jpeg",
   },

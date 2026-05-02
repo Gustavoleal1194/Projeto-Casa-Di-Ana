@@ -519,21 +519,21 @@ export const defaultMenuSections: MenuSection[] = [
             {
                 id: 56,
                 name: "Luigi",
-                description: "Pão focaccia de fermentação natural, pesto de pistache, fatias finas de mortadela Ceratti, muçarela e rúcula selvática.",
+                description: "Pão focaccia de fermentação natural, pesto de pistache com rúcula e manjericão, fatias finas de mortadela Ceratti, muçarela e rúcula selvática.",
                 price: "R$ 52,00",
                 image: "/images/Comidas/Luigi.jpg"
             },
             {
                 id: 57,
                 name: "Júlia",
-                description: "Caprese - Pão focaccia de fermentação natural, pesto de manjericão, queijo, tomates assados e frescos com muçarela de búfala e rúcula selvática.",
+                description: "Caprese - Pão focaccia de fermentação natural, pesto de pistache com rúcula manjericão, queijo, tomates assados e frescos com muçarela de búfala e rúcula selvática.",
                 price: "R$ 45,00",
                 image: "/images/Comidas/julia.jpg"
             },
             {
                 id: 58,
                 name: "Pedro",
-                description: "Pão ciabatta de fermentação natural, mostarda Dijon e mel, filé mignon com fatias de queijo, tomate, picles de cebola roxa e rúcula selvática.",
+                description: "Pão ciabatta de fermentação natural, maionese mostarda Dijon , filé mignon com fatias de queijo, tomate, picles de cebola roxa e rúcula selvática.",
                 price: "R$ 49,00",
                 image: "/images/Comidas/Pedro.jpg"
             },
@@ -554,7 +554,7 @@ export const defaultMenuSections: MenuSection[] = [
             {
                 id: 75,
                 name: "Murillo - Croissant com salmão e ovo",
-                description: "Item fora do cardápio.",
+                description: "Coalhada com rapas de limão, cebola roxa, alcaparras, tomate caqui, sal, pimenta, azeite na baguete.",
                 price: "R$ 58,00",
                 image: "/images/Comidas/Lanche_salmao_ovo.jpeg"
             }
@@ -687,4 +687,3 @@ export const defaultMenuSections: MenuSection[] = [
         ]
     }
 ]
-

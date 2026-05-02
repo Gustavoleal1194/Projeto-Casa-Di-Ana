@@ -139,6 +139,14 @@ export const menuDoDiaItems: MenuItem[] = [
     description: "Item do dia.",
     price: "R$ 13,00",
     image: "/images/Comidas/quidim.jpeg",
+    available: false
+  },
+  {
+    id: 2027,
+    name: "Cinnamon Roll",
+    description: "Item do dia.",
+    price: "R$ 25,00",
+    image: "/images/Comidas/CinnamonRoll.jpeg",
     available: true
   },
 ]
