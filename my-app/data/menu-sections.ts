@@ -533,7 +533,7 @@ export const defaultMenuSections: MenuSection[] = [
             {
                 id: 58,
                 name: "Pedro",
-                description: "Pão ciabatta de fermentação natural, maionese Dijon e mel, filé mignon com fatias de queijo, tomate, picles de cebola roxa e rúcula selvática.",
+                description: "Pão ciabatta de fermentação natural, mostarda Dijon e mel, filé mignon com fatias de queijo, tomate, picles de cebola roxa e rúcula selvática.",
                 price: "R$ 49,00",
                 image: "/images/Comidas/Pedro.jpg"
             },
