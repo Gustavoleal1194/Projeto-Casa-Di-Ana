@@ -59,7 +59,7 @@ export const menuDoDiaItems: MenuItem[] = [
     description: "Item do dia.",
     price: "R$ 30,00",
     image: "/images/Dodia/TrancaFolhadaFrutas.jpg",
-    available: true
+    available: false
   },
   {
     id: 2017,
@@ -83,7 +83,7 @@ export const menuDoDiaItems: MenuItem[] = [
     description: "Item do dia.",
     price: "R$ 35,00",
     image: "/images/Comidas/TortaDeFrango.jpeg",
-    available: true
+    available: false
   },
   {
     id: 2020,
@@ -123,7 +123,7 @@ export const menuDoDiaItems: MenuItem[] = [
     description: "Item do dia.",
     price: "R$ 28,00",
     image: "/images/Comidas/MilFolhas.jpeg",
-    available: true
+    available: false
   },
   {
     id: 2025,

@@ -78,6 +78,13 @@ const novidadesForaDoCardapioItems: MenuItem[] = [
 
 export default function MenuPage() {
   const availableMenuDoDiaItems = menuDoDiaItems.filter((item) => item.available !== false)
+  const prioritySectionIds = ["nossos-lanches", "classicos-padaria", "especialidades-cafe"]
+  const prioritizedSections = [
+    ...prioritySectionIds
+      .map((id) => defaultMenuSections.find((section) => section.id === id))
+      .filter((section): section is NonNullable<typeof section> => Boolean(section)),
+    ...defaultMenuSections.filter((section) => !prioritySectionIds.includes(section.id)),
+  ]
   const carouselItems = getCarouselItemsFromMenuDoDia([
     ...novidadesForaDoCardapioItems,
     ...availableMenuDoDiaItems,
@@ -212,7 +219,7 @@ export default function MenuPage() {
                 Explore todos os nossos sabores artesanais, cuidadosamente preparados para você
               </p>
             </div>
-            <MenuGrid />
+            <MenuGrid sections={prioritizedSections} />
           </div>
         </div>
       </main>
