@@ -148,7 +148,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Juca – Capuccino Caramelo",
                 description: "Capuccino em pó com toque de caramelo salgado.",
                 price: "R$ 18,00",
-                image: "/images/bebidas/Juca.jpg"
+                image: "/images/bebidas/JucaCafe.jpeg"
             },
             {
                 id: 21,
