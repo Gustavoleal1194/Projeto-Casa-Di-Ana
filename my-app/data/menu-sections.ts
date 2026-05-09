@@ -59,7 +59,7 @@ export const defaultMenuSections: MenuSection[] = [
                 id: 9,
                 name: "Café do Mané – Prensa Francesa",
                 description: "Café encorpado, doce e com textura amanteigada.",
-                price: "R$ 18,00",
+                price: "R$ 20,00",
                 image: "/images/bebidas/PrensaFran.jpeg",
                 tag: "Café do Mané"
             },
