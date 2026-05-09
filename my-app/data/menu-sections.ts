@@ -154,7 +154,7 @@ export const defaultMenuSections: MenuSection[] = [
                 id: 21,
                 name: "Simone – Capuccino Italiano",
                 description: "Capuccino italiano com borda de doce de leite.",
-                price: "R$ 18,00",
+                price: "R$ 20,00",
                 image: "/images/bebidas/Simone.jpg"
             }
         ]
