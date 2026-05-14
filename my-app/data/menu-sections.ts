@@ -668,7 +668,7 @@ export const defaultMenuSections: MenuSection[] = [
                 name: "Pain au Chocolat",
                 description: "Unidade",
                 price: "R$ 24,00",
-                image: "/images/Dodia/PainAuChocolat.jpeg"
+                image: "/images/Comidas/PainAuChocolat.jpeg"
             },
             {
                 id: 71,
