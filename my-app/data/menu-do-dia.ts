@@ -46,14 +46,6 @@ export const menuDoDiaItems: MenuItem[] = [
     available: true
   },
   {
-    id: 2015,
-    name: "Croissant de Chocolate com Nutella",
-    description: "Item do dia.",
-    price: "R$ 28,00",
-    image: "/images/Dodia/CroissantChocolate.jpg",
-    available: true
-  },
-  {
     id: 2016,
     name: "Trança Folhada de Frutas Vermelhas",
     description: "Item do dia.",
