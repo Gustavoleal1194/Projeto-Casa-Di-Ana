@@ -105,7 +105,7 @@ export const menuDoDiaItems: MenuItem[] = [
     id: 2022,
     name: "Croissant de nutella com morango",
     description: "Item do dia.",
-    price: "R$ 28,00",
+    price: "R$ 35,00",
     image: "/images/Comidas/CroissantNutellaChocolate.jpeg",
     available: true
   },
