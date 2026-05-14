@@ -74,6 +74,13 @@ const novidadesForaDoCardapioItems: MenuItem[] = [
     price: "R$ 22,00",
     image: "/images/bebidas/latteGelato.jpeg",
   },
+   {
+    id: 3008,
+    name: "Milena - Chocolate Nobre",
+    description: "Chocolate Nobre com Especiarias e Marshmallow",
+    price: "R$ 30,00",
+    image: "/images/bebidas/MilenaChocolateNobre.jpeg",
+  }
 ]
 
 export default function MenuPage() {

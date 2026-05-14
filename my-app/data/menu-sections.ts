@@ -184,7 +184,14 @@ export const defaultMenuSections: MenuSection[] = [
                 description: "Chocolate quente cremoso.",
                 price: "R$ 18,00",
                 image: "/images/bebidas/Mero.jpg"
-            }
+            },
+            {
+                id: 25,
+                name: "Milena - Chocolate Nobre",
+                description: "Chocolate Nobre com Especiarias e Marshmallow",
+                price: "R$ 30,00",
+                image: "/images/bebidas/MilenaChocolateNobre.jpeg"
+            },
         ]
     },
     {
