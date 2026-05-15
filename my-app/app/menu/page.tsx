@@ -80,6 +80,26 @@ const novidadesForaDoCardapioItems: MenuItem[] = [
     description: "Chocolate Nobre com Especiarias e Marshmallow",
     price: "R$ 30,00",
     image: "/images/bebidas/MilenaChocolateNobre.jpeg",
+  },  {
+    id: 3009,
+    name: "Shake doce de leite com café ",
+    description: "Chocolate Nobre com Especiarias e Marshmallow",
+    price: "R$ 35,00",
+    image: "/images/bebidas/Shakes.jpeg",
+  },
+    {
+    id: 3010,
+    name: "Shake ovomaltine ",
+    description: "Feito de sorvete de ninho, com ovomaltine",
+    price: "R$ 32,00",
+    image: "/images/bebidas/Shakes.jpeg",
+  },
+    {
+    id: 3011,
+    name: "Shake Morango ",
+    description: "Feito com sorvete de ninho, e morango",
+    price: "R$ 32,00",
+    image: "/images/bebidas/Shakes.jpeg",
   }
 ]
 
