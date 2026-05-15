@@ -83,21 +83,21 @@ const novidadesForaDoCardapioItems: MenuItem[] = [
   },  {
     id: 3009,
     name: "Shake doce de leite com café ",
-    description: "Chocolate Nobre com Especiarias e Marshmallow",
+    description: "Feito de sorvete de doce de leite a base de whey com café e doce de leite",
     price: "R$ 35,00",
     image: "/images/bebidas/Shakes.jpeg",
   },
     {
     id: 3010,
     name: "Shake ovomaltine ",
-    description: "Feito de sorvete de ninho, com ovomaltine",
+    description: "Feito de sorvete protéico de ninho a base de whey, com 20 gramas de proteína e ovomaltine",
     price: "R$ 32,00",
     image: "/images/bebidas/Shakes.jpeg",
   },
     {
     id: 3011,
     name: "Shake Morango ",
-    description: "Feito com sorvete de ninho, e morango",
+    description: "Feito de sorvete protéico a base de whey de  ninho com 20 gramas de proteína e morango",
     price: "R$ 32,00",
     image: "/images/bebidas/Shakes.jpeg",
   }
