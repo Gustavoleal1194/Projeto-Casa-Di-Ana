@@ -364,21 +364,21 @@ export const defaultMenuSections: MenuSection[] = [
                 id: 40,
                 name: "Coca-Cola KS",
                 description: "Garrafa KS.",
-                price: "R$ 8,00",
+                price: "R$ 9,00",
                 image: "/images/bebidas/cocaksimg.jpg"
             },
             {
                 id: 41,
                 name: "Coca-Cola Zero KS",
                 description: "Refrigerante zero açúcar (KS).",
-                price: "R$ 8,00",
+                price: "R$ 9,00",
                 image: "/images/external/coca-zero.jpg"
             },
             {
                 id: 42,
                 name: "Guaraná",
                 description: "Refrigerante gelado.",
-                price: "R$ 8,00",
+                price: "R$ 9,00",
                 image: "/images/Comidas/guarana.webp"
             }
         ]
