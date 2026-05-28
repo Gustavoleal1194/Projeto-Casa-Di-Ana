@@ -84,7 +84,7 @@ const novidadesForaDoCardapioItems: MenuItem[] = [
     id: 3013,
     name: "Julieta - Chocolate Nobre 75%",
     description: "Chocolate quente feito com ganashe de chocolate nobre 70% cacau, noz moscada , flor de sal e marshmellow",
-    price: "R$ 30,00",
+    price: "R$ 35,00",
     image: "/images/bebidas/MilenaChocolateNobre.jpeg",
   },  {
     id: 3009,
