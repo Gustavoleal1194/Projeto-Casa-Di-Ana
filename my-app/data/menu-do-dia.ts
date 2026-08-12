@@ -15,7 +15,7 @@ export const menuDoDiaItems: MenuItem[] = [
     id: 2027,
     name: "Bolo Matilda",
     description: "Item do dia.",
-    price: "R$ 35,00",
+    price: "R$ 30,00",
     image: "/images/Comidas/BoloMatilda.jpeg",
     available: true
   },
@@ -23,7 +23,7 @@ export const menuDoDiaItems: MenuItem[] = [
     id: 2022,
     name: "Croissant de nutella com morango",
     description: "Item do dia.",
-    price: "R$ 35,00",
+    price: "R$ 38,00",
     image: "/images/Comidas/CroissantNutellaChocolate.jpeg",
     available: true
   },
@@ -31,7 +31,7 @@ export const menuDoDiaItems: MenuItem[] = [
     id: 2004,
     name: "Danishs Variados",
     description: "Item do dia.",
-    price: "R$ 29,00",
+    price: "R$ 30,00",
     image: "/images/Comidas/Danish.jpeg",
     available: true
   },
@@ -72,7 +72,7 @@ export const menuDoDiaItems: MenuItem[] = [
     id: 2017,
     name: "Croissant de Creme Pâtissière",
     description: "Item do dia.",
-    price: "R$ 24,00",
+    price: "R$ 35,00",
     image: "/images/Dodia/CroissantCreme2.jpg",
     available: true
   },

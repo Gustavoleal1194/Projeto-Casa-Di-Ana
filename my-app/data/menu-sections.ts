@@ -203,7 +203,7 @@ export const defaultMenuSections: MenuSection[] = [
                 id: 26,
                 name: "Guga – Café Gelado",
                 description: "Café extraído e servido gelado.",
-                price: "R$ 18,00",
+                price: "R$ 22,00",
                 image: "/images/bebidas/Guga.jpg"
             },
             {
@@ -491,14 +491,14 @@ export const defaultMenuSections: MenuSection[] = [
                 id: 76,
                 name: "Cido",
                 description: "Ovos mexidos (ponto mais) com flor de sal e ceboulette. Acompanha baguete fatiada e tostada. **Opcional: bacon (+R$ 8,00).**",
-                price: "R$ 18,00",
+                price: "R$ 20,00",
                 image: "/images/Comidas/Cido.jpg"
             },
             {
                 id: 77,
                 name: "Odete",
                 description: "Ovos cremosos com toque de creme de leite fresco, flor de sal, noz moscada e ceboulette. Acompanha baguete fatiada e tostada. **Opcional: bacon (+R$ 8,00).**",
-                price: "R$ 20,00",
+                price: "R$ 22,00",
                 image: "/images/Comidas/odete2.jpg"
             }
         ]
@@ -583,7 +583,7 @@ export const defaultMenuSections: MenuSection[] = [
                 id: 62,
                 name: "Pistache",
                 description: "Unidade",
-                price: "R$ 19,00",
+                price: "R$ 20,00",
                 image: "/images/Comidas/SonhoPistache.jpeg"
             },
             {
