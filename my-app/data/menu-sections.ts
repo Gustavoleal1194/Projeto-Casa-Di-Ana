@@ -203,7 +203,7 @@ export const defaultMenuSections: MenuSection[] = [
                 id: 26,
                 name: "Guga – Café Gelado",
                 description: "Café extraído e servido gelado.",
-                price: "R$ 22,00",
+                price: "R$ 18,00",
                 image: "/images/bebidas/Guga.jpg"
             },
             {
@@ -231,7 +231,7 @@ export const defaultMenuSections: MenuSection[] = [
                 id: 29,
                 name: "Frapê da Carol – Nutella",
                 description: "Cremoso, doce e preparado com Nutella.",
-                price: "R$ 29,00",
+                price: "R$ 32,00",
                 image: "/images/bebidas/frapeNutella.jpg"
             },
             {
@@ -245,7 +245,7 @@ export const defaultMenuSections: MenuSection[] = [
                 id: 31,
                 name: "Gaby – Chá de Hibisco com Manga",
                 description: "Infusão gelada com frutas tropicais.",
-                price: "R$ 20,00",
+                price: "R$ 22,00",
                 image: "/images/bebidas/Gabi.jpg"
             },
             {
@@ -667,7 +667,7 @@ export const defaultMenuSections: MenuSection[] = [
                 id: 70,
                 name: "Pain au Chocolat",
                 description: "Unidade",
-                price: "R$ 24,00",
+                price: "R$ 25,00",
                 image: "/images/Comidas/PainAuChocolat.jpeg"
             },
             {
