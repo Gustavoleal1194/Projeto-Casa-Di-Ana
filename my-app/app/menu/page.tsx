@@ -236,10 +236,10 @@ export default function MenuPage() {
           <div className="mb-20 max-w-6xl mx-auto scroll-mt-24">
             <div className="text-center mb-12">
               <h2 className="font-serif text-3xl md:text-4xl text-white mb-3">
-                Novidades fora do cardápio
+                Novidades
               </h2>
               <p className="text-white/90 font-body max-w-2xl mx-auto">
-                Novidades que ainda não estão no cardapio
+                Novidades da casa
               </p>
             </div>
             <MenuDoDiaGrid items={novidadesForaDoCardapioItems} />
