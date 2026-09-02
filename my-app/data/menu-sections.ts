@@ -564,6 +564,27 @@ export const defaultMenuSections: MenuSection[] = [
                 description: "Coalhada com rapas de limão, cebola roxa, alcaparras, tomate caqui, sal, pimenta, azeite na baguete.",
                 price: "R$ 58,00",
                 image: "/images/Comidas/Lanche_salmao_ovo.jpeg"
+            },
+             {
+                id: 76,
+                name: "Antonio",
+                description: "Ciabatta, molho de mostarda e mel, filé mignon tipo rosbife salteado na chapa, queijo cheddar inglês, cebola caramelizada e picles de cenoura.",
+                price: "R$ 52,00",
+                image: "/images/Comidas/Antonio.png"
+            },
+            {
+                id: 77,
+                name: "Cesár",
+                description: "Massa Folhada, guacamole, ovo pochê, aioli de limão siciliano.",
+                price: "R$ 37,00",
+                image: "/images/Comidas/cesar.png"
+            },
+            {
+                id: 78,
+                name: "Fabi",
+                description: "Croissant, burrata, presunto parma, rúcula selvática, molho balsâmico e mel.",
+                price: "R$ 37,00",
+                image: "/images/Comidas/fabi.png"
             }
         ]
     },
