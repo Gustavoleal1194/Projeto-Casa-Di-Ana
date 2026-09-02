@@ -24,6 +24,29 @@ function getCarouselItemsFromMenuDoDia(items: MenuItem[]): MenuCarouselItem[] {
 }
 
 const novidadesForaDoCardapioItems: MenuItem[] = [
+
+
+  {
+    id: 3050,
+    name: "Antonio",
+    description: "Ciabatta, molho de mostarda e mel, filé mignon tipo rosbife salteado na chapa, queijo cheddar inglês, cebola caramelizada e picles de cenoura.",
+    price: "R$ 52,00",
+    image: "/images/Comidas/Antonio.png"
+  },
+  {
+    id: 3051,
+    name: "Cesár",
+    description: "Massa Folhada, guacamole, ovo pochê, aioli de limão siciliano.",
+    price: "R$ 37,00",
+    image: "/images/Comidas/cesar.png"
+  },
+  {
+    id: 3052,
+    name: "Fabi",
+    description: "Croissant, burrata, presunto parma, rúcula selvática, molho balsâmico e mel.",
+    price: "R$ 37,00",
+    image: "/images/Comidas/fabi.png"
+  },
   {
     id: 3001,
     name: "Henrique",
@@ -74,33 +97,33 @@ const novidadesForaDoCardapioItems: MenuItem[] = [
     price: "R$ 22,00",
     image: "/images/bebidas/latteGelato.jpeg",
   },
-   {
+  {
     id: 3008,
     name: "Milena - Chocolate Nobre",
     description: "Chocolate quente feito com ganashe de chocolate nobre 40% cacau, noz moscada , flor de sal e marshmellow",
     price: "R$ 30,00",
     image: "/images/bebidas/MilenaChocolateNobre.jpeg",
-  },{
+  }, {
     id: 3013,
     name: "Julieta - Chocolate Nobre",
     description: "Chocolate quente feito com ganashe de chocolate nobre 70% cacau, noz moscada , flor de sal e marshmellow",
     price: "R$ 35,00",
     image: "/images/bebidas/MilenaChocolateNobre.jpeg",
-  },  {
+  }, {
     id: 3009,
     name: "Shake doce de leite com café ",
     description: "Feito de sorvete de doce de leite a base de whey com café e doce de leite",
     price: "R$ 35,00",
     image: "/images/bebidas/Shakes.jpeg",
   },
-    {
+  {
     id: 3010,
     name: "Shake ovomaltine ",
     description: "Feito de sorvete protéico de ninho a base de whey, com 20 gramas de proteína e ovomaltine",
     price: "R$ 32,00",
     image: "/images/bebidas/Shakes.jpeg",
   },
-    {
+  {
     id: 3011,
     name: "Shake Morango ",
     description: "Feito de sorvete protéico a base de whey de  ninho com 20 gramas de proteína e morango",
@@ -122,7 +145,7 @@ export default function MenuPage() {
     ...novidadesForaDoCardapioItems,
     ...availableMenuDoDiaItems,
   ])
-  
+
   // Função para obter o dia e mês atual por extenso
   const getCurrentDate = () => {
     const today = new Date()
@@ -134,9 +157,9 @@ export default function MenuPage() {
     const month = monthNames[today.getMonth()]
     return `${day} de ${month}`
   }
-  
+
   const currentDate = getCurrentDate()
-  
+
   return (
     <>
       <Header />
