@@ -583,7 +583,7 @@ export const defaultMenuSections: MenuSection[] = [
                 id: 78,
                 name: "Fabi",
                 description: "Croissant, burrata, presunto parma, rúcula selvática, molho balsâmico e mel.",
-                price: "R$ 37,00",
+                price: "R$ 55,00",
                 image: "/images/Comidas/fabi.png"
             }
         ]
