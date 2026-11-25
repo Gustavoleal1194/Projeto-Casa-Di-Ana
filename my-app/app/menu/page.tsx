@@ -29,7 +29,7 @@ const novidadesForaDoCardapioItems: MenuItem[] = [
     name: "Panetone em Fatias",
     description: "de frutas secas italianas processo artesanal italiano, 100% massa madre. Pode ser tradicional ou brûlée.",
     price: "Tradicional R$ 26,00 | Brûlée R$ 28,00",
-    image: "/images/Comidas/Rabanada.jpeg"
+    image: "/images/Comidas/panetone.jpeg"
   },
  {
     id: 3057,
