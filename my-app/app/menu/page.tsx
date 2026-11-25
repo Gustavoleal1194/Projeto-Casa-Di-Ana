@@ -24,10 +24,22 @@ function getCarouselItemsFromMenuDoDia(items: MenuItem[]): MenuCarouselItem[] {
 }
 
 const novidadesForaDoCardapioItems: MenuItem[] = [
-
-
+ {
+    id: 3057,
+    name: "Rabanada",
+    description: "Rabanada com nosso brioche de longa fermentação.",
+    price: "R$ 20,00",
+    image: "/images/Comidas/Rabanada.jpeg"
+  },
   {
-    id: 3050,
+    id: 3056,
+    name: "Pain Perdu",
+    description: "Rabanada com nosso brioche artesanal de longa fermentação, regado com creme inglês e frutas vermelhas.",
+    price: "R$ 28,00",
+    image: "/images/Comidas/PainPerdu.jpeg"
+  },
+  {
+    id: 3055,
     name: "Antonio",
     description: "Ciabatta, molho de mostarda e mel, filé mignon tipo rosbife salteado na chapa, queijo cheddar inglês, cebola caramelizada e picles de cenoura.",
     price: "R$ 52,00",
